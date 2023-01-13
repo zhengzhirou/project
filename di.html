@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Document</title>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <style>
+    * {
+    box-sizing: border-box;
+
+}
+
+body {
+    margin: 0;
+    padding: 10px;
+    background-color: rgb(205, 133, 63);
+
+}
+.header {
+    padding: 5px;
+    text-align: center;
+    position: relative;
+  }
+
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .fakeimg {
+    background-color: rgb(255, 250, 250);
+    width: 100%;
+    padding: 20px;
+  }
+
+  .card2 {
+    background-color: rgb(234, 171, 83) ;
+    padding: 20px;
+    margin-top: 20px;
+  }
+.container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.container .box {
+    position: relative;
+    width: 280px;
+    height: 400px;
+    margin: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.container .box .imgBx {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 255, 255);
+    clip-path: circle(400px at center 100px);
+    transition: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.container .box:hover .imgBx {
+    clip-path: circle(80px at center 100px);
+    transition-delay: 0s;
+}
+
+.container .box .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container .box .content {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 55%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.container .box .content h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.container .box .content a {
+    text-decoration: none;
+    background: rgb(255, 251, 251);
+    color: #fff;
+    padding: 5px;
+    display: inline-block;
+}
+
+.container .box .content h2,
+.container .box .content p,
+.container .box .content a {
+    opacity: 0;
+    transition: 0.5s;
+    transform: translateY(20px);
+}
+
+.container .box:hover .content h2 {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.5s
+}
+
+.container .box:hover .content p {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.7s
+}
+
+.container .box:hover .content a {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.9s
+}
+.footer .card2{
+    text-align: center;
+    padding: 30px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(234, 171, 83);
+ }
+ .block {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: #aa8f09;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+.block:hover {
+  background-color: #ddd;
+  color: black;
+}
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <img src="images\header2.webp" alt="陆地" style="width:100% ;height:400px;">
+    <div class="centered">
+      <h1 style="color:white;font-size: 100px;">陆地动物</h1>
+    </div>
+  </div>
+  <div class="card2">
+    <h2>概念</h2>
+    <div class="fakeimg" style="height:100px;">陆生动物指在陆地生活的动物，绝大多数都呼吸空气。地下动物中，有些靠呼吸孔隙水中的溶解氧而生存的微小动物，亦属陆生动物。陆生动物为了适应陆地生活而呼吸空气、防止体内水分蒸发、支撑身体的运动、保护卵和幼体，以及氮素代谢的最终产物不是以氨态氮而是以尿素和尿酸态氮排出。</div>
+  </div>
+  <div class="card2">
+    <h3>介绍</h3>
+    <div class="fakeimg">
+      <p>身体构造：<br>陆生动物的身体结构有很多特点，它们都可以从力学的基础定律中找到解释。实际上，这条定律是：动物四肢的工作能力与身长的三次方成正比；用来控制它们四肢所消耗的功与身长的四次方成正比。所以，动物的身躯越大，它们的脚、翼、触角等肢体就会越短。在所有的陆生动物中，身躯越小的动物，四肢越长。比如，我们都非常熟悉的盲蜘蛛，就是一个很好的例子。如果动物的身体尺寸非常小，那么它们的形状就会跟盲蜘蛛相似。这些现象都可以利用力学定律进行解释。不过，如果它们的身躯达到了一定的尺寸（比如，狐狸），那它们的体形就不再相似了。这是因为，它们的脚会支撑不住身体的体重，而且这会使得它们的行动非常不便。但是，在海洋里面，动物的体重可以通过水的排斥作用进行平衡，所以它们的形状也可能长成盲蜘蛛那样的形状，比如，深水螃蟹，它的身长只有半米左右，但是脚都长达3米。</p>
+    </div>
+    <div class="fakeimg">
+      <p>特征：<br>动物最基本的特征是可以自由行动。通常，动物可以自如地从一个地方走到另一个地方，但植物却做不到，这是动物和植物的区别之一。动物四处走动可以获取食物并找到栖身之地，可以摆脱食肉动物的侵扰。动物的种类不同，其身体的运动部位也不相同，绝大多数的陆生动物小到臭虫、蜘蛛，大到爬行动物和哺乳动物都是靠它们的腿来走动的；猴子和树懒则是依靠上肢的协助攀爬到树上；蜗牛依靠腹部的分泌物滑行；蛇则通过整个身体的扭动前进。动物在运动时肌肉起着非常重要的作用。脊椎动物的肌肉与它们的骨骼是紧密连在一起运动，使得动物可以爬行、走动、飞行或者游泳。
+        在类似草原一样广阔的环境中生活的动物，例如羚羊、瞪羚和斑马，能够急速奔跑是极其重要的，因为这与它们的性命息息相关。只有极快的速度才能使它们摆脱诸如猎豹、狮子以及野狗等食肉动物的追赶，不会成为它们的猎物。这类动物的肌肉主要集中在大腿和躯体上，它们的小腿和脚都比较轻，可以有效地协调往复运动。</p>
+    </div>
+  </div>
+  <div class="card2">
+    <h1  style="text-align: center;">大型动物</h1>
+  </div>
+  <div class="container">
+    <div class="box">
+      <div class="imgBx">
+        <img src="images\狮子.webp ">
+      </div>
+      <div class="content">
+        <h2>狮子</h2>
+        <p>是食肉目、猫科、豹属的大型猛兽。简称狮，中国古称狻猊。是一种生存在非洲与亚洲的大型猫科动物，是现存平均体重最大的猫科动物，也是在世界上唯一一种雌雄两态的猫科动物。</p>
+ 
+      </div>
+    </div>
+    <div class="box">
+      <div class="imgBx">
+        <img src="images\老虎.webp">
+      </div>
+      <div class="content">
+        <h2>老虎</h2>
+        <p>：是哺乳纲的大型猫科动物；毛色浅黄或棕黄色，满身黑色横纹；头圆、耳短，耳背面黑色，中央有一白斑甚显著；四肢健壮有力；尾粗长，具黑色环纹，尾端黑色。共有九个亚种，各亚种之间的体型和形态差异很大。</p>
+ 
+      </div>
+    </div>
+    <div class="box">
+      <div class="imgBx">
+        <img src="images\白虎.jpg">
+      </div>
+      <div class="content">
+        <h2>白虎</h2>
+        <p>由于基因突变，导致孟加拉虎原本橙黄色底黑色条纹的毛发转变成白底黑纹。第一只野生孟加拉白虎于1951年在印度被发现并捕获，被取名为“莫罕”。 </p>
+        
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="imgBx">
+        <img src="images\花豹.jpg">
+      </div>
+      <div class="content">
+        <h2>花豹</h2>
+        <p>是哺乳纲、猫科、豹属的大型肉食性动物，体长100-150厘米，体重50-100千克。体形似虎，但明显较小；躯体均匀，四肢中长，趾行性。视、听、嗅觉均很发达。头小尾长，四肢短健，前足5趾，后足4趾，爪灰白色，能伸缩。 </p>
+ 
+      </div>
+    </div>
+    <div class="box">
+      <div class="imgBx">
+        <img src="images\黑豹.jpg ">
+      </div>
+      <div class="content">
+        <h2>黑豹</h2>
+        <p> 是豹的黑色型变种。其分布于马来西亚、泰国和印度等地，属热带湿润森林动物。黑豹耳短，尾长70～95cm，体重50～55kg，体黄褐色，并有许多黑色空心斑块。</p>
+ 
+      </div>
+    </div>
+    <div class="box">
+      <div class="imgBx">
+        <img src="images\大象.jpg">
+      </div>
+
+      <div class="content">
+        <h2>大象</h2>
+        <p>大象寿命很长，一般能活到70岁左右，它在10岁到15岁性成熟，怀孕期长达22个月。大象分布极广，大约在四千万年以前，除了大洋洲和南极洲以外，各洲都有它的足迹，然而现在主要有亚洲象和非洲象两大类。 </p>
+ 
+      </div>
+    </div>
+    <div class="box">
+      <div class="imgBx">
+        <img src="images\犀牛.jpg ">
+      </div>
+      <div class="content">
+        <h2>犀牛</h2>
+        <p>是哺乳纲、犀科动物的总称， 有4属5种。是世界上最大的奇蹄目动物，犀类动物腿短、体肥笨拙，体长2.2-4.5米，肩高1.2-2米，体重2800-3000千克。 </p>
+ 
+      </div>
+    </div>
+    <div class="box">
+      <div class="imgBx">
+        <img src="images\长颈鹿.jpg ">
+      </div>
+      <div class="content">
+        <h2>长颈鹿</h2>
+        <p>是一种生长在非洲的反刍偶蹄动物，拉丁文名字的意思是“长着豹纹的骆驼”。它们是世界上现存最高的陆生动物。站立时由头至脚可达6-8米，体重约700千克，刚出生的幼仔就有1.5米高</p>
+      </div>
+    </div>
+  </div>
+  <div class="card2">
+    <h1 style="text-align: center;">南北极动物，其他动物</h1>
+ 
+  </div>
+  <div class="container">
+    <div class="box">
+      <div class="imgBx">
+        <img src=" images\北极熊.webp">
+      </div>
+      <div class="content">
+        <h2>北极熊</h2>
+        <p>是熊科熊属的一种动物，是世界上最大的陆地食肉动物，又名白熊。身体大而粗壮，肩高可达1.6米。成年雄性体重在300-800千克之间，头体长可达2.5米。雌性较小，体重150-300千克，体长1.8-2米。</p>
+ 
+      </div>
+    </div>
+    <div class="box">
+      <div class="imgBx">
+        <img src=" images\北极狐.jpg ">
+      </div>
+      <div class="content">
+        <h2>北极狐</h2>
+        <p>体长50-60厘米，尾长20-25厘米，体重2.5-4千克。冬季全身体毛为白色，仅鼻尖为黑色；夏季体毛为灰黑色，腹面颜色较浅。具有很密的绒毛和较少的针毛，可在零下50℃的冰原上生活。</p>
+ 
+      </div>
+    </div>
+    <div class="box">
+      <div class="imgBx">
+        <img src=" images\北极兔.jpg">
+      </div>
+      <div class="content">
+        <h2>北极兔</h2>
+        <p> 是兔科、兔属的哺乳动物。北极兔体型巨大，头比一般的兔子大且长，耳朵较小，腿长，四肢非常有力灵活，夏季身体背面浅灰色，冬季身体背面白色。</p>
+    
+      </div>
+    </div>
+    <div class="box">
+      <div class="imgBx">
+        <img src="images\北极狼.webp">
+      </div>
+      <div class="content">
+        <h2>北极狼</h2>
+        <p> 又称白狼，是犬科犬属下的灰狼亚种，分布于欧亚大陆北部、加拿大北部和格陵兰北部。是灰狼亚种中体型中等的狼。狼具有很好的耐力，适合长途迁移。它们的胸部狭窄，背部与腿强健有力，使它们具备很有效率的机动能力。</p>
+ 
+      </div>
+    </div>
+    <div class="box">
+      <div class="imgBx">
+        <img src="images\且.jpg ">
+      </div>
+      <div class="content">
+        <h2>企鹅</h2>
+        <p>是鸟纲、企鹅科所有物种的通称。有“海洋之舟”美称的企鹅是一种最古老的游禽，它们很可能在地球穿上冰甲之前，就已经在南极安家落户。全世界的企鹅共有18种，大多数都分布和生活在南半球。特征为不能飞翔</p>
+ 
+      </div>
+    </div>
+    <div class="box">
+      <div class="imgBx">
+        <img src="images\熊猫.jpg ">
+      </div>
+      <div class="content">
+        <h2>熊猫</h2>
+        <p>属于熊科、大熊猫属的哺乳动物。仅有二个亚种。雄性个体稍大于雌性。体型肥硕似熊、丰腴富态，头圆尾短，头躯长1.2-1.8米，尾长10-12厘米。</p>
+ 
+      </div>
+    </div>
+    <div class="box">
+      <div class="imgBx">
+        <img src="images\考拉.jpg ">
+      </div>
+      <div class="content">
+        <h2>考拉</h2>
+        <p>考拉（kolar），是澳大利亚珍贵的有袋类动物树袋熊，考拉在澳大利亚土著语言中是“不饮水”的意思。</p>
+ 
+      </div>
+    </div>
+    <div class="box">
+      <div class="imgBx">
+        <img src="images\袋鼠.webp">
+      </div>
+      <div class="content">
+        <h2>袋鼠</h2>
+        <p>袋鼠是袋类动物的典型代表。袋类动物是发育不完全的动物，属早产胎儿，所以需要在育儿袋中发育</p>
+ 
+      </div>
+    </div>
+    <div class="box">
+      <div class="imgBx">
+        <img src="images\棕熊.webp ">
+      </div>
+      <div class="content">
+        <h2>棕熊</h2>
+        <p> 是食肉目、熊科动物。亦称灰熊。是陆地上食肉目体形最大的哺乳动物之一，体长1.5-2.8米，肩高0.9-1.5米，雄性体重135-545千克，雌性体重80-250千克。</p>
+ 
+      </div>
+    </div>
+    <div class="box">
+      <div class="imgBx">
+        <img src="images\狐狸.jpg">
+      </div>
+      <div class="content">
+        <h2>狐狸</h2>
+        <p> 体长为45-90厘米，尾长25-60厘米，体重2-10千克，最大的超过15千克，雌兽体形比雄兽略小。体型中等、匀称，四肢修长，趾行性，利于快速奔跑。</p>
+  
+      </div>
+    </div>
+    <div class="box">
+      <div class="imgBx">
+        <img src="images\兔子.webp ">
+      </div>
+      <div class="content">
+        <h2>兔子</h2>
+        <p>是哺乳类兔形目兔科下属所有的属的总称。俗称兔子。生物学分类动物界脊索动物门 脊椎动物亚门 哺乳纲 兔形目。</p>
+ 
+      </div>
+    </div>
+    <div class="box">
+      <div class="imgBx">
+        <img src="images\狼.jpg ">
+      </div>
+      <div class="content">
+        <h2>狼</h2>
+        <p> 是食肉目、犬科的动物。共有11个亚种。体型中等、匀称，四肢修长，趾行性，利于快速奔跑。头腭尖形，颜面部长，鼻端突出，耳尖且直立，嗅觉灵敏，听觉发达。</p>
+   
+      </div>
+    </div>
+    <div class="box">
+      <div class="imgBx">
+        <img src="images\猩猩.jpg ">
+      </div>
+      <div class="content">
+        <h2>猩猩</h2>
+        <p>是灵长目、人科、大猩猩属类人猿的总称。分两个物种——“东非大猩猩”和“西非大猩猩”。是现存所有灵长类中体型最大的种 </p>
+      </div>
+    </div>
+    <div class="box">
+      <div class="imgBx">
+        <img src="images\狒狒.jpg">
+      </div>
+      <div class="content">
+        <h2>狒狒</h2>
+        <p>灵长目猿猴亚目狭鼻组猴科的1属，通称狒狒。有5种：阿拉伯狒狒、几内亚狒狒、东非狒狒、草原狒狒和豚尾狒狒。</p>
+ 
+      </div>
+    </div>
+    <div class="box">
+      <div class="imgBx">
+        <img src=" images\猴子.jpg">
+      </div>
+      <div class="content">
+        <h2>猴子</h2>
+        <p>猴子是灵长目一些动物的俗称。整个灵长目动物因进化等级的差异可分为两大亚目——原猴亚目和类人猿亚目 [11]  ，又称为原猴类和猿猴类。</p>
+ 
+      </div>
+    </div>
+    <div class="box">
+      <div class="imgBx">
+        <img src="images\刺猬.jpg">
+      </div>
+      <div class="content">
+        <h2>刺猬</h2>
+        <p>刺猬是属于猬亚科（ Erinaceus amurensis）的一类猬形目哺乳动物的统称，共有5个属；其中猬属（Erinaceus）的刺猬分布最普遍，广泛分布在欧洲、亚洲北部，在中国的北方和长江流域也分布很广。</p>
+ 
+      </div>
+    </div>
+  </div>
+  <div class="card2">
+    <h1 style="text-align: center;">相似动物</h1>
+  </div>
+  <div class="container">
+    <div class="box">
+      <div class="imgBx">
+        <img src="images\斑马.jpg">
+      </div>
+      <div class="content">
+        <h2>斑马</h2>
+        <p>是现存的奇蹄目马科马属3种兽类的通称。因身上有起保护作用的斑纹而得名。没有任何动物比斑马的皮毛更与众不同。斑马周身的条纹和人类的指纹一样——没有任何两头完全相同。斑马为非洲特产。</p>
+ 
+      </div>
+    </div>
+    <div class="box">
+      <div class="imgBx">
+        <img src="images\马.jpg">
+      </div>
+      <div class="content">
+        <h2>马</h2>
+        <p>马在动物分类学中分类为：脊椎动物亚门（Vertebrata）、哺乳纲（Mammalia）、奇蹄目（Perissodactyla）、马科（Equidae）、马属（Equus）、马（Equus caballus） [1]  。是一种草食性动物。</p> 
+      </div>
+    </div>
+    <div class="box">
+      <div class="imgBx">
+        <img src=" images\骡子.webp">
+      </div>
+      <div class="content">
+        <h2>骡子</h2>
+        <p>哺乳类奇蹄目动物。马和驴的种间杂种，主供役用。由公驴和母马所生的杂种为马骡（Mule），简称骡；由公马和母驴所生的杂种为驴骡（Hinny）</p>
+ 
+      </div>
+    </div>
+    <div class="box">
+      <div class="imgBx">
+        <img src="images\骆驼.jpg">
+      </div>
+      <div class="content">
+        <h2>骆驼</h2>
+        <p>头较小，颈粗长，弯曲如鹅颈。躯体高大，体毛褐色。眼为重睑，鼻孔能开闭，四肢细长，蹄大如盘，两趾、跖有厚皮，都是适于沙地行走的特征。尾细长，尾端有丛毛。背有1～2个较大驼峰 </p>
+ 
+      </div>
+    </div>
+    <div class="box">
+      <div class="imgBx">
+        <img src="images\梅花鹿.webp ">
+      </div>
+      <div class="content">
+        <h2>梅花鹿</h2>
+        <p>是一种中小型鹿，体长125至145厘米，尾长12至13厘米，肩高70至95厘米，体重70至100千克。毛色夏季为栗红色，有许多白斑，状似梅花；冬季为烟褐色，白斑不显著。颈部有鬣毛。雄性角长达30至66厘米 </p>
+ 
+      </div>
+    </div>
+    <div class="box">
+      <div class="imgBx">
+        <img src="images\羚羊.jpg">
+      </div>
+      <div class="content">
+        <h2>羚羊</h2>
+        <p>《山海经》中《西山经》有提到麢（líng），就是羚羊。羚羊是对一类偶蹄目牛科动物的统称。羚羊类的动物总共有86种，分属于11个族、32个属。对于分类学，羚羊并没有特定的专指哪个科或属。</p>
+ 
+      </div>
+    </div>
+    <div class="box">
+      <div class="imgBx">
+        <img src="images\牦牛.jpg">
+      </div>
+      <div class="content">
+        <h2>牦牛</h2>
+        <p>属于哺乳纲、真兽亚纲、偶蹄目、反刍亚目、牛科、牛亚科动物，是以中国青藏高原为中心，及其毗邻高山、亚高山高寒地区的特有珍稀牛种之一，草食性反刍家畜。</p>
+ 
+      </div>
+    </div>
+    <div class="box">
+      <div class="imgBx">
+        <img src="images\奶牛.png">
+      </div>
+      <div class="content">
+        <h2>奶牛</h2>
+        <p>该牛分为奶用、肉奶兼用两种。奶用牛的产奶量是奶牛中最高的</p>
+ 
+      </div>
+    </div>
+  </div>
+  <div class="card2">
+    <h1 style="text-align: center;">宠物</h1>
+ 
+  </div>
+<div class="container">
+  <div class="box">
+    <div class="imgBx">
+      <img src="images\阿布拉多.jpg ">
+    </div>
+    <div class="content">
+      <h2>阿布拉多</h2>
+      <p>拉布拉多又称寻回犬，是一种中大型犬类，是非常适合被选作经常出入公共场合的导盲犬或地铁警犬及搜救犬和其他工作犬的狗品种，因原产地在加拿大的纽芬兰与拉布拉多省而得名。拉布拉多智商位列世界犬类第六位。</p>
+
+    </div>
+  </div>
+  <div class="box">
+    <div class="imgBx">
+      <img src="images\边牧.webp ">
+    </div>
+    <div class="content">
+      <h2>边牧</h2>
+      <p>边境牧羊犬（英文名：Border Collie）是一种牧羊犬，为柯利牧羊犬的一种。耳朵全竖或半竖立状，体形结实，长垂尾。</p>
+
+    </div>
+  </div>
+  <div class="box">
+    <div class="imgBx">
+      <img src=" images\博美.png">
+    </div>
+    <div class="content">
+      <h2>博美</h2>
+      <p>是一种紧凑、短背、活跃的玩赏犬，学名哈多利系博美犬（俗称英系博美犬），是德国狐狸犬的一种，原产德国。</p>
+
+    </div>
+  </div>
+  <div class="box">
+    <div class="imgBx">
+      <img src="images\萨摩耶.jpg ">
+    </div>
+    <div class="content">
+      <h2>萨摩耶</h2>
+      <p>原是西伯利亚的原住民萨摩耶族培育出的犬种，一岁前调皮、灵动。它机警、强壮、灵活、美丽、高贵优雅、乖巧可爱，有着非常引人注目的外表，有“微笑天使”的称号，也有着“微笑天使面孔，捣蛋魔鬼内心”之称。</p>
+
+    </div>
+  </div>
+  <div class="box">
+    <div class="imgBx">
+      <img src="images\柴犬.jpg ">
+    </div>
+    <div class="content">
+      <h2>柴犬</h2>
+      <p>日本国宝，柴犬是体型中等并且又最古老的日本犬。柴犬能够应付陡峭的丘陵和山脉的斜坡，拥有灵敏的感官，使得柴犬屡次成为上乘的狩猎犬。柴犬性格活泼、好动。对自己喜欢的玩具、会一天到晚的把玩。</p>
+
+    </div>
+  </div>
+  <div class="box">
+    <div class="imgBx">
+      <img src="images\杜宾.jpg ">
+    </div>
+    <div class="content">
+      <h2> 杜宾</h2>
+      <p>杜宾犬是一种十分凶猛的犬种，主要担当军、警工作，经过训练后，可成为搜索犬、狩猎犬和牧羊犬。杜宾犬性格活泼、警惕、坚定、机敏、勇敢而顺从。</p>
+
+    </div>
+  </div>
+  <div class="box">
+    <div class="imgBx">
+      <img src=" images\柯基.jpg">
+    </div>
+    <div class="content">
+      <h2>柯基</h2>
+      <p>威尔士柯基犬（welsh corgi pembroke）是一种小型犬，它们的胆子很大，也相当机警，能高度警惕地守护家园，是最受欢迎的小型护卫犬之一。</p>
+
+    </div>
+  </div>
+  <div class="box">
+    <div class="imgBx">
+      <img src="images\哈士奇.png ">
+    </div>
+    <div class="content">
+      <h2>哈士奇</h2>
+      <p>哈士奇性格多变，有的极端胆小，也有的极端暴力，进入人类社会和家庭的哈士奇，都已经没有了这种极端的性格，比较温顺，是一种流行于全球的宠物犬</p>
+  
+    </div>
+  </div>
+  <div class="box">
+    <div class="imgBx">
+      <img src="images\波斯猫.webp ">
+    </div>
+    <div class="content">
+      <h2>波斯猫</h2>
+      <p>波斯猫是最常见的长毛猫，波斯猫有一张讨人喜爱的面庞，长而华丽的背毛，优雅的举止，故有“猫中王子”、“王妃”之称，是世界上爱猫者最喜欢的纯种猫之一，占有极其重要的地位。</p>
+  
+    </div>
+  </div>
+  <div class="box">
+    <div class="imgBx">
+      <img src="images\布偶猫.webp ">
+    </div>
+    <div class="content">
+      <h2>布偶猫</h2>
+      <p>布偶猫是猫中较大、较重的一种。它的头呈V形，眼大而圆，被毛丰厚，四肢粗大，尾长，身体柔软，多为三色或双色猫</p>
+  
+    </div>
+  </div>
+  <div class="box">
+    <div class="imgBx">
+      <img src=" images\短毛猫.jpg">
+    </div>
+    <div class="content">
+      <h2>短毛猫</h2>
+      <p>短毛猫是家养猫，皮毛不长，很短。短毛猫可能有单层皮毛，也可能是双层皮毛</p>
+    </div>
+  </div>
+  <div class="box">
+    <div class="imgBx">
+      <img src="images\无毛猫.jpg ">
+    </div>
+    <div class="content">
+      <h2>无毛猫</h2>
+      <p>加拿大无毛猫（Canadian Hairless）亦称斯芬克斯猫，是加拿大安大略省多伦多市养猫爱好者在1966年从一窝几乎是无毛的猫仔中，经过近交选育，特意为对猫毛过敏的爱猫者培育成的。</p>
+  
+    </div>
+  </div>
+</div>
+<div class="card2">
+  <h1 style="text-align: center;">家禽,家畜</h1>
+</div>
+<div class="container">
+<div class="box">
+  <div class="imgBx">
+    <img src=" images\鹅.jpg">
+  </div>
+  <div class="content">
+    <h2>鹅</h2>
+    <p>鹅是食草禽，全身都是宝，羽毛是富贵华丽的服装，鹅肝是高等餐桌的美味，鹅肉营养丰富、氨基酸完全、脂肪是单一不饱和脂肪酸，价值敢与羊肉相媲美，是高档餐馆的必备</p>
+
+  </div>
+</div>
+<div class="box">
+  <div class="imgBx">
+    <img src="images\鸭.jpg">
+  </div>
+  <div class="content">
+    <h2>鸭</h2>
+    <p>鸭是雁形目鸭科（Anatidae）鸭亚科（Anatinae）水禽的统称，或称真鸭。鸭的体型相对较小，颈短，一些属的嘴要大些。</p>
+
+  </div>
+</div>
+<div class="box">
+  <div class="imgBx">
+    <img src="images\猪.webp ">
+  </div>
+  <div class="content">
+    <h2>猪</h2>
+    <p>是一种脊椎动物、哺乳动物、家畜，也是古杂食类哺乳动物，主要分为家猪和野猪。</p>
+
+  </div>
+</div>
+<div class="box">
+  <div class="imgBx">
+    <img src="images\羊.jpg ">
+  </div>
+  <div class="content">
+    <h2>羊</h2>
+    <p>羊是羊亚科的统称，哺乳纲、偶蹄目、牛科、羊亚科，是人类的家畜之一。</p>
+
+  </div>
+</div>
+<div class="box">
+  <div class="imgBx">
+    <img src="images\鸡.jpg ">
+  </div>
+  <div class="content">
+    <h2>鸡</h2>
+    <p>鸡是一种家禽，家鸡源出于野生的原鸡，其驯化历史至少约4000年，但直到1800年前后鸡肉和鸡蛋才成为大量生产的商品。鸡的种类有火鸡、乌鸡、野鸡等。</p>
+
+  </div>
+</div>
+<div class="box">
+  <div class="imgBx">
+    <img src="images\牛.webp ">
+  </div>
+  <div class="content">
+    <h2>家牛</h2>
+    <p>是偶蹄目、牛科、牛属中很多已经驯化的动物。这种群居动物的祖先为原牛，大约8千年前被人类驯化成家养的牲畜。</p>
+  </div>
+</div>
+<div class="box">
+  <div class="imgBx">
+    <img src="images\黄牛.jpg">
+  </div>
+  <div class="content">
+    <h2>黄牛</h2>
+    <p>黄牛是中国固有的普通牛种。黄牛被毛以黄色为最多，品种可能因此而得名、但也有红棕色和黑色等。头部略粗重，角形不一，角根圆形。体质粗壮，结构紧凑，肌肉发达，四肢强健，蹄质坚实。</p>
+
+  </div>
+</div>
+<div class="box">
+  <div class="imgBx">
+    <img src="images\火鸡.jpg">
+  </div>
+  <div class="content">
+    <h2>火鸡</h2>
+    <p>雉科、火鸡属走禽。亦称吐绶鸡。体长110-115厘米。翼展125-144厘米，体重2.5-10.8千克。头颈几乎裸出，仅有稀疏羽毛，喉下垂有红色肉瘤。</p>
+
+  </div>
+</div>
+</div>
+<div class="card2">
+  <h1 style="text-align: center;">鸟类，鹰科，鸦科</h1>
+
+</div>
+<div class="container">
+<div class="box">
+  <div class="imgBx">
+    <img src=" images\丹顶鹤.webp">
+  </div>
+  <div class="content">
+    <h2>丹顶鹤</h2>
+    <p>鹤科、鹤属的一种大型涉禽，体长120-160厘米。颈、脚较长，通体大多白色，头顶鲜红色，喉和颈黑色，耳至头枕白色，脚黑色，站立时颈、尾部飞羽和脚黑色，头顶红色，其余全为白色</p>
+
+  </div>
+</div>
+<div class="box">
+  <div class="imgBx">
+    <img src="images\火烈鸟.webp ">
+  </div>
+  <div class="content">
+    <h2>火烈鸟</h2>
+    <p>亦称红鹳。是鸟纲、红鹳科3属6种鸟类的通称。体高约80~160厘米，体重2.5~3.5千克。体型、大小似鹳 </p>
+
+  </div>
+</div>
+<div class="box">
+  <div class="imgBx">
+    <img src=" images\海鸥.webp">
+  </div>
+  <div class="content">
+    <h2>海鸥</h2>
+    <p>是鸻形目、鸥科、鸥属的一种中等体型的海鸟。体重394-586克；体长451-510毫米。寿命24年。</p>
+  </div>
+</div>
+<div class="box">
+  <div class="imgBx">
+    <img src="images\燕子.jpg  ">
+  </div>
+  <div class="content">
+    <h2>燕子</h2>
+    <p>是雀形目燕科74种鸟类的统称。形小，翅尖窄，凹尾短喙，足弱小，羽毛不算太多。羽衣单色，或有带金属光泽的蓝或绿色；大多数种类两性都很相似。</p>
+
+  </div>
+</div>
+<div class="box">
+  <div class="imgBx">
+    <img src="images\麻雀.webp">
+  </div>
+  <div class="content">
+    <h2>麻雀</h2>
+    <p>是雀科 [5]  麻雀属27种小型鸟类的统称。它们的大小、体色甚相近。一般上体呈棕、黑色的斑杂状，因而俗称麻雀。</p>
+
+  </div>
+</div>
+<div class="box">
+  <div class="imgBx">
+    <img src=" images\老鹰.jpg">
+  </div>
+  <div class="content">
+    <h2>老鹰</h2>
+    <p>广义的鹰（hawk；eagle）泛指小型至中型的白昼活动的鹰形类鸟，尤指鹰属（Accipiter）的种类（真鹰，true hawk），包括苍鹰和雀鹰。广义的鹰（hawk；eagle）一词也常用来称呼鹰科的其他种鸟类</p>
+
+  </div>
+</div>
+<div class="box">
+  <div class="imgBx">
+    <img src="images\秃鹫.png ">
+  </div>
+  <div class="content">
+    <h2>秃鹫</h2>
+    <p>是鹰科，秃鹫属的大型猛禽，体长108-120厘米。通体黑褐色，头裸出，仅被有短的黑褐色绒羽，后颈完全裸出无羽，颈基部被有长的黑色或淡褐白色羽簇形成的皱翎。</p>
+
+  </div>
+</div>
+<div class="box">
+  <div class="imgBx">
+    <img src=" images\喜鹊.jpg">
+  </div>
+  <div class="content">
+    <h2>喜鹊</h2>
+    <p>是鸦科、鹊属的一种鸟类。共有11个亚种。体长40-50厘米，雌雄羽色相似，头、颈、背至尾均为黑色，并自前往后分别呈现紫色、绿蓝色、绿色等光泽，双翅黑色而在翼肩有一大形白斑，尾远较翅长</p>
+
+  </div>
+</div>
+</div>
+<div class="footer">
+        <div class="card2">
+            <h1>Ending</h1>
+            <p style="text-align: center;">温馨提示：保护野生动物，杜绝野味，它们不属于餐桌。</p>
+        </div>
+    </div>
+    <button type="button" class="block" onclick="myFunction()">返回首页</button>
+    <script>
+      function myFunction() {
+location.replace("index.html")
+}
+ </script>
+  </body>
+
+</html>

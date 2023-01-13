@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+   <html>
+      <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body {
+  height: 100%;
+  background: linear-gradient(141deg, #fafbfb 0%, #a5e4eb 51%, #2cb5e8 75%);
+}
+            * {
+              box-sizing: border-box;
+            }
+            
+            body {
+              font-family: Arial;
+              font-size: 17px;
+            }
+            
+            .head {
+              position: relative;
+              max-width: 100%;
+              margin: 0 auto;
+            }
+            
+            .head img {vertical-align: middle;}
+            
+            .head .content {
+              position: absolute;
+              bottom: 0;
+              background: rgb(0, 0, 0);
+              background: rgba(0, 0, 0, 0.5);
+              color: #ffffff;
+              width: 100%;
+              padding: 20px;
+            }
+            table {
+               border-collapse: collapse;
+               border-spacing: 0;
+               width: 100%;
+               border: 1px solid rgb(203, 233, 231);
+            }
+
+            th, td {
+               text-align: left;
+               padding: 16px;
+             }
+
+             tr:nth-child(even) {
+             background-color: #44bbe6;
+             }
+             
+             .header {
+  padding: 10px 16px;
+  background: #555;
+  color: #f1f1f1;
+}
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #f1f1f1;
+  height: 10px;
+}
+
+.header h2 {
+  text-align: center;
+}
+
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #ccc;
+}
+
+.progress-bar {
+  height: 8px;
+  background: #397edf;
+  width: 0%;
+}
+
+.content {
+  padding: 100px 0;
+  margin: 10px auto 0 auto;
+  width: 80%;
+}          
+.container {
+  border: 2px solid #d2ecf0;
+  background-color: #d7f1f7;
+  border-radius: 5px;
+  padding: 40px;
+  margin: 40px 0;
+}
+
+.darker {
+  border-color: rgb(202, 223, 242);
+  background-color: rgb(191, 224, 230);
+}
+
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container img {
+  float: left;
+  max-width: 200px;
+  width: 100%;
+  margin-right: 100px;
+  border-radius: 10%;
+}
+
+.container img.right {
+  float: right;
+  margin-left: 20px;
+  margin-right:0;
+}
+hr.solid {
+  border-top: 3px solid rgb(189, 235, 249);
+}
+.accordion {
+  background-color: rgb(213, 234, 243);
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: rgb(165, 233, 247); 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 50px;
+  text-align: center;
+}
+
+#London {background-color:rgb(199, 110, 128);}
+#Paris {background-color:rgb(39, 140, 100);}
+#Tokyo {background-color:rgb(20, 117, 166);}
+#Oslo {background-color:rgb(104, 117, 222);}
+.block {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: #4aa1d4;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+.block:hover {
+  background-color: #ddd;
+  color: black;
+}
+.block a{
+    color: #000;
+}
+            </style>
+      </head>
+      <body>
+        <div class="head">
+            <img src="动保1.png" alt="Notebook" style="width:100%;">
+            <div class="content">
+              <h1>动物保护</h1>
+              <p>不要让一切都成为记忆——保护动物，与自然和谐</p>
+            </div>
+          </div>
+            </div>
+          </div>
+          <div class="header">
+            <div class="progress-container">
+              <div class="progress-bar" id="myBar"></div>
+            </div>  
+          </div>
+          
+          <div class="content">
+            <h3>由于人类的破坏，与栖息地的丧失等因素，地球上濒临灭绝生物的比例正在以惊人的速度增长。</h3>
+            <h3>在工业社会以前，鸟类平均每300年灭绝一种，兽类平均每8000年灭绝一种；但是自从工业社会以来，地球物种灭绝的速度已经超出自然灭绝率的1000倍。</h3>
+            <h3>全世界1/8的植物，1/4的哺乳动物，1/9的鸟类，1/5的爬行动物，1/4的两栖动物，1/3的鱼类，都濒临灭绝。所以保护动物刻不容缓，全世界都在号召保护动物。动物保护的核心内容是禁止虐待、残害任何动物，禁止猎杀和捕食野生动物。</h3>
+            <h2>当1个物种满足下列标准的一项时，被认为有灭绝的危险：</h2>
+            <div class="container">
+                <img src="狮子.jpg" alt="Avatar" style="width:100%;">
+                <p>1）野生种群小，并种群具有下列特征之一：①依据观察、推测或估计种群数量或栖息地面积下降和质量下降；②仅存在1个单个种群；③在1个或多个生活史阶段，大多数个体集中在某一亚种群内；④种群数量出现大幅度波动；⑤物种的生物学特征或行为学特征可能导致物种容易灭绝。</p>
+                
+              </div>
+              
+              <div class="container darker">
+                <img src="梅花鹿.jpg" alt="Avatar" class="right" style="width:100%;">
+                <p>2）野生种群分布面积狭域，如①物种的栖息地破碎或物种的个体仅在极少数地点发现；②物种分布面积大幅度缩小或亚种群数大幅度波动；③由种群生物学或行为（包括迁徙）导致物种高度易危；④依据观察、推测或估计，种群分布面积、亚种群数目、个体数、栖息地面积或质量以及个体的生殖能力呈下降趋势。</p>
+                
+              </div>
+              
+              <div class="container">
+                <img src="羊咩咩.jpg" alt="Avatar" style="width:100%;">
+                <p>3）野外种群数量下降，如物种的栖息地面积或质量下降，由于人们的商业开发、病原体、竞争者、寄生物、捕食者、杂交和外来引入种的作用以及毒素和环境污染物影响，个体生殖能力下降。</p>
+                
+              </div>
+              
+              <div class="container darker">
+                <img src="斑马.jpg" alt="Avatar" class="right" style="width:100%;">
+                <p>4）5年内该物种种群现状很可能出现以上所列标准中的一项或多项。</p>
+                
+              </div>
+              <hr class="solid">
+              <h3>一切自然物种及其群落都与所在地域的环境条件相适应，只要条件不变，就能长期生存，即使发生扩散或缩减，其历程也是缓慢和渐变的。人类活动的加剧，却打破了这千古不变的平衡，导致物种灭绝，其中自然的灾害也是一部分的原因。</h3>
+              <button class="accordion">过度贪婪</button>
+<div class="panel">
+  <p>老虎是世界上最大的猫科动物，已接近灭绝。世界上只有大约6600余头，而巴里虎，爪哇虎，里海虎已在30年代逐渐灭绝。尽管各国政府三令五申禁止捕杀老虎，但还是有一些酷爱金钱的人常将它们当作摇钱树，这连政府都无法约束，法律都无法制服：1967年，在印度有480头老虎被猎杀；1991年，大量的西伯利亚虎被偷猎；1993年，在印度偷猎者手里竟然查获了867斤虎骨。</p>
+  <p>2015年2月3日，美国福克斯新闻网发表一篇题为《恐怖组织促使中非暴力偷猎大象增多》的报道称：在中非各地，偷猎大象案件处于上升势头。一些极端主义团伙甚至从直升机上向这些动物射击，然后使用电锯锯掉它们宝贵的长牙。</p>
+</div>
+
+<button class="accordion">环境丧失</button>
+<div class="panel">
+  <p>退化与破碎、人类能在短期内把山头削平、令河流改道，百年内使全球森林减少50%，这种毁灭性的干预导致的环境突变，导致许多物种失去相依为命、赖以为生的家——环境，沦落到灭绝的境地，而且这种事态仍在持续着。在濒临灭绝的脊椎动物中，有67%的物种遭受环境丧失、退化与破碎的威胁。</p>
+  <p>世界上61个热带国家中，已有49个国家的半壁江山失去野生环境，森林被砍伐、湿地被排干、草原被翻垦、珊瑚礁遭毁坏……亚洲尤为严重。孟加拉的94%、斯里兰卡的83%、印度的80%的野生生境已不复存在。俗话说：树倒猢狲散，如果森林没有了，林栖的猴子与许多动物当然无“家”可归，“生态”一词原本就是来源于希腊文ECO即“家”、“住所”之意。</p>
+  <p>灭绝物种中，迁徙能力差的两栖爬行类及无处迁徙的岛屿种类更为明显，马达加斯加上的物种有85%为特有种，狐猴类就有60多种，1500年前人类登岛后，90%的原始森林消失，狐猴类动物仅剩下28种（包括神秘的、体小如指的指猴）。大陆生境的片断化、岛屿化是近百年来日趋严重的事件，这不仅限制了动物的扩散、采食、繁殖，还增加了对生存的威胁，当某动物从甲地向乙地迁移时，被发现、被消灭的可能性就大大增加了。目前我国计划为大熊猫建的绿色走廊，就是为了解决这个矛盾。</p>
+</div>
+
+<button class="accordion">过度开发</button>
+<div class="panel">
+  <p>许多野生动物因被作为“皮可穿、毛可用、肉可食、器官可入药”的开发和利用的对象而遭灭顶之灾。象牙、犀角、虎皮、熊胆、鸟羽毛、海龟蛋、海豹的油、藏羚羊绒毛……但更多更多的是野生动物的肉，为人类的商品，大肆捕杀地球上最大的动物：鲸，就是为了食用鲸油和生产宠物食品；惨忍地捕杀，这种已进化4亿年之久的软骨鱼类被割鳍（鱼类的运动器官，由薄膜和硬刺组成，按它所在部位，可分为胸鳍、腹鳍、脊鳍、臀鳍、尾鳍）后抛弃，只是为品尝鱼翅这道美食。人类正在为了满足自己的时尚、炫耀、取乐、口腹之欲，而去剥夺野生动物的生命。对野生物种的商业性获取，往往结果是“商业性灭绝”。全球每年的野生动物黑市交易额都在100亿美元以上，与军火、毒品并驾齐驱，销蚀着人类的良心，加重着世界的罪孽。北美旅鸽曾有几十亿只，是随处可见的鸟类，大群飞来时可遮云蔽日，殖民者开发美洲100多年，将这种鸟捕尽杀绝。当1914年9月最后一只旅鸽死去，许多美国人感到震惊，瞧着这种曾多得不可胜数的动物竟在人类的开发利用下灭绝，他们为旅鸽树起纪念碑，碑文充满自责与忏悔：“旅鸽，作为一个物种因人类的贪婪和自私，灭绝了。”</p>
+</div>
+<button class="accordion">盲目引种</button>
+<div class="panel">
+    <p>人类盲目引种对濒危、稀有脊椎动物的威胁程度达19%，对岛屿物种则是致命的。公元400年，波利尼西亚人进入夏威夷，并引入鼠、犬、猪，使该地半数的鸟类（44种）灭绝了。1778年，欧洲人又带来了猫、马、牛、山羊，新种类的鼠及鸟病，加上砍伐森林、开垦土地，又使17种本地特有鸟灭绝了。人们引进猫鼬是为了对付以前错误引入的鼠类，不料，却将岛上不会飞的秧鸡吃绝了。15世纪欧洲人相继来到毛里求斯，1507年葡萄牙人，1598年荷兰人把这里做为航海的中转站，同时随意引入了猴和猪，使8种爬行动物，19种本地鸟先后灭绝了，特别是渡渡鸟。在新西兰斯蒂芬岛，有一种该岛特有的异鹩，由于灯塔看守人带来1只猫，这位捕食者竟将岛上的全部异鹩消灭了，1894年，斯蒂芬异鹩灭绝，是1只动物灭绝了1个物种。</p>
+</div>
+<button class="accordion">环境污染</button>
+<div class="panel">
+    <p>1962年，美国的雷切尔·卡逊著的《寂静的春天》引起了全球对农药危害性的关注；人类为了经济目的，急功近利地向自然界施放有毒物质的行为不胜枚举：化工产品、汽车尾气、工业废水、有毒金属、原油泄漏、固体垃圾、去污剂、制冷剂、防腐剂、水体污染、酸雨、温室效应、塑料污染……甚至海洋中军事及船舶的噪音污染都在干扰着鲸类的通讯行为和取食能力。</p>
+    <p>科学家发现，对环境质量高度敏感的两栖爬行动物正大范围的消逝。温度的增高、紫外光的强化，栖息地的分割、化学物质横溢，已使蝉噪蛙鸣成为儿时的记忆。与其它因素不同，污染对物种的影响是微妙的、积累的、慢性的致生物于死地的“软刀子”，危害程度与生物环境丧失不相上下。</p>
+</div>
+          <h2>国家二级保护动物列表（部分）</h2>
+          <p>《国家重点保护野生动物名录》已于1988年12月10日经国务院批准，1989年1月14日由林业部、农业部发布施行。名录中列入陆生野生动物330多种，其中，国家二级保护动物有小熊猫、黑熊、天鹅、鹦鹉等共230多种。</p>
+
+          <table>
+            <tr>
+              <th>纲</th>
+              <th>目</th>
+             <th>名称</th>
+            </tr>
+            <tr>
+              <td rowspan="6">哺乳纲</td>
+             </tr>
+             <tr>
+                <td>食肉目</td>
+                <td>狼、亚洲胡狼、貉、沙狐、藏狐、赤狐、懒熊、棕熊、黑熊、小熊猫、黄喉貂、石貂、小爪水獭、水獭、江獭、椰子猫、斑林狸、草原斑猫、渔猫、兔狲、猞猁、云猫、豹猫、北海狗、北海狮、髯海豹、环海豹</td>
+               </tr>
+               <tr>
+                <td>灵长目</td>
+                <td>短尾猴、熊猴、白颊猕猴、猕猴、藏南猕猴、藏酋猴</td>
+               </tr>
+               <tr>
+                <td>偶蹄目</td>
+                <td>獐、贡山麂、海南麂、水鹿、马鹿、毛冠鹿、藏原羚、鹅喉羚、长尾斑羚、缅甸斑羚、中华斑羚、北山羊、岩羊、阿尔泰盘羊、哈萨克盘羊、戈壁盘羊、天山盘羊、帕米尔盘羊...</td>
+               </tr>
+               <tr>
+                <td>...</td>
+                <td>...</td>
+               </tr>
+          
+</table>
+<hr class="solid">
+<h2>保护一级动物</h2>
+<div id="London" class="tabcontent">
+    <h1>兽类</h1>
+    <p>蜂猴（所有种）、熊猴、台湾猴、豚尾猴、叶猴（所有种）、长臂猿（所有种）、大熊猫、紫貂、貂熊、熊狸豹、虎、雪豹、儒艮、白暨豚、亚洲象、黑麂、蒙古野驴、西藏野驴、野马、鼷鹿、白唇鹿、坡鹿、梅花鹿、豚鹿、野牛、野牦牛、普氏原羚、藏羚、高鼻羚羊、台湾鬣羚、赤斑羚、塔尔羊、北山羊、河狸、金丝猴（所有种）、云豹、中华白海豚、野骆驼、麋鹿、扭角羚、马来熊</p>
+  </div>
+  
+  <div id="Paris" class="tabcontent">
+    <h1>肠鳃类</h1>
+    <p>多鳃孔舌形虫</p> 
+  </div>
+  
+  <div id="Tokyo" class="tabcontent">
+    <h1>两栖爬行类</h1>
+    <p>四爪陆龟、鼋、鳄蜥、巨蜥、蟒、扬子鳄。</p>
+  </div>
+  
+  <div id="Oslo" class="tabcontent">
+    <h1>鸟类</h1>
+    <p>短尾信天翁、白腹军舰鸟、白鹳、黑鹳、朱鹮、中华秋沙鸭、金雕、白肩雕、玉带海雕、白尾海雕、虎头海雕、拟兀鹫、胡兀鹫、细嘴松鸡、斑尾榛鸡、雉鹑、四川山鹧鸪、海南山鹧鸪、黑头角雉、红胸角雉、灰腹角雉、黄腹角雉、虹雉（所有种）、褐马鸡、蓝鹇、黑颈长尾雉、白颈长尾雉、黑长尾雉、孔雀雉、绿孔雀、黑颈鹤、白头鹤、丹顶鹤、白鹤、赤颈鹤、鸨（所有种）、遗鸥。</p>
+  </div>
+  
+  <button class="tablink" onclick="openCity('London', this, 'red')" id="defaultOpen">兽类</button>
+  <button class="tablink" onclick="openCity('Paris', this, 'green')">肠鳃类</button>
+  <button class="tablink" onclick="openCity('Tokyo', this, 'blue')">两栖爬行类</button>
+  <button class="tablink" onclick="openCity('Oslo', this, 'orange')">鸟类</button>
+  <hr class="solid">
+  <div class="footer">
+    <button type="button" class="block" ><a href="index.html">返回首页</a></button>
+  </div>
+<script>
+    window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+function openCity(cityName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(cityName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+
+}
+
+document.getElementById("defaultOpen").click();
+
+    </script>
+
+      </body>
+   </html>
+   

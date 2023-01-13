@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+   <html>
+      <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+             body{font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(172, 242, 141);
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #484747;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #010101;
+}
+
+.main {
+  margin-left: 160px; 
+  font-size: 28px; 
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.responsive {
+  width: 100%;
+  height: auto;
+}
+* {box-sizing: border-box;}
+
+.container {
+  position: relative;
+  width: 50%;
+  max-width: 300px;
+}
+
+.container.image {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+.slideshow-container {
+  position: relative;
+  background: #f1f1f1f1;
+}
+
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+q {font-style: italic;}
+
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  position: relative;
+  display: none;
+}
+
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+.closebtn {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  color: rgb(63, 236, 40);
+  font-size: 35px;
+  cursor: pointer;
+}
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+        </style>
+      </head>
+      <body>
+        <div class="sidenav">
+            <a href="index.html">首页</a>
+            <a href="environment.html#a">生物多样性</a>
+            <a href="environment.html#b">环境保护</a>
+          </div>
+          
+          <div class="main">
+            <img src="世界环境日.jpg" alt="Nature" class="responsive">
+            <h2 id="a">生物多样性</h2>
+            <p>生物多样性是生物（动物、植物、微生物）与环境形成的生态复合体以及与此相关的各种生态过程的总和，包括生态系统多样性、物种多样性和基因多样性三个层次。</p>
+            <p>生物多样性使地球充满生机，也是人类生存和发展的基础，可通过就地保护和迁地保护等方式加以保护。</p>
+            <div class="card">
+              <h2>生态系统多样性</h2>
+              <img src="生态系统.jpg" width="100%" height="100%"></div>
+              <p>生态系统多样性是指生物圈内生境、生物群落和生态过程的多样化以及生态系统内生境、生物群落和生态过程变化的多样性。生态系统是生态学上的一个主要结构和功能单位，对生态系统的研究不仅要关注组成生态系统的生物成分与非生物成分，还需要重视生态系统中的能量流动、物质循环和信息传递。同时，生态系统是一个动态的系统，经历了从简单到复杂的发展过程，并以动态的平衡保持自身稳定。因此，生态系统多样性是一个高度综合的概念，既包含生态系统组成成分的多样化，更强调生态过程及其动态变化的复杂性。</p>
+            
+            
+            <button onclick="typeWriter()" id="b">Click me</button>
+
+            <p id="demo"></p>
+            <div class="slideshow-container">
+
+              <div class="mySlides">
+                <q>物种灭绝。我国是世界上生物多样性最丰富的国家之一，高等植物和野 生动物物种均占世界的10%左右，基本约有200个特有属。然而，环境污染和生态破坏导致了动植物生境的破坏，物种数量急剧减少，有的物种已经灭绝。据统计，我国高等植物大约有4600种处于濒危或受威胁状态，占高等植物的15%以上，近50年来约有200种高等植物灭绝，平均每年灭绝4种；野生动物中约有 400种处于濒危或受威胁状态，非法捕猎、经营、倒卖、食用野生动物的现象屡禁不止。广东省吴川县非法出售犀牛角，珠海活熊取胆等案件在国际上造成了恶劣的影响。</q>
+              </div>
+              
+              <div class="mySlides">
+                <q>植被破坏。森林是生态系统的重要支柱。一个良性生态系统要求森林覆 盖率仅13.9%。尽管建国后开展了大规模植树造林活动，但森林破坏仍很严重， 特别是用材林中可供采伐的成熟林和过熟林蓄积量已大幅度减少。同时，大量林 地被侵占，1984～1991年全国年均达837万亩，呈逐年上升趋势，在很大程度 上抵消了植树造林的成效。草原面临严重退化、沙化和碱化，加剧了草地水土流失和风沙危害。</q>
+                
+              </div>
+              
+              <div class="mySlides">
+                <q>土地退化。我国是世界上土地沙漠化较为严重的国家，土地沙漠化急剧发展，50～70年代年均沙化面积为1560平方公里，70～80年代年 均扩大到2100平方公里，总面积已达20.1平方公里。40年来初步治理了50多 万平方公里，而水土流失面积已达179万平方公里。我国的耕地退化问题也 十分突出。如原来土地肥沃的北大荒地带，土壤的有机质已从原来的5%～8%下 降到1%～2%（理想值应不小于3%）。同时，由于农业生态系统失调，全国每年因灾害损毁的耕地约200万亩</q>
+                
+              </div>
+              
+              <a class="prev" onclick="plusSlides(-1)">❮</a>
+              <a class="next" onclick="plusSlides(1)">❯</a>
+              
+              </div>
+              
+              <div class="dot-container">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+              </div>
+              <div class="row">
+                <div class="column">
+                  <img src="bear.jpeg" alt="熊" style="width:100%" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                  <img src="xiniu.png" alt="犀牛" style="width:100%" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                  <img src="desert.jpeg" alt="沙漠化" style="width:100%" onclick="myFunction(this);">
+                </div>
+                <div class="column">
+                  <img src="water.jpg" alt="水土流失" style="width:100%" onclick="myFunction(this);">
+                </div>
+              </div>
+              
+              <div class="container">
+                <span onclick="this.parentElement.style.display='none'" class="closebtn" >&times;</span>
+                <img id="expandedImg" width="200%">
+                <div id="imgtext"></div>
+              </div>
+              <div class="tab">
+                <button class="tablinks" onclick="openCity(event, 'London')">行动方案</button>
+                <button class="tablinks" onclick="openCity(event, 'Paris')">物种计划</button>
+                <button class="tablinks" onclick="openCity(event, 'Tokyo')">栖地计划</button>
+              </div>
+              
+              <div id="London" class="tabcontent">
+                <h3>行动方案</h3>
+                <p>生物多样性行动方案是一个广受国际认可的计划，因应受到威胁的物种和栖息地，旨在保护和恢复生物系统及其多样性。最初推动这些计划的努力来自于1992年的生物多样性公约。至2006年止，共有188个国家批准；但是只有少数参与国发展及编定了具有实际意义的计划文献。</p>
+              </div>
+              
+              <div id="Paris" class="tabcontent">
+                <h3>物种计划</h3>
+                <p>根本实践生物多样性行动计划的方式便是着重纪录个别物种的族群分布跟保育情况。此方式虽然基本却困难重重，主要因为世界上的物种估计只有约百分之十被记载下来。大部分未知的物种为植物或低等生物。许多哺乳类、鸟类和爬虫的资讯常可见于文献，至於植物跟无脊椎动物就需要可观的地区资料采集。编纂族群数量预测的趋势有助于了解生物变迁和脆弱性的动态资讯。对世界上某些地区来说，编订完整的物种目录不切实际。好比说马达加斯加干燥落叶林内的许多物种完全不为人知，科学家对该林内许多地区也从未发起有系统的探险活动。</p> 
+                <p>生物多样性行动计划内的物种计划应包含对分布范围、栖地、行为、生殖、异种互动的详细描述。一旦认定保育情况，就可订定计划；保育跟复育此物种至该族群的目标数量。有计划的保护要素举例如下：栖地还原、防止都市发展影响栖地、建立财产所有权、限制畜牧及农业活动侵略、减少火耕农业、立法制止采集或猎杀、限制杀虫剂使用、控制其他环境污染。此计划应向大众和私人机构宣布并实行保育计划，也应拨款确保执行。</p>              
+              </div>
+              
+              <div id="Tokyo" class="tabcontent">
+                <h3>栖地计划</h3>
+                <p>在一定数量的数种生物栖息于某地时，生物多样性行动的栖息地保护便可适当实施。举例如苏格兰的酸性沼泽、南非布许斐的瓦特堡生物圈、加州的海岸湿地、以及瑞典阿兰岛的史托拉阿瓦雷特。在这样的情况下，物种详细清单、地理分布跟栖地品质需要记录。然后用来保护复育的计划可以依照上述物种计划的类似方针制定。</p>
+              </div>
+              
+          </div>
+          
+          <script>
+            var i = 0;
+            var txt = '环境保护迫在眉睫';
+            var speed = 50;
+            
+            function typeWriter() {
+              if (i < txt.length) {
+                document.getElementById("demo").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+              }
+            }
+            var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+            </script>
+      </body>
+   </html>

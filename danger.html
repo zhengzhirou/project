@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta chaset="utf-8">
+    <meta http-equiv="X-UA-Compatuble" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>濒危动物</title>
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+
+    background-color: rgba(109, 216, 115, 0.51);
+}
+.header {
+    padding: 5px;
+    text-align: center;
+    position: relative;
+  }
+
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+.container{
+    position: relative;
+    height: 450px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 80px;
+}
+.container .card{
+    margin-top: 100px;
+    position: relative;
+    max-width: 430px;
+    height: 230px;
+    background: rgb(237, 232, 232);
+    margin:  30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 202px rgba(0,0,0,0.5);
+    transition: .3s ease-in-out;
+    border-radius: 20px;
+}
+.container .card:hover{
+    height: 500px;
+}
+.container .card .picture{
+    position: relative;
+    width: 390px;
+    height: 250px;
+    top: -60px;
+    left: 20px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    border-radius: 20px;
+}
+.container .card .picture img{
+    max-width: 100%;
+    border-radius: 4px;
+    width: 390px;
+    height: 250px;
+    border-radius: 20px;
+}
+.container .card .zzz{
+    position: relative;
+    margin-top: -100px;
+    padding: 10px 15px;
+    text-align: center;
+    color:#111;
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s ease-in-out;
+}
+.container .card:hover .zzz{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: .3s;
+
+}
+
+.wrap{
+    width: 100%;
+    position: relative;
+    top:  100px;
+    margin-top: 30px;
+    padding-bottom: 30px;
+   padding: 0;
+}
+.wrap::after{
+    content: '';
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    width: 5px;
+    z-index: -999;
+    height: 1000px;
+    background-color: rgba(255,255,255,.5);
+}
+.box{
+    position: relative;
+    width:100%;
+    height: 120px;
+    margin-bottom: 50px ;
+    display: flex;
+    justify-content: space-between;
+}
+.left,.right{
+    position: relative;
+    width: 40%;
+    height: 120px;
+    border-radius: 15px;
+    text-align: center;
+    color: rgb(90,90,90);
+    background-color: rgb(126, 229, 110);
+}
+
+.center{
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.center>span{
+    width: 120px;
+    border-radius: 10px;
+    text-align: center;
+    font: 900 24px;
+    line-height: 50px;
+    background-color: #fff;
+}
+.shell{
+    width: 90%;
+    height:500px;
+    display: flex;
+    margin-top: 100px;
+    margin-left: 70px;
+}
+.container2
+{
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 100px;
+}
+.box2{
+    flex:1;
+    overflow: hidden;
+    transition: .5s;
+    margin: 0 20px;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.5);
+    border-radius: 20px;
+    border: 10px solid #fff;
+    background-color: #fff;
+
+}
+.box2>img{
+    width: 200%;
+    height: 85%;
+    object-fit: cover;
+    transition: .5s;
+}
+.box2>span{
+    font:200 45px '优设标题黑';
+    text-align: center;
+    height:15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box2:hover{
+    flex-basis: 40%;
+}
+.box2:hover>img{
+    width:100%;
+    height:100%;
+}
+.container2
+{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-left: 150px;
+    
+
+}
+.box3
+{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: #000;
+    box-shadow: 0 30px 30px rgba(0,0,0,.5);
+}
+ 
+.box3 .imgBx2
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.box3 .imgBx2 img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+ 
+.box3:hover .imgBx2 img
+{
+    opacity: 0;
+}
+ 
+.box3 .content2
+{
+    position: absolute;
+    bottom: 20px;
+    left: 10%;
+    width: 80%;
+    height: 60px;
+    background: rgb(236, 243, 223);
+    transition: 0.5s;
+    overflow: hidden;
+    padding: 15px;
+    box-sizing: border-box;
+    text-align: center;
+}
+ 
+.box3:hover .content2
+{
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+}
+.box3 .content2 h3
+{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+.box3 .content2 p
+{
+    margin: 10px 0 0;
+    padding: 0;
+    opacity: 0;
+    line-height: 1.2em;
+    transition: 0.5s;
+    text-align: justify;
+}
+.box3:hover .content2 p
+{
+    opacity: 1;
+    transition-delay: 0.5s;
+}
+.leftcolumn {
+    float: left;
+    width: 50%;
+}
+
+.rightcolumn {
+    float: right;
+    width: 50%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.fakeimg {
+    background-color: #aaa;
+    width: 80%;
+    padding: 20px;
+}
+
+
+.card2 {
+    background-color: white;
+    padding: 20px;
+    margin-top: 100px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.wrap2 {
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 100px;
+
+}
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: white;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  
+   
+  .container3 {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  
+  .container3::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: white;
+    border: 4px solid #FF9F55;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  
+  .left3 {
+    left: 0;
+  }
+  
+  
+  .right3 {
+    left: 50%;
+  }
+  
+   
+  .left3::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+  }
+  
+   
+  .right3::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+  
+ 
+  .right3::after {
+    left: -16px;
+  }
+  
+   
+  .content3 {
+    padding: 20px 30px;
+    background-color: white;
+    position: relative;
+    border-radius: 6px;
+  }
+  
+ 
+  @media screen and (max-width: 600px) {
+    /* Place the timelime to the left */
+    .timeline::after {
+    left: 31px;
+    }
+    
+   
+    .container3 {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+    }
+    
+     
+    .containe3::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+    }
+  
+    
+    .left3::after, .right3::after {
+    left: 15px;
+    }
+     
+    .right3 {
+    left: 0%;
+    }
+  }
+  .footer .card2{
+    text-align: center;
+    padding: 30px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(165, 228, 166, 0.629);
+ }
+ .block {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: #4caf98;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+.block:hover {
+  background-color: #ddd;
+  color: black;
+}
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <img src="images\header4.webp" style="width:100% ;height:400px;">
+        <div class="centered">
+            <h1 style="color:white;font-size: 100px;">濒危动物</h1>
+        </div>
+    </div>
+    <div class="timeline">
+        <div class="container3 left3">
+            <div class="content3">
+                <h2>奥陶纪-志留纪灭绝：约 4.4 亿年前<br>
+                    物种灭绝：85%</h2>
+
+            </div>
+        </div>
+        <div class="container3 right3">
+            <div class="content3">
+                <h2>晚泥盆纪灭绝：约 3.65 亿年前<br> 物种灭绝：75%</h2>
+
+            </div>
+        </div>
+        <div class="container3 left3">
+            <div class="content3">
+                <h2>二叠纪-三叠纪灭绝：约 2.53 亿年前<br>
+
+                    灭绝的物种：96% 的海洋生物；70% 陆地生命</h2>
+                <p> </p>
+            </div>
+        </div>
+        <div class="container3 right3">
+            <div class="content3">
+                <h2>三叠纪-侏罗纪灭绝：约2.01亿年前<br>
+
+                    物种灭绝：80%</h2>
+                <p> </p>
+            </div>
+        </div>
+        <div class="container3 left3">
+            <div class="content3">
+                <h2>K-Pg 灭绝：约 6600 万年前<br>
+
+                    K-Pg大灭绝物种灭绝比例：75%</h2>
+                <p> </p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="card">
+            <div class="picture">
+                <img src="images\渡渡鸟.jpg ">
+            </div>
+            <div class="zzz">
+                <h2>渡渡鸟</h2>
+                <p>渡渡鸟自十七世纪中后期就已经灭绝了。这个通常是作为灭绝物种的原型，因为它是在有人类记录的时候开始濒临灭绝的。这个可以归功于人类的活动。这个形容词短语as dead as
+                    dodo的意思是毋庸置疑的(死亡)。 </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="picture">
+                <img src="images\穴狮.jpg ">
+            </div>
+            <div class="zzz">
+                <h2>穴狮 </h2>
+                <p>穴狮，同样被人称为欧洲穴狮或是亚欧穴狮。通过化石和丰富的史前艺术得知，穴狮是狮子类中已灭绝的亚种。这个亚种是狮子类中最大的一类。1985年在Siegsdorf(属德国境内)发现一只雄性成年穴狮。它的肩高大约是1.2米，身长为2.1米，无尾。和现代狮在体型面积上无多大区别。这只雄狮甚至都没有其它这种亚种标本大。因此，这种猫科动物大约比现代狮大5%10%。在武木冰期即大概在10000年前，这种物种濒临灭绝。
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="picture">
+                <img src="images\大海雀.jpg ">
+            </div>
+            <div class="zzz">
+                <h2> 大海雀</h2>
+                <p>大海雀是海雀类中唯一不飞的物种，体型巨大。来自大西洋，幸存直至当代，很不幸，如今已不见大海雀身影。它同时被称为大海燕或是企鹅。它站立大约3034英尺高(75厘米)，重5公斤。这种不飞的大海雀是海雀类中最大的物种。它腹部是白色的羽毛，背部是光滑的黑色羽毛。在过去，大量的大海雀在加拿大东部、格陵兰、冰岛、挪威、爱尔兰和英国不远处的诸多岛屿上生活。但是还是逃不过被捕杀而灭绝的命运。从弗罗里达州贝冢中发现的残骸表明，它们在冬天都会不定期地往南飞，直到十四世纪。
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+
+        <div class="card">
+            <div class="picture">
+                <img src="images\白头叶猴.jpg ">
+            </div>
+            <div class="zzz">
+                <h2>白头叶猴 </h2>
+                <p>被公认为世界最稀有的猴类。目前白头叶猴仅分布在中国广西左江和明江之间的一个十分狭小的三角形地带内，面积不足200平方公里，而其该地区地形难以储水，时常发生干旱，给白头叶猴的生存带来了极大的困难。
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="picture">
+                <img src="images\袋狼.jpg ">
+            </div>
+            <div class="zzz">
+                <h2>袋狼 </h2>
+                <p>袋狼是近代很有名的身上附有袋子的食肉类动物。产于澳大利亚和新几内亚。二十世纪，这个物种已经濒临灭绝。在欧洲大陆上居住居民前的几千年前，澳大利亚本土上的袋狼开始濒临灭绝，但是在塔斯马尼亚岛上却幸存有袋狼和其它大量的特有物种，例如，袋獾。因为受到当地对它进行悬赏集中捕杀而导致它灭绝的行为，通常会受到谴责。但是，这种行为下的一个有利方面就是，狗和人类都进入了这块栖息地。尽管这个物种已经被认为是灭绝物种，但是还是有不少关于目击袋狼的报道。
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="picture">
+                <img src="images\霸王龙.jpg">
+            </div>
+            <div class="zzz">
+                <h2>霸王龙 </h2>
+                <p>在北美岩层，研究者发现了霸王龙化石。据化石资料显示，霸王龙时代可追溯到麦斯里希特阶末期白垩纪时期的最后300万年，大约是6850万年-6550万年前。它与最后的恐龙类共存，恐龙类在白垩纪第三纪灭绝事件中灭亡。经鉴定，研究者发现了30多种霸王龙标本。其中有一些标本有非常清晰的骨架结构。研究人员从中发现了软组织。大量的化石材料对生物学的诸多方面有重要意义，包括生命史、生物力学。
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+
+        <div class="card">
+            <div class="picture">
+                <img src=" images\华南虎.jpg">
+            </div>
+            <div class="zzz">
+                <h2> 华南虎</h2>
+                <p>从上世纪50年代开始，在利益的驱使下，大量华南虎被捕杀，其中仅1956年全国收购虎皮1750张。1990年后就再也没发现过野生华南虎，有关组织曾多次发起寻找野生华南虎的行动，均没有任何发现。很多专家都认为，华南虎的自然种群已经灭绝。
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="picture">
+                <img src="images\北部白犀牛.jpg ">
+            </div>
+            <div class="zzz">
+                <h2>北部白犀牛</h2>
+                <p>全球仅剩一只！目前世界上仅剩下了最后一只白犀牛，不论是野生的还是人工饲养的都已经没有了，这意味着白犀牛这种生物将随着最后一头的死亡而永远的从地球上消失，位列世界十大濒危动物排行榜之首。 </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="picture">
+                <img src="images\科尔多瓦斗犬.jpg ">
+            </div>
+            <div class="zzz">
+                <h2>科尔多瓦斗犬</h2>
+                <p>科尔多瓦斗犬是杂交出来的品种，即獒、斗牛梗、英国斗牛犬相互结合的品种，现在是已经灭绝的犬种之一。这只狗狗以其在阿根廷科尔多瓦的原产地命名，被称为凶猛的猎手，它的耐受性很高，成为了一名受欢迎的战士、猎人和警卫犬。在20世纪中期，许多科多巴犬在战斗中死亡，这是造成这种品种灭绝的主要原因。
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="card2">
+        <h1 style="text-align: center;">部分国家级保护动物</h1>
+    </div>
+    <div class="shell">
+        <div class="box2">
+            <img src="images\长江鲟鱼.jpg ">
+            <span>长江鲟</span>
+        </div>
+        <div class="box2">
+            <img src="images\斑鳖.jpg ">
+            <span>斑鳖 </span>
+        </div>
+        <div class="box2">
+            <img src="images\白鲟.jpg ">
+            <span> 白鲟</span>
+        </div>
+        <div class="box2">
+            <img src="images\扁吻鱼.jpg ">
+            <span> 扁吻鱼</span>
+        </div>
+        <div class="box2">
+            <img src="images\中华鲟.jpg">
+            <span>中华鲟 </span>
+        </div>
+        <div class="box2">
+            <img src="images\斑鳠.jpg ">
+            <span>斑鳠 </span>
+        </div>
+    </div>
+    <div class="shell">
+        <div class="box2">
+            <img src="images\金斑喙凤蝶.jpg">
+            <span>金斑喙凤蝶</span>
+        </div>
+        <div class="box2">
+            <img src="images\白臀叶猴.jpg ">
+            <span>白臀叶猴</span>
+        </div>
+        <div class="box2">
+            <img src="images\熊猴.jpg ">
+            <span> 熊猴</span>
+        </div>
+        <div class="box2">
+            <img src="images\金丝猴.jpg ">
+            <span> 金丝猴</span>
+        </div>
+        <div class="box2">
+            <img src="images\台湾猴.jpg ">
+            <span>台湾猴 </span>
+        </div>
+        <div class="box2">
+            <img src="images\鼋.png ">
+            <span>鼋 </span>
+        </div>
+    </div>
+    <div class="card2">
+        <h1>濒危动物</h1>
+        <div class="fakeimg">
+            <p>濒危动物是指所有由于物种自身的原因或受到人类活动或自然灾害的影响，而有灭绝危险的野生动物物种。从广义上讲，濒危动物泛指珍贵、濒危或稀有的野生动物。从野生动物管理学角度讲，濒危动物是指《濒危野生动植物种国际贸易公约》附录所列动物，以及国家和地方重点保护的野生动物。
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card2">
+                <h2>分类方法</h2>
+                <div class="fakeimg" style="height:100px;">两级法，等级法</div>
+                <p>这是中国国家重点保护动物划分的标准，它是根据物种的科学价值、经济价值、资源数量、濒危程度以及是否为中国所特有等多项因素综合评价、论证而制定的。
+                    I级：指中国特产稀有或濒临灭绝的野生动物。
+                    II级：指数量稀少，分布地区狭窄，有灭绝危险的野生动物。
+                    等级法编辑<br>无危：无危（Least
+                    Concerned,LC），虽然存在威胁但是并不影响生存。英文直译为低关注，并不是指该物种受到的关注少，而是威胁不严重，不用过分关注的意思，例如：台湾蓝鹊、狼。
+                    近危：近危（Near Threatened，NT），当一分类单元未达到极危、濒危或者易危标准，但是在未来一段时间后，接近符合或可能符合受威胁等级；例如：小头睡鲨，兔狲。
+                    易危：易危（Vulnerable,VU）：在中期内可能有比较高的灭绝威胁。例如：环尾狐猴、大白鲨、北极熊、大熊猫 [3]  。
+                    濒危：濒危（Endangered,EN）：其野生种群在不久的将来面临灭绝的机率很高。例如：蓝鲸、麋鹿。
+                    极危：极危（Critically Endangered,CR）：野生种群面临即将灭绝的机率非常高。例如：姬猪、桑岛麂羚。
+                    野外灭绝：野外灭绝（Extinct in the
+                    Wild,EW）：只生活在栽培、圈养条件下或者只作为自然化种群（或种群）生活在远离其过去的栖息地时，即认为该分类单元属于野外灭绝。例如：单峰骆驼、台湾梅花鹿。
+                    灭绝：灭绝（Extinct,EX）：如果有理由怀疑一分类单元的最后一个个体已经死亡，即认为该分类单元已经灭绝。例如：袋狼、渡渡鸟、台湾云豹。</p>
+                <h2>《中国濒危动物红皮书》</h2>
+                <p>是在世界自然保护联盟编写的；详细、全面地论述了中国濒危动物的濒危状况、致危因素、保护措施等，旨在使政府部门、科学界和公众较为清楚地了解中国的动物物种现状，提高政府官员及公众对中国濒危物种的保护意识，并针对现状制定和实施相应的保护措施。为中国物种的保护和持续利用提供科学依据。如图1所示
+                    其采用的物种濒危等级分为：野生绝迹、绝迹、濒危、渐危、稀有、易危等。全书共分4卷：鸟类、鱼类、两栖类、爬行类及兽类。
+                    此外，中国濒危动物红皮书数据库收集了中国592个濒危动物物种的详细描述，包括了濒危的鱼类、两栖纲、爬行纲、鸟纲和哺乳纲的动物。
+                    《中国濒危动物红皮书》的鸟类卷。论述了中国鸟类濒危物种的分类地位、濒危等级、种群现状、致危因素、现有保护措施、饲养繁殖状况等。</p>
+            </div>
+        </div>
+        <div class="rightcolumn">
+            <div class="wrap">
+                <div class="box">
+                    <div class="left">如果1个生物分类单元的最后一个个体已经死亡，列为灭绝</div>
+                    <div class="center">
+                        <span>灭绝</span>
+                    </div>
+                    <div class="right">如恐龙等等</div>
+                </div>
+                <div class="box">
+                    <div class="left">如果1个生物分类单元的个体仅生活在人工栽培和人工圈养状态下，列为野生灭绝 </div>
+                    <div class="center">
+                        <span>野外灭绝</span>
+                    </div>
+                    <div class="right">如高鼻羚羊</div>
+                </div>
+                <div class="box">
+                    <div class="left">极危：野外状态下1个生物分类单元灭绝概率很高时，列为极危。</div>
+                    <div class="center">
+                        <span>极危濒危</span>
+                    </div>
+                    <div class="right">濒危：1个生物分类单元，虽未达到极危，但在可预见的不久将来，其野生状态下灭绝的概率高，列为濒危。</div>
+                </div>
+                <div class="box">
+                    <div class="left">易危：1个生物分类单元虽未达到极危或濒危的标准，但在未来一段时间中其在野生状态下灭绝的概率较高，列为易危。</div>
+                    <div class="center">
+                        <span>易危低危</span>
+                    </div>
+                    <div class="right">低危：一个生物分类单元，经评估不符合列为极危、濒危或易危任一等级的标准，列为低危</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container2">
+        <div class="box3">
+            <div class="imgBx2">
+                <img src="images\爪洼犀牛.jpg ">
+            </div>
+            <div class="content2">
+                <h3>爪洼犀牛 </h3>
+                <p>是犀科、独角犀属犀牛。爪哇犀比印度犀牛小：通体长2.5-3.5米，肩高1.6米，平均体重1500千克，最大个体可达2300千克。有一支角，角长少于20厘米，皮肤为灰色。 </p>
+            </div>
+        </div>
+        <div class="box3">
+            <div class="imgBx2">
+                <img src="images\中华穿山甲.jpg">
+            </div>
+            <div class="content2">
+                <h3>中华穿山甲 </h3>
+                <p> 是鳞甲目、穿山甲科的哺乳动物。头体长42-92厘米，尾长28-35厘米，体重2-7千克；鳞片与体轴平行，共15-18列。尾巴上另有纵向鳞片9-10片。鳞片棕褐色，老年兽的鳞片边缘橙褐或灰褐色，幼兽尚未角化的鳞片呈黄色。吻细长。脑颅大，呈圆锥形。具有一双小眼睛，形体狭长，全身有鳞甲，四肢粗短，尾扁平而长，背面略隆起。不同个体体重和身长差异极大。舌长，无齿。耳不发达。足具5趾，并有强爪；前足爪长，尤以中间第3爪特长，后足爪较短小。全身鳞甲如瓦状。
+                </p>
+            </div>
+        </div>
+        <div class="box3">
+            <div class="imgBx2">
+                <img src="images\黑颈鹤.jpg">
+            </div>
+            <div class="content2">
+                <h3>黑颈鹤 </h3>
+                <p>是鹤科、鹤属的大型涉禽，体长110-120厘米，体重4-6千克。颈、脚甚长，通体羽毛灰白色，头部、前颈及飞羽黑色，眼先和头顶前方裸露的皮肤呈暗红色，尾羽褐黑色。头顶，三级飞羽的羽片分散，当翅闭合时超过初级飞羽。虹膜黄褐色，嘴肉红色，尖端沾黄，腿和脚灰褐色。
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container2">
+        <div class="box3">
+            <div class="imgBx2">
+                <img src="images\藏羚.jpg ">
+            </div>
+            <div class="content2">
+                <h3>藏羚 </h3>
+                <p> 是偶蹄目、牛科、藏羚属的哺乳动物。体长120-140厘米，尾长14-16厘米，肩高65-70厘米。雄性有直而细长的角，长约55-62厘米，近基部有明显的横棱。雌性略小。该物种头形宽长，吻部粗壮，鼻部宽阔略隆起，鼻腔二侧鼓胀，呈半球状。背毛厚密。上体淡棕褐色，颈下、胸、腹和四肢内侧均白色。背毛色同体背，尾侧及尾尖白色，尾腹面裸露。
+                </p>
+            </div>
+        </div>
+        <div class="box3">
+            <div class="imgBx2">
+                <img src="images\麋鹿.jpg ">
+            </div>
+            <div class="content2">
+                <h3> 麋鹿</h3>
+                <p>是鹿科、麋鹿属唯一的鹿类动物。因为它头脸狭长像马、角像鹿又与其它鹿略有不同、蹄子宽大像牛、尾细长像驴，因此又名四不像。它的角形独特，形状与其它鹿的犄角正好相反，前杈再分小杈，而后杈几乎不分叉。头大，吻部狭长，鼻端裸露部分宽大，眼小，眶下腺非常显著。四肢粗壮，主蹄宽大、多肉，有很发达的悬蹄，行走时带有响亮的磕碰声。麋鹿喜好沼泽湿地生境，以青草和水草为食物。性好合群，善游泳，喜欢以嫩草和水生植物为食。夏季求偶发情，比其它大多数鹿类都早一个季度。
+                </p>
+            </div>
+        </div>
+        <div class="box3">
+            <div class="imgBx2">
+                <img src="images\麝属.jpg ">
+            </div>
+            <div class="content2">
+                <h3>麝属 </h3>
+                <p>CITES附录Ⅱ级，国家一级重点保护野生动物。是脊索动物门、脊椎动物亚门、哺乳纲、偶蹄目、麝科的一属。又名香獐，因雄麝在脐部和生殖器之间有香囊，能分泌和贮存麝香故得名。 </p>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container2">
+        <div class="box3">
+            <div class="imgBx2">
+                <img src="images\蒙古野驴.jpg ">
+            </div>
+            <div class="content2">
+                <h3>蒙古野驴 </h3>
+                <p> 是马属动物“亚洲野驴”的指名亚种，外形似骡，体长可达260厘米，肩高约120厘米，尾长80厘米左右，体重约250千克。吻部稍细长，耳长而尖。颈背具短鬃，颈的背侧、肩部、背部为浅黄棕色，背中央有一条棕褐色的背线延伸到尾的基部，下体和体侧黄白色。
+                </p>
+            </div>
+        </div>
+        <div class="box3">
+            <div class="imgBx2">
+                <img src="images\儒艮.jpg ">
+            </div>
+            <div class="content2">
+                <h3>儒艮 </h3>
+                <p>儒艮的身体呈纺锤形，长约3米，体重300-500千克。全身有稀疏的短细体毛。没有明显的颈部，头部较小，上嘴唇似马蹄形，吻端突出有刚毛，两个近似圆形的呼吸孔并列于头顶前端；无外耳廓，耳孔位于眼后。无背鳍，鳍肢为椭圆形。尾鳍宽大，左右两侧扁平对称，后缘为新月形，无缺刻。鳍肢的下方具一对乳房。背部以深灰色为主，腹部稍淡。
+                </p>
+            </div>
+        </div>
+        <div class="box3">
+            <div class="imgBx2">
+                <img src="images\斑尾榛鸡.jpg ">
+            </div>
+            <div class="content2">
+                <h3>斑尾榛鸡 </h3>
+                <p> 为中国特有品种，只产于中国甘肃、青海、四川等地。主要以柳、榛的鳞芽、叶和云杉种子以及其他植物的花、花序、叶、嫩枝梢为食。亦捕食小毛虫、伪步行虫、金花虫等。分布区狭窄，加上人为和天敌的破坏，数量日少，处于濒危状态。
+                </p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="footer">
+        <div class="card2">
+            <h1>Ending</h1>
+            <p style="text-align: center;">温馨提示：保护野生动物，杜绝野味，它们不属于餐桌。</p>
+        </div>
+    </div>
+    <button type="button" class="block" onclick="myFunction()">返回首页</button>
+    <script>
+        function myFunction() {
+location.replace("index.html")
+}
+   </script>
+</body>
+
+</html>

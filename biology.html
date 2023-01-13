@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+      <style>
+        body {margin:0;font-family:Arial}
+
+.topnav {
+  overflow: hidden;
+  background-color: rgb(95, 159, 233);
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.active {
+  background-color: #4c81af;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;    
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(105, 164, 222, 0.572);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: rgb(69, 136, 230);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: rgb(28, 133, 207);
+  color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: rgb(66, 133, 232);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+.row {margin: 0 -5px;}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(75, 188, 245, 0.462);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.container {
+  padding: 0 16px;
+}
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.footer{
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  background-color: rgb(65, 124, 201);
+  color: white;
+  text-align: center;
+}
+
+
+      </style>
+    </head>
+    <body>
+
+      <div class="topnav" id="myTopnav">
+        <a href="index.html" >主页</a>
+        <div class="dropdown">
+          <button class="dropbtn">动物 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="waterdongwu.html">水生动物</a>
+            <a href="di.html">陆地动物</a>
+            <a href="too.html">两栖动物</a>
+          </div>
+        </div> 
+        <a href="#about">濒危动物</a>
+        <a href="biology.html" class="active">其他</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
+
+      <div class="column">
+        <div class="card">
+          <img src="鳄鱼.jpeg" alt="鳄鱼" style="width:100%">
+          <div class="container">
+            <h3>鳄鱼</h3>
+            <p class="title">鳄鱼吞食很多石块，
+              甚至栖息在多淤泥和沙土地区的鳄鱼胃里也能找到石块
+              。鳄鱼为了寻觅石块，有时不得不做长途旅行，这可以说明，石块是鳄鱼的必需品。</p>
+            <p class="title">鳄鱼吞食的石块重量约为鳄鱼体重的1％，
+              这个百分比并不随鳄鱼年龄的增长而有所改变。观察表明，
+              胃中没有石块的幼小鳄鱼，潜水能力大大落后于吞了石块的同伴
+              。</p>
+              <p class="title">根据这一点，科学家们认为，石块不但能帮助鳄鱼磨碎食物，
+                而且还起“镇仓物”的作用。这种“镇仓物”使鳄鱼便于潜伏水底和在水底活动，
+                不至被湍急的水流冲走。另外，石块还有助于鳄鱼把大的猎物拖到水里。</p>
+          </div>
+        </div>
+      </div>
+     
+      <div class="column">
+        <div class="card">
+          <img src="尖嘴地雀.jpg" alt="尖嘴地雀" style="width:100%">
+          <div class="container">
+            <h3>尖嘴地雀</h3>
+            <p class="title">该鸟具有尖而有力的喙。喜欢叮啄特定鸟类的翅膀根部，
+              吸食血液。由于其非凡的食性而著名。它不像秃鹰、角鸮或者其它大型的吃肉鸟类，
+              吸血雀看起来就像是人类后花园常飞来飞去的可爱的小鸟。体重不到一盎司，
+              也没有鲜艳的羽毛和尖锐的爪子。</p>
+            <p class="title">因为驯鹿所处的环境特殊，夏季眼睛变成金黄色
+              ，以适应长时间的阳光照射；冬季眼睛变成蓝色，可以感应到更多的光线
+              ，从而增强夜视能力。</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <img src="黑头林鵙鹟.webp" alt="黑头林鵙鹟" style="width:100%">
+            <div class="container">
+              <h3>黑头林鵙鹟</h3>
+              <p class="title">黑头林鵙鹟是由于饮食所产生的毒素，这些毒素会沉积在鸟类的皮屑、皮肤和羽毛中，
+                这种毒素还会产生一种类似硫化物的气味，这些有毒物质是人类已知的毒性最大的天然物质之一
+                ，对捕食者和害虫等具有非常有效的威慑作用，
+                有人发现，蛇会吐出黑头林鵙鹟，而虱子和大型鸟类会远离它。</p>
+              <p class="title">这些毒素带来的影响包括刺痛、麻木、流泪、不断打喷嚏和灼热。
+                毒素中的活性成分称为batrachotoxin，
+                大量摄入的话，甚至可能导致瘫痪、心脏骤停，甚至死亡。
+                好在黑头林鵙鹟体型比较小，因此不会释放大量致命的毒素，
+                大多数人摄入这种毒素只是产生轻微的刺激、麻木和轻微的灼烧感。</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <img src="鲣鱼.jpeg" alt="鲣鱼" style="width:100%">
+            <div class="container">
+              <h3>鲣鱼</h3>
+              <p class="title">我们在水族馆观赏鲣鱼游动的身姿，
+                有时会隐约看到它们从头部向尾部显现出条状花纹，
+                这种花纹在生物学上叫作“竖条纹”。</p>
+              <p class="title">有趣的是，鲣鱼一旦兴奋起来
+                ，比如追捕猎物或者雄性追求雌性时，条纹的方向就会瞬间改变，
+                由竖条纹变成从背部延伸到腹部的粗条纹，叫作“横条纹”。
+                当鲣鱼冷静下来后，横条纹又会变回竖条纹。此外，鲣鱼一旦死去，
+                原有的竖条纹颜色会明显变黑。</p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <img src="灰鲭鲨.jpg" alt="灰鲭鲨" style="width:100%">
+            <div class="container">
+              <h3>灰鲭鲨</h3>
+              <p class="title">灰鲭鲨是所有鲨鱼中游得速度最快的，速度可达56km/h，
+                能跳出离水面6m的高度.
+              </p>
+              <p class="title">体呈纺锤形，躯干粗大，尾渐细小。尾柄具一侧突，
+                尾基上下方各具一凹洼。灰鲭鲨属暖水性上层游泳种类，生活在水下150米附近。</p>
+              <p class="title">灰鲭鲨还有一个能使体温高于周围的水的热交换循环系统
+                从而维持高度的活跃性。此外，其也是世界上最具有攻击性的鲨鱼之一，生性凶猛，追食鲐鱼和沙丁鱼等
+                鱼群，有时候甚至会捕食其他鲨鱼，还会攻击附近捕捞的渔民。
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <img src="信天翁.jpg" alt="信天翁" style="width:100%">
+            <div class="container">
+              <h3>信天翁</h3>
+              <p class="title">信天翁是世界上最大的会飞的鸟类，翼展可达3.7公尺。
+                它能够用羽毛来保护自己，因为它身上有一层厚厚的羽绒层，可以吸收大量热量
+                ；同时还能将体内排出的废气排到空气中去。</p>
+                <p class="title">信天翁可以锁住翅膀，利用气流在空中滑翔六小时而不抖动翅膀，
+                  它甚至可以用这种方法在空中睡觉，这是一种无敌的飞行技巧！</p>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <img src="企鹅.jpg" alt="企鹅" style="width:100%">
+            <div class="container">
+              <h3>企鹅</h3>
+              <p class="title">企鹅的粪便可以让栖息地呈现出五彩斑斓的颜色。
+                这和它们的食谱有关，其中包括含有虾青素的磷虾，蓝色的银鱼等。</p>
+                <p class="title">随着各种各样的食物被吃进肚里，拉出来的粪便也是不同的颜色。
+                  所以在企鹅群里，你经常可以看到遍地的斑斓颜色的粪便。</p>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <img src="海豹.jpg" alt="海豹" style="width:100%">
+            <div class="container">
+              <h3>海豹</h3>
+              <p class="title">海豹的眼睛总是泪汪汪的，并不是在卖萌。流眼泪其实是海豹的生理问题。
+                由于海豹没有鼻泪管，保护眼睛的液体就会全部溢出眼眶，所以看上去总是一副泪汪汪的样子。</p>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <img src="驯鹿.jpeg" alt="驯鹿" style="width:100%">
+            <div class="container">
+              <h3>驯鹿</h3>
+              <p class="title">驯鹿眼睛会随着季节转变而变色,因为驯鹿所处的环境特殊，夏季眼睛变成金黄色
+                ，以适应长时间的阳光照射；冬季眼睛变成蓝色，可以感应到更多的光线
+                ，从而增强夜视能力。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+      </div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+</body>
+</html>
+

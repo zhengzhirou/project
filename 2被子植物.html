@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>被子植物</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            }
+    #max{
+        background-image: url(页面图片1.jpg);
+        background-size:100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .grasses{
+        height: 6.25rem;
+        display: flex;
+        position: fixed;
+        left: 3.125rem;
+        bottom: 1.875rem;
+    }
+    .grass{
+        width: 0.625rem;
+        height: 6.25rem;
+        border-radius: 0.625rem;
+        background: linear-gradient(rgb(210, 233, 135),rgb(233, 249, 94),rgb(247, 250, 45));
+        margin-right: 0.3125rem;
+        list-style: none;
+    }
+    .grass:nth-child(1){
+        animation: grass1 4s 0s infinite;
+    }
+    .grass:nth-child(2){
+        animation: grass2 4s 0s infinite;
+    }
+    .grass:nth-child(3){
+        animation: grass3 4s 0s infinite;
+    }
+    .grass:nth-child(4){
+        animation: grass4 4s 0s infinite;
+    }
+    .grass:nth-child(5){
+        animation: grass5 4s 0s infinite;
+    }
+    @keyframes grass1{
+        0%,50%{
+            height: 2.5rem;
+            transform: translateY(-40px);
+        }
+        70%,100%{
+            height: 0%;
+            transform: translateY(0px);
+        }
+    }
+    @keyframes grass2{
+        0%,50%{
+            height: 3.75rem;
+            transform: translateY(-60px);
+        }
+        70%,100%{
+            height: 0%;
+            transform: translateY(0px);
+        }
+    }
+    @keyframes grass3{
+        0%,50%{
+            height: 5rem;
+            transform: translateY(-80px);
+        }
+        70%,100%{
+            height: 0%;
+            transform: translateY(0px);
+        }
+    }
+    @keyframes grass4{
+        0%,50%{
+            height: 3.75rem;
+            transform: translateY(-60px);
+        }
+        70%,100%{
+            height: 0%;
+            transform: translateY(0px);
+        }
+    }
+    @keyframes grass5{
+        0%,50%{
+            height: 2.5rem;
+            transform: translateY(-40px);
+        }
+        70%,100%{
+            height: 0%;
+            transform: translateY(0px);
+        }
+    } 
+    .grasses1{
+        height: 6.25rem;
+        display: flex;
+        position: fixed;
+        right: 3.125rem;
+        bottom: 1.875rem;
+    }
+    .grassa{
+        width: 0.625rem;
+        height: 6.25rem;
+        border-radius: 0.625rem;
+        background:linear-gradient(rgb(210, 233, 135),rgb(233, 249, 94),rgb(247, 250, 45));
+        margin-right: 0.3125rem;
+        list-style: none;
+    }
+    .grassa:nth-child(1){
+        animation: grass1 4s 0s infinite;
+    }
+    .grassa:nth-child(2){
+        animation: grass2 4s 0s infinite;
+    }
+    .grassa:nth-child(3){
+        animation: grass3 4s 0s infinite;
+    }
+    .grassa:nth-child(4){
+        animation: grass4 4s 0s infinite;
+    }
+    .grassa:nth-child(5){
+        animation: grass5 4s 0s infinite;
+    }
+    @keyframes grass1{
+        0%,50%{
+            height: 2.5rem;
+            transform: translateY(-40px);
+        }
+        70%,100%{
+            height: 0%;
+            transform: translateY(0px);
+        }
+    }
+    @keyframes grass2{
+        0%,50%{
+            height: 3.75rem;
+            transform: translateY(-60px);
+        }
+        70%,100%{
+            height: 0%;
+            transform: translateY(0px);
+        }
+    }
+    @keyframes grass3{
+        0%,50%{
+            height: 5rem;
+            transform: translateY(-80px);
+        }
+        70%,100%{
+            height: 0%;
+            transform: translateY(0px);
+        }
+    }
+    @keyframes grass4{
+        0%,50%{
+            height: 3.75rem;
+            transform: translateY(-60px);
+        }
+        70%,100%{
+            height: 0%;
+            transform: translateY(0px);
+        }
+    }
+    @keyframes grass5{
+        0%,50%{
+            height: 2.5rem;
+            transform: translateY(-40px);
+        }
+        70%,100%{
+            height: 0%;
+            transform: translateY(0px);
+        }
+    } 
+    #header{
+        display: block;
+        text-align: center;
+        font-size: 1.875rem;
+        margin-left: 10%;
+        margin-right: 10%;
+        color: rgb(13, 13, 13);
+        text-shadow: rgb(241, 207, 207) 1px 0 0,rgb(241, 207, 207) 0 1px 0,rgb(241, 207, 207) -1px 0 0,rgb(241, 207, 207) 0 -1px 0;
+    }
+    #header img{
+        box-shadow: black 5px 5px 5px ;
+    }
+    .row{
+        display: flex;
+        height: 100%;
+        margin-left: 10%;
+        margin-right: 10%;
+        
+    }
+   .container{
+    
+      flex-basis: -50%;
+    }
+    .container .card{
+        margin-top: 6.25rem;
+        position: relative;
+        width: 26.875rem;
+        height: 14.375rem;
+        background:rgb(194, 194, 167);
+        margin: 1.875rem 0.625rem;
+        padding: 3.125rem 0.9375rem;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 0.3125rem 1.25rem black;
+        transition: .2s ease-in-out;
+        border-radius: 1.25rem;
+    }
+    .container .card:hover{
+        height: 41.25rem;
+    }
+    .container .card .picture{
+        position: relative;
+        width: 24.375rem;
+        height: 15.625rem;
+        top: -3.75rem;
+        left: 1.25rem;
+        z-index: 1;
+        box-shadow: 0 0.3125rem 0.625rem black;
+        border-radius: 1.25rem;
+    }
+    .container .card .picture img{
+        max-width: 100%;
+        border-radius: 0.25rem;
+        width: 24.375rem;
+        height: 15.625rem;
+    }
+    .container .card .information{
+        position: relative;
+        margin-top: -8.75rem;
+        padding: 0.625rem 0.9375rem;
+        text-align: center;
+        color:rgb(8, 8, 8);
+        display: none;
+        opacity: 0;
+        transition: .3s ease-in-out;
+        font-style: italic;
+        background-color: rgb(194, 194, 167);
+    }
+    .container .card:hover .information{
+        display: block;
+        opacity: 1;
+        margin-top: -2.5rem;
+        transition-delay: .4s;
+    }
+    .container .content{
+        color: rgb(7, 7, 7);
+        text-indent: 3.125rem;
+        font-size: 1.25rem;
+        word-spacing: 0.3125rem5px;
+        font-weight: bolder;
+        text-shadow: white 1px 0 0,white 0 1px 0,white -1px 0 0,white 0 -1px 0;
+    }
+    .container .content .h1{
+        font-size: 1.875rem;
+    }
+    .card h2{
+        position: relative;
+       top: -2.5rem;
+       left: 11rem;
+       width: 5rem;
+    }
+    @media(max-width:1600px){
+        #max{
+            background-image: none;
+            background-color: rgb(234, 198, 218);
+        }
+    }
+    @media(max-width:900px){
+        html{
+            font-size: 11px;
+        }
+       #max{
+            background-image: none;
+            background-color: rgbgb(234, 198, 218);
+        }
+        .row{
+            display: block;
+        }
+    }
+    .block {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: rgb(246, 185, 185);
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+.block:hover {
+  background-color: #ddd;
+  color: black;
+}
+    </style>
+    </head>
+    <body>
+        <div id="max">
+     <ul class="grasses">
+        <li class="grass"></li>
+        <li class="grass"></li>
+        <li class="grass"></li>
+        <li class="grass"></li>
+        <li class="grass"></li>
+     </ul>
+     <ul class="grasses1">
+        <li class="grassa"></li>
+        <li class="grassa"></li>
+        <li class="grassa"></li>
+        <li class="grassa"></li>
+        <li class="grassa"></li>
+     </ul>
+    <div id="header">
+        <img src="被子植物7.jpg" width="100%" height="400px" >
+     <h1 >被子植物</h1>
+    </div>
+    <div class="row">
+    <div class="container">
+        <div class="content">
+        <h1>简介</h1>
+           <p> 被子植物是当今世界植物界中最进化、种类最多、分布最广、适应性最强的类群。现知全世界被子植物共有20多万种，占植物界总数的一半以上。中国已知的被子植物约2700多属，3万余种。 被子植物与人类有着极为密切的关系，如中国的被子植物可提供食物的达2000余种；果树有300多种；花卉植物数不胜数；药用被子植物有10027种（含种以下分类单位），占中国药用植物总数的90%，是药用种类最多的类群，绝大多数中药均来自于被子植物。
+            被子植物是现存高等植物最为繁盛的类群，是陆地植被的主要组成成分。搞清科、属和种的数量和范畴对认识全球和区域生物多样性有重要价值。分子系统学的快速发展，使很多被子植物的科和属的范畴发生了变化。 [3] 
+            被子植物在植物分类学上，被命名为被子植物亚门。 是植物界中 高等的类群—种子植物门中的一个最高等的类群（学名：Angiospermae）也是植物界最大的一个类群。由少数（典型的是8个）细胞构成的胚囊和双受精现象被视为被子植物在进化上的一致性和与其他植物类群区别证据。 </p>
+        </div>
+        <div class="content">
+         <h1>历史</h1>
+         <p>
+            现有最早的花粉粒化石和叶化石证据表明被子植物是在大约1.3亿～1.35亿年前的早白垩世起源的。在较古老的白垩纪沉积中，被子植物化石记录的数量与蕨类和裸子植物的化石相形见绌。直到离今8000～9000万年的白垩纪末期，被子植物才在地球上的大部分地区占了统治的地位。只有在早白垩世的上半期[阿尔必期（Albian）和阿普第期（Aptian）]，在北半球（北美、葡萄牙、远东）才出现了无可置疑的双子叶植物叶印痕的化石。最早的，显示原始的双子叶和单子叶特征的被子植物的单沟花粉粒是在早白垩世的巴列姆期（Barremian）出现的。可是，原始被子植物的花粉与裸子植物的花粉几乎不能分辨，从而给古老花粉化石的鉴定造成很大的困难，较进化的双子叶植物的三沟花粉是在稍年轻的阿普第期的岩层中首次报道的。
+            古植物学家从较古老地层中原始类型的花粉发展到年轻沉积中较为派生类型的花粉这一事实获悉，被子植物在白垩纪曾经历了一个很大的多样化过程。到了白垩纪末的麦斯特列赫期（Maestrichtian）出现了若干现代科、属的化石花粉和叶。化石花是在新生代第三纪始新世地层中找到的。白垩纪假定为双子叶植物的木材只有少数记录，它们代表着木质部的原始类型而缺乏进化的被子植物的特征，对白垩纪时期叶化石的研究结果表明存在着一个逐渐多样化的式样，即从为现代的某些木兰目所共有的叶型过渡到与现存的蔷薇亚纲形态上相似的叶型的过程。
+            </p>
+        </div>
+        <div class="content">
+            <h1>形态特征</h1>
+           <p> <h2>花</h2>
+            被子植物在形态上具有不同于裸子植物所具有的孢子叶球的花；胚珠被包藏于闭合的子房内，由子房发育成果实；子叶1～2枚（很少3～4枚）；维管束主要由导管构成；在生殖上配子体大大简化，以最少的分裂次数而发育，雌配子体中的颈卵器已不发育；在生态上适应于广泛的各式各样的生存条件；在生理功能上具有比裸子植物和蕨类植物大得多的对光能利用的适应性。全世界约有300～450个科（各个分类系统科概念不同）、25万种，大多数科分布在热带，2/3的种限于热带或其邻近地区。中国约2.5万种，分别隶属于291科和3050属。
+            被子植物门
+            被子植物门(5张)
+            传统上，开花植物被分成两个类别，一般称之为“双子叶植物”和“单子叶植物”，这些名称主要是来自观察双子叶植物大多有两个子叶，而单子叶植物大多只有一个而来的，并非绝对。就特征而言，子叶的数目并不是一个特别便利且可靠的特征。
+            <h2>果实</h2>
+            果实作为被子植物的繁殖器官,其所具有的鉴定特征是探讨植物的系统发育和系统分类的基础（Tiffney, 1990）。但是繁殖器官生长和成熟的季节性原因，使得在全球新生代地层中果实化石的发现报道不像叶片化石那样广泛。一般情况下,花瓣保存为化石的概率较小,而植物的果实和种子常常能够保存为化石。 [4] 
+            根据植物遗传基因学研究：单子叶植物实际是由古代的双子叶植物演化而来，在睡莲目与当今双子叶植物分道扬镳时，单子叶植物和现代双子叶植物还是同一个祖先。单子叶植物会形成一单系群，称之为单子叶植物分支，是双子叶植物的一个特化分支，这使传统的双子叶植物分类成为一个并系群而不再被视为有效分类。但是，双子叶植物则不是，而是只有大部份双子叶植物可组成单系群，称之为真双子叶植物分支。而除去真双子叶植物分支外的其他剩余双子叶植物则被称为古双子叶植物分支，但此一名称只是方便而已，因为它并不是一个单系群。</p>
+        </div>
+        <div class="content">
+            <h1>保护现状</h1>
+           <p><h2>保护级别</h2>
+            被子植物也是我国濒危植物的主体, 许多种类已经被列入国内保护植物名录和国际公约保护物种名录。 我国共有约1,600种植物被列入, 其中绝大部分是被子植物的兰科植物。 [2] 
+           <h2> 濒危原因</h2>
+            为生境退化或丧失、人为过度利用、物种内在原因、外来入侵种和其他种间竞争、环境污染、自然灾害和极端气候变化等几种类型。这些因子将带来物种居群衰退、分布范围缩小或个体数量下降等不利影响, 从而导致物种受威胁、濒危甚至灭绝。 </p>
+        </div>
+        <div class="content">
+            <h1>分类</h1>  
+           <p> 被子植物在阶层系统中的地位和名称意见不一，有的作为门，有的作为亚门或纲。除了少数分类系统外，被子植物通常被分成双子叶植物和单子叶植物两大部分，但不同的分类系统给予这两大类群以不同的等级和名称——有的作为纲，即双子叶植物纲和单子叶植物纲，有的则作为亚纲，即双子叶植物亚纲（Dicoty-ledonidae）和单子叶植物亚纲（Monocotyledonidae）。这两大类群彼此以若干性状相区别，但孢粉学资料并未提供它们之间存在着明显界线的证据。分支系统学家则认为单子叶植物和双子叶植物是非单元发生的并系类群，在自然分类系统中应予排除。</p>
+        </div>
+        <div class="content">
+            <h1>主要价值</h1>
+           <p><h2>经济价值</h2>
+            人类的大部分食物和营养来源于被子植物，不是直接地通过农作物或园艺作物如谷类、豆类、薯类、瓜果和蔬菜等，就是间接地为牧场提供牲畜所需的饲料。被子植物还提供建筑、造纸、纺织和塑料制品、油料、纤维、食糖、香料、虫蜡、医药、树脂、鞣酸、麻醉剂、饮料等多得不可计数的原材料。此外，世界上大约有25亿人口从木材和煤炭来获得能源。
+            被子植物由于它们在种和个体数量上的优势而在覆盖陆地的植物组成中起着主要的作用，形成了作为自然环境景观的大部分植被，并且提供了为大多数陆生动物的生存所需的生境。在生态学上，被子植物对人类的重要意义在于营造防风林和栽种覆盖植物以防止水土流失和海水侵蚀陆地。但人类不仅仅利用自然所赋予的植物，而且还通过植物栽培来改善他们的生活环境，而被子植物在这方面提供了建筑庭园、公园、运动场地、街道绿化、住宅装饰等娱乐和消遣所需的大部分材料。
+            被子植物在发展人类的文化意识方面起着重要的作用，在宗教和礼仪上占有重要的地位，而且为全世界各族人民的文化提供了大量的象征。茎、叶和花的形状和样式曾被广泛地用作世界上许多地方的艺术、建筑和图案设计的原型。
+            据估计在农业、林业、果树和蔬菜栽培和生药学上有用的种最少在6000个以上。其中有些在世界贸易中有用，有些则严格说来具有地方性的价值，如那些纯粹属于生产地方性的食物、药物和其他与民间日常生活有关者。此外，还有比这多一倍的种是纯粹的观赏园艺植物。 [1] 
+            <h2>观赏价值</h2>
+            各地的植物园引种了大量非国产植物(如：中国科学院华南植物园、中国科学院西双版纳热带植物园、上海辰山植物园、深圳仙湖植物园、中国科学院武汉植物园等)，据不完全统计己达13,565种，尚不包含大量未鉴定及未列入植物园名录的种。台湾的辜严倬云植物保种中心引种的植物更是多达26,024种。英国皇家园艺学会园艺数据库收录的非中国产商业化栽培植物有48，783种（不包括品种），其中很多种类在国内苗圃、园艺公司都有引种。中国民间植物爱好者也引种了大量的外来植物(薛聪贤，2002-2004;汪远，个人交流)。在仙人掌和多肉植物爱好者的引介下，景天科、番杏科、仙人掌科3个科80%的物种在国内均己有引种，合计约5,000种，再加上其他科的多肉植物，总计达约8，000种。由于兰花爱好者的引介，兰科植物在民间流入中国的外来植物中数量居第一位，估计在10,000种以上。宿根和球根花卉爱好者、水族饲养爱好者等也引入了大量非国产种。电子商务的发展，如淘宝网,更助长了民间引入的力度。据本文作者之一汪远估计，通过各种途径新引入的非国产植物可能多达30,000种，其中FRPS和FOC未记录的属约有1,300个(小属概念)，而且这个数字将会持续增长。由于引入的来源、时间、途径不同，所记载的科属归属差别较大，很多外来植物的名称相当混乱。由此可见，为适应学术和社会生产发展的需要，厘清中国原产和引入被子植物的科属名单是极为迫切的。</p>
+        </div>
+    </div>
+    <div class="container">   
+        <div class="card">
+            <div class="picture">
+                <img src="被子植物1.jpg">
+            </div>
+            <h2>玫瑰</h2>
+            <div class="information">   
+          <p>
+玫瑰（学名：Rosa ssp. 英文名称：Rosa）：是蔷薇目，蔷薇科、蔷薇属多种植物和培育花卉的通称名字。[1]直立、蔓延或攀援灌木，多数被有皮刺、针刺或刺毛，稀无刺，有毛、无毛或有腺毛。叶互生；花单生；花托球形、坛形至杯形；花瓣5，稀4，开展，覆瓦状排列，白色、黄色，粉红色至红色；花柱顶生至侧生，外伸，离生或上部合生；花瓣倒卵形，重瓣至半重瓣，花有紫红色、黄色、粉色、白色和各种复色。枝条较为柔弱软垂且多密刺，每年花期只有一次。
+玫瑰是所有花卉中最著名和最受欢迎的一类。几个世纪以来，玫瑰一直备受推崇。历史证据表明，它们大约在5000年前在中国生长，从那时起它们就一直在历史中发挥作用。无论是古希腊人、罗马人、基督徒、共济会或其他人，玫瑰始终是爱、美和平等的永恒象征。虽然每种颜色表达爱，美和平衡有点不同，但主要的信息仍然是爱。
+玫瑰有许多不同的含义，这取决于它的颜色。然而，任何玫瑰通常都可以被视为象征：爱、荣誉、信仰、美丽、平衡、热情、智慧、奉献和永恒。
+玫瑰作为经济作物时，其花朵主要用于食品及提炼香精玫瑰油，玫瑰油应用于化妆品、食品、精细化工等工业。
+在欧洲诸语言中，蔷薇、玫瑰、月季都是使用同一个词，如英语是rose，德语是Die Rose。  
+        </p>
+          </div>
+        </div>
+        <div class="card">
+        <div class="picture">
+            <img src="被子植物2.jpg">
+        </div>
+        <h2>桂花</h2>
+        <div class="information">
+            
+      <p>
+        桂花是中国木犀属众多树木的习称，代表物种木犀（学名：Osmanthus fragrans (Thunb.) Lour.），又名岩桂，系木犀科常绿灌木或小乔木，质坚皮薄，叶长椭圆形面端尖，对生，经冬不凋。花生叶腑间，花冠合瓣四裂，形小，其园艺品种繁多，最具代表性的有金桂、银桂、丹桂、月桂等。
+         桂花是中国传统十大名花之一，集绿化、美化、香化于一体的观赏与实用兼备的优良园林树种，桂花清可绝尘，浓能远溢，堪称一绝。尤其是仲秋时节，丛桂怒放，夜静轮圆之际，把酒赏桂，陈香扑鼻，令人神清气爽。在中国古代的咏花诗词中，咏桂之作的数量也颇为可观。自古就深受中国人的喜爱，被视为传统名花。
+        以桂花做原料制作的桂花茶是中国特产茶，它香气柔和、味道可口，为大众所喜爱。桂花在园林建设中有着广泛的运用。
+        桂花经过长期栽植、自然杂交和人工选育，产生了许多栽培品种。通过进一步调查清理，已初步确定各桂花品种32个。以花色而言，有金桂、银桂、丹桂之分；以叶型而言，有柳叶桂、金扇桂、滴水黄、葵花叶、柴柄黄之分；以花期而言，有八月桂、四季桂等之分等。
+    </p>
+      </div>
+    </div>
+        <div class="card">
+        <div class="picture">
+            <img src="被子植物3.jpg">
+        </div>
+        <h2>腊梅</h2>
+        <div class="information">
+           
+      <p>
+       蜡梅（学名： Chimonanthus praecox (L.) Link）是蜡梅科、蜡梅属植物。落叶灌木，高达4米；幼枝四方形，老枝近圆柱形；鳞芽通常着生于第二年生的枝条叶腋内，芽鳞片近圆形。叶纸质至近革质，卵圆形、椭圆形、宽椭圆形至卵状椭圆形，有时长圆状披针形。花着生于第二年生枝条叶腋内，先花后叶，芳香，直径2-4厘米；花被片圆形、长圆形、倒卵形、椭圆形或匙形；雄蕊长4毫米，花丝比花药长或等长，花药向内弯，无毛；心皮基部被疏硬毛，花柱长达子房3倍，。果托近木质化，坛状或倒卵状椭圆形，长2-5厘米，直径1-2.5厘米，口部收缩，并具有钻状披针形的被毛附生物。花期11月至翌年3月，果期4-11月。  
+野生于中国山东、江苏、安徽、浙江、福建、江西、湖南、湖北、河南、陕西、四川、贵州、云南等省；广西、广东等省区均有栽培。日本、朝鲜和欧洲、美洲均有引种栽培。生于山地林中。 蜡梅性喜光，耐干旱，忌水湿，喜深厚而排水良好的土壤，在黏土及盐碱地上生长不良，有一定的耐寒性。  
+根、叶可药用，理气止痛、散寒解毒，治跌打、腰痛、风湿麻木、风寒感冒，刀伤出血；花解暑生津，治心烦口渴、气郁胸闷；花蕾油治烫伤。花可提取蜡梅浸膏0.5-0.6%；化学成分有苄醇、乙酸苄醋、芳樟醇、金合欢花醇、松油醇、吲哚等。 
+     </p>
+      </div>
+      </div>
+        <div class="card">
+        <div class="picture">
+            <img src="被子植物4.jpg">
+        </div>
+        <h2>牵牛花</h2>
+        <div class="information">
+            
+      <p>
+        牵牛（Ipomoeanil(Linnaeus)Roth）是旋花科、牵牛属，一年生缠绕草本。这一种植物的花酷似喇叭状，因此有些地方叫它做喇叭花。种植牵牛花一般在春天播种，夏秋开花，其品种很多，花的颜色有蓝、绯红、桃红、紫等，亦有混色的，花瓣边缘的变化较多，是常见的观赏植物。果实卵球形，可以入药。牵牛花叶子三裂，基部心形。花呈白色、紫红色或紫蓝色，漏斗状，全株有粗毛。花期以夏季最盛。种子具有药用价值。
+        一年生缠绕草本，茎上被倒向的短柔毛及杂有倒向或开展的长硬毛。叶宽卵形或近圆形，深或浅的3裂，偶5裂，长4-15厘米，宽4.5-14厘米，基部圆，心形，中裂片长圆形或卵圆形，渐尖或骤尖，侧裂片较短，三角形，裂口锐或圆，叶面或疏或密被微硬的柔毛；叶柄长2-15厘米，毛被同茎。
+        顺应性较强，喜阳光充足，亦可耐半遮荫。喜暖和凉快，亦可耐暑热高温，但不耐寒，怕霜冻。喜肥美疏松土堆，能耐水湿和干早，较耐盐碱。种子发芽适合温度18~23℃，幼苗在10℃以上气温即可生长。
+    </p>
+      </div>
+      </div>
+        <div class="card">
+        <div class="picture">
+            <img src="被子植物5.jpg">
+        </div>
+        <h2>海棠花</h2>
+        <div class="information">
+           
+      <p>
+        海棠花（学名：Malus spectabilis （Ait）Borkh）：乔木，高可达8米；小枝粗壮，圆柱形，幼时具短柔毛，逐渐脱落，老时红褐色或紫褐色，无毛。叶片椭圆形至长椭圆形，长5-8厘米，宽2-3厘米，边缘有紧贴细锯齿，有时部分近于全缘，幼嫩时上下两面具稀疏短柔毛，以后脱落，老叶无毛。花序近伞形，有花4-6朵，花直径4-5厘米；萼筒外面无毛或有白色绒毛；萼片三角卵形，先端急尖，全缘；花瓣卵形，长2-25厘米，宽15-2厘米，基部有短爪，白色，在芽中呈粉红色。果实近球形，直径2厘米，黄色。果期8-9月。素有“国艳”之誉。是中国的特有植物。
+早在先秦时期的文献中就有记载海棠花在中国古代的栽培历史。在汉代，海棠花就已经与园林艺术结下不解之缘。不论是栽培技术还是种植面积，海棠花在唐代有了明显的提高。宋代时期，海棠花在唐朝的基础上得到了更大的发展，终于达到鼎盛时期，在当时就被视为“百花之尊”。元朝战火硝烟不断，很多花卉都受到了牵连，不复唐宋时期的昌盛。但是海棠不同，它仍然保持着长盛不衰的势头。中国人民如此喜爱海棠，其根本是在于它的丰厚文化内涵，人们称赞它是“百花之尊”、“花之贵妃”，甚至有“花中神仙”之说，同时将它看作是美好春天、美人佳丽和万事吉祥的象征。  
+    </p>
+      </div>
+      </div> 
+        <div class="card">
+        <div class="picture">
+            <img src="被子植物6.jpg">
+        </div>
+        <h2>鸢尾</h2>
+        <div class="information">
+            
+      <p>
+        鸢尾（学名：Iris tectorum Maxim. ）又名：蓝蝴蝶、紫蝴蝶、扁竹花等，属百合目、鸢尾科、鸢尾属多年生草本，根状茎粗壮，直径约1cm，斜伸；叶长15~50cm，宽1.5~3.5cm，花蓝紫色，直径约10cm；蒴果长椭圆形或倒卵形，长4.5~6cm，直径2~2.5cm。原产于中国中部以及日本，主要分布在中国中南部。可供观赏，花香气淡雅，可以调制香水，其根状茎可作中药，全年可采，具有消炎作用。
+        鸢尾叶片碧绿青翠，花形大而奇，宛若翩翩彩蝶，是庭园中的重要花卉之一，也是优美的盆花、切花和花坛用花。其花色丰富，花型奇特，是花坛及庭院绿化的良好材料，也可用作地被植物，有些种类为优良的鲜切花材料。国外有用此花作成香水的习俗。
+        鸢尾花主要色彩为蓝紫色，有“蓝色妖姬”的美誉，鸢尾花因花瓣形如鸢鸟尾巴而称之其属名iris，“爱丽丝”。爱丽丝在希腊神话中是彩虹女神，她是众神与人间的使者，主要任务在于将善良人死后的灵魂，经由天地间的彩虹桥携回天国。
+    </p>
+      </div>
+      </div>
+      <div class="card">
+        <div class="picture">
+            <img src="被子植物8.jpg">
+        </div>
+        <h2>野茉莉</h2>
+        <div class="information">   
+      <p>
+        野茉莉（学名：Styrax japonicus Sieb. et Zucc.）是安息香科，安息香属灌木或小乔木，高可达10米，树皮平滑；嫩枝稍扁，暗紫色，圆柱形。叶互生，叶片纸质或近革质，椭圆形或长圆状椭圆形至卵状椭圆形，上面除叶脉疏被星状毛外，下面除主脉和侧脉汇合处有白色长髯毛外无毛，总状花序顶生，有花，花序梗无毛；花白色，花梗纤细，小苞片线形或线状披针形，花萼漏斗状，膜质，萼齿短而不规则；花冠裂片卵形、倒卵形或椭圆形，花丝扁平，果实卵形，种子褐色，有深皱纹。4-7月开花，9-11月结果 。
+        中国分布广，北自秦岭和黄河以南，东起山东、福建，西至云南东北部和四川东部，南至广东和广西北部。朝鲜和日本也有分布。生长在海拔400-1804米的林中，属阳性树种，生长迅速，喜生于酸性、疏松肥沃、土层较深厚的土壤中。
+        野茉莉木材为散孔材，黄白色至淡褐色，纹理致密，材质稍坚硬，可作器具、雕刻等细工用材；种子油可作肥皂或机器润滑油，油粕可作肥料；花美丽、芳香，可作庭园观赏植物。
+    </p>
+      </div>
+    </div>
+    </div>
+    </div>
+        </div>
+        <button type="button" class="block" onclick="myFunction()">返回首页</button>
+        <script>
+            function myFunction() {
+     location.replace("index.html")
+   }
+       </script>
+    </body>
+</html>

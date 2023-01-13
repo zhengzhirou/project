@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>苔藓植物</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #max{
+            background-image: url(页面图片2.jpg);
+            background-size:100%;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .grasses{
+        height: 6.25rem;
+        display: flex;
+        position: fixed;
+        left: 3.125rem;
+        bottom: 1.875rem;
+    }
+    .grass{
+        width: 0.625rem;
+        height: 6.25rem;
+        border-radius: 0.625rem;
+        background: linear-gradient(rgb(173, 202, 78),rgb(132, 162, 12),rgb(70, 83, 5));
+        margin-right: 0.3125rem;
+        list-style: none;
+    }
+    .grass:nth-child(1){
+        animation: grass1 4s 0s infinite;
+    }
+    .grass:nth-child(2){
+        animation: grass2 4s 0s infinite;
+    }
+    .grass:nth-child(3){
+        animation: grass3 4s 0s infinite;
+    }
+    .grass:nth-child(4){
+        animation: grass4 4s 0s infinite;
+    }
+    .grass:nth-child(5){
+        animation: grass5 4s 0s infinite;
+    }
+    @keyframes grass1{
+        0%,50%{
+            height: 2.5rem;
+            transform: translateY(-40px);
+        }
+        70%,100%{
+            height: 0%;
+            transform: translateY(0px);
+        }
+    }
+    @keyframes grass2{
+        0%,50%{
+            height: 3.75rem;
+            transform: translateY(-60px);
+        }
+        70%,100%{
+            height: 0%;
+            transform: translateY(0px);
+        }
+    }
+    @keyframes grass3{
+        0%,50%{
+            height: 5rem;
+            transform: translateY(-80px);
+        }
+        70%,100%{
+            height: 0%;
+            transform: translateY(0px);
+        }
+    }
+    @keyframes grass4{
+        0%,50%{
+            height: 3.75rem;
+            transform: translateY(-60px);
+        }
+        70%,100%{
+            height: 0%;
+            transform: translateY(0px);
+        }
+    }
+    @keyframes grass5{
+        0%,50%{
+            height: 2.5rem;
+            transform: translateY(-40px);
+        }
+        70%,100%{
+            height: 0%;
+            transform: translateY(0px);
+        }
+    } 
+    .grasses1{
+        height: 6.25rem;
+        display: flex;
+        position: fixed;
+        right: 3.125rem;
+        bottom: 1.875rem;
+    }
+    .grassa{
+        width: 0.625rem;
+        height: 6.25rem;
+        border-radius: 0.625rem;
+        background: linear-gradient(rgb(173, 202, 78),rgb(132, 162, 12),rgb(70, 83, 5));
+        margin-right: 0.3125rem;
+        list-style: none;
+    }
+    .grassa:nth-child(1){
+        animation: grass1 4s 0s infinite;
+    }
+    .grassa:nth-child(2){
+        animation: grass2 4s 0s infinite;
+    }
+    .grassa:nth-child(3){
+        animation: grass3 4s 0s infinite;
+    }
+    .grassa:nth-child(4){
+        animation: grass4 4s 0s infinite;
+    }
+    .grassa:nth-child(5){
+        animation: grass5 4s 0s infinite;
+    }
+    @keyframes grass1{
+        0%,50%{
+            height: 2.5rem;
+            transform: translateY(-40px);
+        }
+        70%,100%{
+            height: 0%;
+            transform: translateY(0px);
+        }
+    }
+    @keyframes grass2{
+        0%,50%{
+            height: 3.75rem;
+            transform: translateY(-60px);
+        }
+        70%,100%{
+            height: 0%;
+            transform: translateY(0px);
+        }
+    }
+    @keyframes grass3{
+        0%,50%{
+            height: 5rem;
+            transform: translateY(-80px);
+        }
+        70%,100%{
+            height: 0%;
+            transform: translateY(0px);
+        }
+    }
+    @keyframes grass4{
+        0%,50%{
+            height: 3.75rem;
+            transform: translateY(-60px);
+        }
+        70%,100%{
+            height: 0%;
+            transform: translateY(0px);
+        }
+    }
+    @keyframes grass5{
+        0%,50%{
+            height: 2.5rem;
+            transform: translateY(-40px);
+        }
+        70%,100%{
+            height: 0%;
+            transform: translateY(0px);
+        }
+    } 
+    #header{
+        display: block;
+        text-align: center;
+        font-size: 1.875rem;
+        margin-left: 10%;
+        margin-right: 10%;
+        color: white;
+        text-shadow: rgb(12, 12, 12) 1px 0 0,rgb(10, 10, 10) 0 1px 0,rgb(9, 9, 9) -1px 0 0,rgb(14, 13, 13) 0 -1px 0;
+    }
+    #header img{
+        box-shadow: black 5px 5px 5px ;
+    }
+    .row{
+        display: flex;
+        height: 100%;
+        margin-left: 10%;
+        margin-right: 10%;
+        
+    }
+   .container{
+    
+      flex-basis: -50%;
+    }
+    .container .card{
+        margin-top: 6.25rem;
+        position: relative;
+        width: 26.875rem;
+        height: 14.375rem;
+        background: rgb(167, 210, 174);
+        margin: 1.875rem 0.625rem;
+        padding: 3.125rem 0.9375rem;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 0.3125rem 1.25rem black;
+        transition: .2s ease-in-out;
+        border-radius: 1.25rem;
+    }
+    .container .card:hover{
+        height: 34.375rem;
+    }
+    .container .card .picture{
+        position: relative;
+        width: 24.375rem;
+        height: 15.625rem;
+        top: -3.75rem;
+        left: 1.25rem;
+        z-index: 1;
+        box-shadow: 0 0.3125rem 0.625rem black;
+        border-radius: 1.25rem;
+    }
+    .container .card .picture img{
+        max-width: 100%;
+        border-radius: 0.25rem;
+        width: 24.375rem;
+        height: 15.625rem;
+    }
+    .container .card .information{
+        position: relative;
+        margin-top: -8.75rem;
+        padding: 0.625rem 0.9375rem;
+        text-align: center;
+        color:black;
+        display: none;
+        opacity: 0;
+        transition: .3s ease-in-out;
+        font-style: italic;
+       }
+    .container .card:hover .information{
+        display: block;
+        opacity: 1;
+        margin-top: -2.5rem;
+        transition-delay: .4s;
+    }
+    .container .content{
+        color: rgb(33, 76, 39);
+        text-indent: 3.125rem;
+        font-size: 1.25rem;
+        word-spacing: 0.3125rem;
+        font-weight: bolder;
+        text-shadow: white 1px 0 0,white 0 1px 0,white -1px 0 0,white 0 -1px 0;
+    }
+    .container .content .h1{
+        font-size: 1.875rem;
+    }
+    .card h2{
+        position: relative;
+       top: -2.5rem;
+       left: 11rem;
+       width: 5rem;
+    }
+    @media(max-width:1600px){
+        #max{
+            background-image: none;
+            background-color: rgb(183, 212, 161);
+        }
+    }
+    @media(max-width:900px){
+        html{
+            font-size: 11px;
+        }
+        #max{
+            background-image: none;
+            background-color: rgb(183, 212, 161);
+        }
+        .row{
+            display: block;
+        }
+    }
+    .block {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: #7fa23d;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+.block:hover {
+  background-color: #ddd;
+  color: black;
+}
+    </style>
+    </head>
+    <body>
+        <div id="max">
+     <ul class="grasses">
+        <li class="grass"></li>
+        <li class="grass"></li>
+        <li class="grass"></li>
+        <li class="grass"></li>
+        <li class="grass"></li>
+     </ul>
+     <ul class="grasses1">
+        <li class="grassa"></li>
+        <li class="grassa"></li>
+        <li class="grassa"></li>
+        <li class="grassa"></li>
+        <li class="grassa"></li>
+     </ul>
+    <div id="header">
+        <img src="苔藓植物7.jpg" width="100%" height="400px" >
+     <h1 >苔藓植物</h1>
+    </div>
+    <div class="row">
+    <div class="container">
+        <div class="content">
+        <h1>简介</h1>
+           <p> 苔藓植物是一群小型的高等植物，没有真根和维管组织的分化，多生于阴湿环境中。具有配子体世代占优势的独特生活史。配子体产生性器官（精子器和颈卵器）和配子（精子和卵子）；孢子体产生孢子，但它们不能独立生存，必须依赖配子体提供水分和营养物质。全世界约有23000种，分为苔纲Hepaticae、藓纲Musci和角苔纲Anthocerotae。苔藓植物在不毛之地和受干扰后的次生生境中担当重要的拓荒者角色。 [1] 
+            在北温带和高山生态系统的水土维持方面有着不可替代的作用；泥炭藓Sphagnum等种类在园艺和微缩景观设计有着巨大价值，强生公司以其为材料生产女性卫生护垫；也是广泛用于监测空气污染和作为科学研究上的模式植物。 [1] 
+            苔藓植物对水分、矿质营养等特殊的体表吸收方式，利用孢子进行远距离传播的能力和多样化的营养繁殖方式，使其能广泛地分布于除海洋以外的地球上绝大部分生境中 。因此，其在水土保持、涵养水源、CO2 的固定和森林更新等方面具有重要的生态功能 。据统计，全世界约有苔藓植物 189 科 1284 属 22175 种 ，中国已报道有 150 科 591 属 3021 种，是世界上苔藓植物多样性程度最高的国家之一。 </p>
+        </div>
+        <div class="content">
+         <h1>历史</h1>
+         <p>
+            关于苔藓植物的来源问题，尚无一致的意见，有人认为起源于绿藻，其理由为：含有相同的光合作用色素；相同的贮藏淀粉；精子均具有2条等长的顶生鞭毛；孢子萌发时所形成的原丝体，与丝藻也很相似；绿藻的卵囊与精子囊的构造与苔藓植物的颈卵器和精子器相似。
+另一种观点是由裸蕨类植物退化而来，裸蕨类出现于志留纪，而苔藓植物出现于泥盆纪中期，要比裸蕨晚数千万年。从进化顺序上说，它们很可能起源于同一祖先。但是，上述两种观点直至2017年还缺乏足够的证据，有待于今后的进一步研究。
+苔藓植物的配子体占优势，孢子体依附在配子体上。配子体构造简单，没有真正的根，没有输导组织，喜欢阴湿，在有性生殖时，必须借助于水。因而其在陆地上难以进一步适应和发展，这都表明它属于由水生到陆生的过渡类型的植物。
+        </p>
+        </div>
+        <div class="content">
+            <h1>形态特征</h1>
+           <p> 
+           <h2> 概括性特征</h2>
+
+苔藓植物Bartramia pomiformis seta
+苔藓植物是一类生活史中以配子体占优势的小型的绿色植物，结构简单，不具维管组织，没有真正的根、茎、叶的分化，我们平时所见到茎、叶和根，严格上应该叫拟茎，拟叶和拟根。
+苔藓植物通常喜欢阴湿的环境，一般生长在石壁、树干和土面上，或潮湿的森林和沼泽地，有些苔藓植物也能生存于荒漠甚至沙漠中。 [2] 
+比较高级的种类，植物体已有假根和类似茎、叶的分化。植物体的内部构造简单，假根是由单细胞或由一列细胞所组成，无中柱，只在较高级的种类中，有类似输导组织的细胞群。苔藓植物体的形态、构造虽然如此简单，但由于苔藓植物具有类似茎、叶分化，会释放出孢子，所以对研究陆生生物仍然有重要的生物学意义。在植物界的演化进程中，苔藓植物代表着从水生逐渐过渡到陆生的类型。
+<h2>多样性</h2>
+中国的苔藓植物十分丰富。全世界有苔藓植物23000种，中国约有3100种，占全世界的12.2%。苔藓植物包括苔类植物门、藓类植物门和角苔植物门。苔类植物们包含86科，386属，约7500种；藓类植物们包含120科，862属，约13000种藓类植物；角苔植物门有6科，12属，约200种。中国约有152科，607属，约3100种。
+中国苔藓植物的特点是：
+（1）特有类群丰富：根据近几十年调查的结果，仅见于中国的特有苔藓属和主要分布于亚洲东部（仅少数涉及邻近地区）的东亚特有苔藓属共35个，占中国苔藓植物属数的7.09%。它们共含有48个种、亚种或变种，占中国苔藓植物种总数的2.2%。这些特有属、种在中国西南部横断山区、长江流域中游山区和东南沿海山区存在3个分布中心；
+（2）在系统发生上居关键位置的类群多：如原始类型藻苔目（Takakiales）藻苔科（Takakiaceae）藻苔属（Takakia）的两个种；藻苔（T. lepidozioides）和角叶藻苔（T. ceratophylla）在中国西藏地区的察隅、波密及米林县的高寒山地都有发现；
+（3）热带、亚热带成分占优势。
+           </p>
+        </div>
+        <div class="content">
+            <h1>分布范围</h1>
+           <p> 
+            苔藓植物分布范围极广，可以生存在热带、温带和寒冷的地区（如南极洲和格陵兰岛）。成片的苔藓植物称为苔原，苔原主要分布在欧亚大陆北部和北美洲北部，局部生长在树木线以上的高山地区。
+            可以防止水土流失苔藓植物一般生长密集，有较强的吸水性，因此能够抓紧泥土，有助于保持水土。可作为鸟雀及哺乳动物的食物有助于形成土壤苔藓植物可以积累周围环境中的水分和浮尘，分泌酸性代谢物来腐蚀岩石，促进岩石的分解，形成土壤。
+           </p>
+        </div>
+        <div class="content">
+            <h1>栽培技术</h1>  
+           <p> ①穴栽：五六株栽一穴，间隔一定距离种植在平整的地面上。
+            ②片植：将苔藓一片片铺设在预先平整好的土地上，稍稍压实，适量淋水，使之与土表紧密相连。
+            ③断茎：苔藓再生力很强，将苔藓切成细段，均匀地撒在平整好的土地上，再覆上一层细土即可生长。
+            苔藓刚栽植时竞争能力很低，其他高等植物容易侵入，因此，刚栽植时应加强除草。而后当苔藓植物密布基质表面后，杂草就几乎不能侵入。苔藓植物对空气湿度要求较严格，在管理中要采用一些喷灌或喷雾装置来调节空气湿度，以利于苔藓生长。大多数苔藓植物适于偏酸性的土壤，可以采用泥炭土作为酸性基质。</p>
+        </div>
+        <div class="content">
+            <h1>主要价值</h1>
+           <p>1.苔藓植物是自然界的拓荒者
+            2.苔藓植物能够促使沼泽陆地化
+            3.苔藓植物的指示作用
+            4.苔藓植物具有保持水土的作用
+            5.用作肥料及燃料
+            6.药用价值
+            7.绿化价值
+           </div>
+    </div>
+    <div class="container">   
+             <div class="card" >
+            <div class="picture">
+                <img src="苔藓植物1.jpg">
+            </div>
+            <h2>葫芦藓</h2>
+            <div class="information">
+                
+          <p>葫芦藓（学名：Funaria hygrometrica Hedw.）是葫芦藓科、葫芦藓属苔藓类植物。植物体丛集或呈大面积散生，呈黄绿色带红色。茎长1-3厘米，单一或自基部分枝。叶往往在茎先端簇生，干时皱缩，呈阔卵圆形、卵状披针形或倒卵圆形，先端急尖，叶边全缘，两侧边缘往往内卷，长4-5毫米，宽1.2-1.8毫米；中肋至顶或突出。孢蒴梨形，长3-4.5毫米，直径1.5-2毫米，具明显的台部；蒴齿两层，外齿片与内层齿条对生，均呈狭长线状披针形。[1]
+
+            在全世界广泛分布。分布于东北、华北、华东、华中及西南等地区。多生于田边地角或房前屋后富含氮肥的土壤上，亦多见于林间火烧迹地上，在林缘、路边、土地上及土壁上也常见。
+            
+            全草可以入药。性味淡，平。功用主治除湿止血。主治痨伤吐血，跌打损伤，湿气脚痛。
+            
+            列入《世界自然保护联盟濒危物种红色名录》（IUCN 2018年 ver 3.1）——无危（LC）。
+            </p>
+          </div>
+          </div>
+        <div class="card">
+        <div class="picture">
+            <img src="苔藓植物2.jpg">
+        </div>
+        <h2>泥炭藓</h2>
+        <div class="information">
+           
+      <p>泥炭藓，中药名。为泥炭藓科植物泥炭藓Sphagnum palustre L. [S. obtusifolium Ehrh.；S. cymbifolium (Ehrh.) Hern.]的植物体。泥炭藓分布于东北、华东、中南和西南等地区。具有清热明目，止痒之功效。常用于目生云翳，皮肤病，虫叮咬瘙痒。
+        生于水湿环境及沼泽地带。四季均生长。适于高山带的湿冷环境。分布于东北、华东、中南和西南等地区。
+        植物体枝条纤长，黄绿色或黄白色，高8-20cm。茎及枝表皮细胞具多数螺纹及水孔。茎叶舍形，平展，长1-2mm，宽0.8-0.9mm，叶细胞无螺纹；枝叶阔卵圆形，内凹，先端兜状内卷，绿色，细胞在叶片横切面呈狭长三角形，偏于叶片腹面。
+     </p>
+      </div>
+    </div>
+        <div class="card">
+        <div class="picture">
+            <img src="苔藓植物3.jpg">
+        </div>
+        <h2>疣黑藓</h2>
+        <div class="information">
+            
+      <p>疣黑藓，拉丁学名：Andreaea mamillosula植物体细弱，密集丛生成垫状，颜色暗黑，无光泽。黑藓属Andreaea。细小，密集成垫状丛生，暗紫黑色，无光泽。茎直立或倾立，长约2厘米，单一或稀少分枝。叶密生，干时呈覆瓦状紧贴，长卵形，上部渐狭，顶端圆钝；边全缘，稍内卷；无中肋；叶细胞厚壁，上部细胞圆形或菱形，背面具粗大突出的单疣，下部细胞长方形，胞壁无疣，具壁孔。苞叶2-3片，较长大，卷呈圆筒形。孢蒴高出于苞叶，紫黑色，长圆形，成熟时纵长四裂。孢子四分体形，直径20-38微米，棕色，具细疣。 分布于陕西、安徽和福建。生于海拔1700米以上的高山裸露向阳的花岗岩面。 图注：1.丛集的植物体（× 2); 2．具孢蒴的枝条(× 14); 3．叶（× 28); 4.苞叶(×28); 5．叶片横切面的一部分（×340)。
+        </p>
+      </div>
+      </div>
+        <div class="card">
+        <div class="picture">
+            <img src="苔藓植物4.jpg">
+        </div>
+        <h2>藻藓</h2>
+        <div class="information">
+            
+      <p>
+        藻藓（学名：Takakia ceratophylla (Mitt.) Grolle）是藻苔科、藻藓属植物。配子体直立，无假根或假根极少。叶螺旋状近于轮生，裂片圆柱状，生于海拔3000米以上高山岩面湿地。配子体直立，长6-11毫米，下部具鞭状分枝，无假根或假根极少。叶螺旋状近于轮生，2-4指状深裂至基部，裂片圆柱状，无中肋及叶面区分；茎与叶表皮由1至多列明显厚壁细胞组成。孢子体顶生，直立，绿色，成熟后呈褐色，对称，孢蒴直立，长橄榄形，两端急尖，先端具小尖头，长1.6-2.3毫米，直径0.38-0.48毫米，蒴壁细胞由蒴柄处向顶部右向螺旋状排列，孢蒴成熟后，沿蒴外层螺旋状排列细胞中的一列异形细胞缝合线处，由中部向两端纵裂。孢蒴表皮细胞壁极厚。不形成蒴盖及蒴齿。中轴圆柱状，长约达孢腔的3/4处，蒴外层细胞呈不规则的长方形或多角形；蒴柄长1.2-2.6毫米；蒴帽小，勺状。孢子圆球形，直径32-36微米，褐色。 [1]
+     </p>
+      </div>
+      </div>
+        <div class="card">
+        <div class="picture">
+            <img src="苔藓植物5.jpg">
+        </div>
+        <h2>地钱</h2>
+        <div class="information">
+            
+      <p>
+        地钱（学名：Marchantia polymorpha L.）是地钱科、地钱属。叶状体暗绿色，宽带状，多回二歧分叉，长5-10厘米，宽1-2厘米，边缘呈波曲状，有裂瓣。背面具六角形，整齐排列的气室分隔；每室中央具1个烟囱型气孔。气室内具多数直立的营养丝。基本组织由10-20层细胞构成。鳞片紫色，4-6列。假根平滑或带花纹。雌雄异株。雄托盘状，波状浅裂成7-8瓣；精子器生于托的背面。雌托扁平，深裂成9-11个指状裂瓣；孢蒴着生托的腹面，托柄长6厘米，叶状体背面前端常生有杯状的无性芽胞杯。
+地钱为世界广布种，中国各地均有分布。生长于阴湿土坡、墙下或沼泽地湿土或岩石上。
+全草能清热解毒，祛擦生肌；可用于治疗黄疸性肝炎。[1]地钱含有广木香内酯，为变态反应原，能诱发接触性皮炎过敏反应。地钱所含广木香内酯成分还有阻止曼氏血吸虫侵入鼷鼠体内的作用及毒鱼作用。地钱提取物可抑制枯草杆菌、八叠球菌或金黄色葡萄球菌的繁殖。
+    </p>
+      </div>
+      </div> 
+        <div class="card">
+        <div class="picture">
+            <img src="苔藓植物6.jpg">
+        </div>
+        <h2>大金发藓</h2>
+        <div class="information">
+           
+      <p>
+        大金发藓（拉丁学名：Polytrichum commune Hedw.），是金发藓的别名，本草及植物名实图考所指“土马粽”可能系泛指此种藓类。[1]异名：小松柏、岩上小草、眼丹药、一口血（《贵州草药》），矮松树、万年杉（《四川常用中草药》）。[2]
+
+大金发藓为金发藓科（Polytrichaceae）金发藓属（Polytrichum）草本丛生植物。高可达20厘米，茎直立，单一，常扭曲，下部密生假根，上部深绿色，老时呈棕红色或黑棕色。叶丛生于上部，向下叶渐小而渐疏，上部叶较大，具长卵形明显鞘部，雌雄异株；雌株较高大，蒴柄强劲，棕红色；孢于小，圆形，黄色，平滑。
+
+生于林下湿地。全草人药，味甘，性凉，主治久热不退、肺病咳嗽、盗汗、吐血、便血、崩漏、跌打损伤、子宫脱垂、刀伤出血。对高夫克氏球菌、金色葡萄菌、肺炎球菌、结核杆菌有抗性，对淋巴细胞白血病等瘤症有一定抑制作用。[3]
+    </p>
+      </div>
+      </div>
+    </div>
+    </div>
+        </div>
+        <button type="button" class="block" onclick="myFunction()">返回首页</button>
+    <script>
+         function myFunction() {
+  location.replace("index.html")
+}
+    </script>
+    </body>
+</html>

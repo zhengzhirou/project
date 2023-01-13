@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>裸子植物</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #max{
+            background-image: url(页面图片.jpg);
+            background-size:100%;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    .grasses{
+        height: 6.25rem;
+        display: flex;
+        position: fixed;
+        left: 3.125rem;
+        bottom: 1.875rem;
+    }
+    .grass{
+        width: 0.625rem;
+        height: 6.25rem;
+        border-radius: 0.625rem;
+        background: linear-gradient(rgb(8, 202, 8),rgb(10, 136, 10),rgb(5, 83, 5));
+        margin-right: 0.3125rem;
+        list-style: none;
+    }
+    .grass:nth-child(1){
+        animation: grass1 4s 0s infinite;
+    }
+    .grass:nth-child(2){
+        animation: grass2 4s 0s infinite;
+    }
+    .grass:nth-child(3){
+        animation: grass3 4s 0s infinite;
+    }
+    .grass:nth-child(4){
+        animation: grass4 4s 0s infinite;
+    }
+    .grass:nth-child(5){
+        animation: grass5 4s 0s infinite;
+    }
+    @keyframes grass1{
+        0%,50%{
+            height: 2.5rem;
+            transform: translateY(-40px);
+        }
+        70%,100%{
+            height: 0%;
+            transform: translateY(0px);
+        }
+    }
+    @keyframes grass2{
+        0%,50%{
+            height: 3.75rem;
+            transform: translateY(-60px);
+        }
+        70%,100%{
+            height: 0%;
+            transform: translateY(0px);
+        }
+    }
+    @keyframes grass3{
+        0%,50%{
+            height: 5rem;
+            transform: translateY(-80px);
+        }
+        70%,100%{
+            height: 0%;
+            transform: translateY(0px);
+        }
+    }
+    @keyframes grass4{
+        0%,50%{
+            height: 3.75rem;
+            transform: translateY(-60px);
+        }
+        70%,100%{
+            height: 0%;
+            transform: translateY(0px);
+        }
+    }
+    @keyframes grass5{
+        0%,50%{
+            height: 2.5rem;
+            transform: translateY(-40px);
+        }
+        70%,100%{
+            height: 0%;
+            transform: translateY(0px);
+        }
+    } 
+    .grasses1{
+        height: 6.25rem;
+        display: flex;
+        position: fixed;
+        right: 3.125rem;
+        bottom: 1.875rem;
+    }
+    .grassa{
+        width: 0.625rem;
+        height: 6.25rem;
+        border-radius: 0.625rem;
+        background: linear-gradient(rgb(8, 202, 8),rgb(10, 136, 10),rgb(5, 83, 5));
+        margin-right: 0.3125rem;
+        list-style: none;
+    }
+    .grassa:nth-child(1){
+        animation: grass1 4s 0s infinite;
+    }
+    .grassa:nth-child(2){
+        animation: grass2 4s 0s infinite;
+    }
+    .grassa:nth-child(3){
+        animation: grass3 4s 0s infinite;
+    }
+    .grassa:nth-child(4){
+        animation: grass4 4s 0s infinite;
+    }
+    .grassa:nth-child(5){
+        animation: grass5 4s 0s infinite;
+    }
+    @keyframes grassa1{
+        0%,50%{
+            height: 2.5rem;
+            transform: translateY(-40px);
+        }
+        70%,100%{
+            height: 0%;
+            transform: translateY(0px);
+        }
+    }
+    @keyframes grassa2{
+        0%,50%{
+            height: 3.75rem;
+            transform: translateY(-60px);
+        }
+        70%,100%{
+            height: 0%;
+            transform: translateY(0px);
+        }
+    }
+    @keyframes grassa3{
+        0%,50%{
+            height: 5rem;
+            transform: translateY(-80px);
+        }
+        70%,100%{
+            height: 0%;
+            transform: translateY(0px);
+        }
+    }
+    @keyframes grassa4{
+        0%,50%{
+            height: 3.75rem;
+            transform: translateY(-60px);
+        }
+        70%,100%{
+            height: 0%;
+            transform: translateY(0px);
+        }
+    }
+    @keyframes grassa5{
+        0%,50%{
+            height: 2.5rem;
+            transform: translateY(-40px);
+        }
+        70%,100%{
+            height: 0%;
+            transform: translateY(0px);
+        }
+    }   
+    #header{
+        display: block;
+        text-align: center;
+        font-size: 1.875rem;
+        margin-left: 10%;
+        margin-right: 10%;
+        color: aliceblue;
+    }
+    #header img{
+        box-shadow: black 5px 5px 5px ;
+    }
+    .row{
+        display: flex;
+        height: 100%;
+        margin-left: 10%;
+        margin-right: 10%;
+        
+    }
+   .container{
+    
+      flex-basis: -50%;
+    }
+    .container .card{
+        margin-top: 10%;
+        position: relative;
+        width:26.875rem;
+        height: 14.375rem;
+        background: rgb(26, 130, 41);
+        margin: 2rem 0.312rem;
+        padding: 3.125rem 1rem;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 0.3125rem 1.25rem black;
+        transition: .2s ease-in-out;
+        border-radius: 1.25rem;
+    }
+    .container .card:hover{
+        height: 41.25rem;
+    }
+    .container .card .picture{
+        position: relative;
+        width: 24.375rem;
+        height: 15.625rem;
+        top: -3.75rem;
+        left: 1.25rem;
+        z-index: 1;
+        box-shadow: 0 0.3125rem 0.625rem black;
+        border-radius: 1.25rem;
+    }
+    .container .card .picture img{
+        max-width: 100%;
+        border-radius: 0.25rem;
+        width: 24.375rem;
+        height: 15.625rem;
+    }
+    .container .card .information{
+        position: relative;
+        margin-top: -8.75rempx;
+        padding: 0.625rem 1rem;
+        text-align: center;
+        color:white;
+        display: none;
+        opacity: 0;
+        transition: .3s ease-in-out;
+        font-style: italic;
+    }
+    .container .card:hover .information{
+        display: block;
+        opacity: 1;
+        margin-top: -2.5rem;
+        transition-delay: .4s;
+    }
+    .container .content{
+        color: white;
+        text-indent: 3.125rem;
+        font-size: 1.25rem;
+        word-spacing: 0.3125rem;
+    }
+    .container .content .h1{
+        font-size: 1.875rem;
+    }
+    .card h2{
+        position: relative;
+       top: -2.5rem;
+       left: 11rem;
+       width: 5rem;
+    }
+    @media(max-width:1600px){
+        #max{
+            background-image: none;
+            background-color: rgb(52, 96, 46);
+        }
+    }
+    @media(max-width:900px){
+        html{
+            font-size: 11px;
+        }
+        #max{
+            background-image: none;
+            background-color: rgb(52, 96, 46);
+        }
+        .row{
+            display: block;
+        }
+    }
+    .block {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: #238847;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+.block:hover {
+  background-color: #ddd;
+  color: black;
+}
+    </style>
+    </head>
+    <body>
+        <div id="max">
+     <ul class="grasses">
+        <li class="grass"></li>
+        <li class="grass"></li>
+        <li class="grass"></li>
+        <li class="grass"></li>
+        <li class="grass"></li>
+     </ul>
+     <ul class="grasses1">
+        <li class="grassa"></li>
+        <li class="grassa"></li>
+        <li class="grassa"></li>
+        <li class="grassa"></li>
+        <li class="grassa"></li>
+     </ul>
+    <div id="header">
+        <img src="裸子植物3.jpg" width="100%" height="400px" >
+     <h1 >裸子植物</h1>
+    </div>
+    <div class="row">
+    <div class="container">
+        <div class="content">
+        <h1>简介</h1>
+           <p> 裸子植物门（Gymnospermae）是植物界的1门，既是颈卵器植物，又是种子植物，它们有胚珠（不同于蕨类植物门），但心皮不包成子房，且胚珠裸露，胚乳（即雌性原叶体）在受精前已形成（不同于被子植物门）。
+           </p>
+        </div>
+        <div class="content">
+         <h1>历史</h1>
+         <p>
+            裸子植物发生发展的历史悠久，最初的裸子植物出现约在34500万年前至39500万年之间的古生代泥盆纪，历经古生代的石炭纪、二叠纪，中生代的三叠纪、侏罗纪、白垩纪，新生代的第三纪、第四纪。从裸子植物产生到21世纪，地质气候经过多次重大变化，裸子植物种系也随之多次演变更替，老的种类相继灭绝，新的种类陆续演化出来，种类演替繁衍至今，现代的裸子植物有不少种类是从约250万年前至6500万年之间的新生代第三纪出现的，又经过第四纪冰川时期保留下来，繁衍至今。
+较多学者认为裸子植物是由前裸子植物（Progymnospermae）和种子蕨（Pteridospermopsida，即苏铁蕨Cycadofilicopsida）演化而来。真蕨类（Filicopsida）与前裸子植物可能共同起源于裸蕨类（Psilophyta），而种子蕨类与其他裸子植物又平行起源于前裸子植物。科达类（Cordaitopsida）可能起源于前裸子植物，而本内苏铁类（Bennettitopsida，即拟苏铁类Cycadeoideopsida）可能起源于种子蕨类的皱叶羊齿类（Lyginopteridatae），苏铁类（Gycadopsida）与皱叶羊齿类亲缘关系密切。银杏类（Ginkgopsida）与苛得狄类可能有共同的起源，它们可能是由前裸子植物的同一个分枝中演化出来，或一开始就彼此独立演化成两个平行分枝。松杉类（Coniferopsida）与苛得狄类有着很近的亲缘关系。盖子植物（Chlamydospermopsida）是极特殊的类群，因缺乏古植物学资料，未见有阐明其起源与演化的报道。
+         </p>
+        </div>
+        <div class="content">
+            <h1>形态特征</h1>
+           <p> 裸子植物为多年生木本植物，大多为单轴分枝的高大乔木，少为灌木，稀为藤本；次生木质部几全由管胞组成，稀具导管。叶多为线形、针形或鳞形，稀为羽状全裂、扇形、阔叶形、带状或膜质鞘状。花单性，雌雄异株或同株；小孢子叶球（雄球花）具多数小孢子叶（雄蕊），小孢子叶具多数至2个小孢子囊（花药），小孢子（花粉）具气囊或船形具单沟，或球形外壁上具一乳头状突起或具明显或不明显的萌发孔或无萌发孔，或橄榄形具多纵肋和凹沟，有时还具一远极沟，多为风媒传粉，花粉萌发后花粉管内有两个游动或不游动的精子；大孢子叶（珠鳞、珠托、珠领、套被）不形成封闭的子房，着生一至多枚裸露的胚珠，多数丛生树干顶端或生于轴上形成大孢子叶球（雌球花）；胚珠直立或倒生，由胚囊、珠心和珠被组成，顶端有珠孔。种子裸露于种鳞之上，或多少被变态大孢子叶发育的假种皮所包，其胚由雌配子体的卵细胞受精而成，胚乳由雌配子体的其他部分发育而成，种皮由珠被发育而成；胚具两枚或多枚子叶。裸子植物的染色体基数少（x=8～20），形较大，在各属基本一致。
+           </p>
+        </div>
+        <div class="content">
+            <h1>分布范围</h1>
+           <p> 裸子植物广布于南北半球，尤以北半球更为广泛，从低海拔至高海拔、从低纬度至高纬度几乎都有分布。裸子植物的科、属、种数虽远比被子植物少，但覆盖面积却大致相等。在高纬度及高海拔气候温凉至寒冷的地区，几乎都是某些裸子植物形成的单纯林或组成的混交林。
+裸子植物分为：苏铁科（Cycadaceae）、罗汉松科（Podocarpaceae）和南洋杉科（Araucariaceae），除其模式属（即苏铁属、罗汉松属、南洋杉属）的少数种分布于北半球热带及亚热带外，其他属种均产南半球；银杏原产中国，现广泛栽于北半球亚热带及温带地区；松科（Pinaceae）除松属（Pinus）的少数种分布于南半球外，其他属种均产北半球，其中油杉属、金钱松属、黄杉属、雪松属、银杉属、以及松属和铁杉属的部分种类分布于亚热带低山至中山地带，随着纬度或海拔的升高，逐渐被耐寒、喜温凉冷湿的少数松树、铁杉及落叶松属、云杉属和冷杉属树种所代替；杉科除单型属密叶杉属产澳大利亚外，其他属种均分布于北半球的亚热带地区；柏科分布于南北半球；三尖杉科分布于东亚南部及中南半岛北部；红豆杉科除澳洲红豆杉属产新喀里多尼亚外，其他属种均分布于北半球亚热带及温带；麻黄科分布于北半球温带及亚热带高山；买麻藤科分布于亚洲、非洲及南美洲的热带及亚热带地区；单型科百岁兰科分布于安哥拉及非洲热带东南部。
+           </p>
+        </div>
+        <div class="content">
+            <h1>分类</h1>  
+           <p> 现代裸子植物的种类分属于5纲(银杏纲、苏铁纲、红豆杉纲、松柏纲、买麻藤纲)9目12科71属近800种。我国有5纲8目11科41属236种47变种，其中引种栽培1科7属51种2变种。
+            裸子植物在地球环境大变迁时大批先后灭绝，现存八百多种，其中中国占三百多种。裸子植物在高等植物中常作为一个自然类群，其分类单位为门、亚门或纲，包括已灭绝的类群，如种子蕨、开通（Cayoniopsida）、舌羊齿（Giossopteridopsida）、五柱木（Pentaxyopsida）、本内苏铁、科达等，以及现代生存的类群（如苏铁、银杏、松杉、盖子植物等）。
+            在裸子植物分类系统中（如R·皮尔格1926，G·张伯伦1935，D·A·约翰森1951，A·Л·塔赫塔江1953，R·皮尔格和H·梅尔希奥1954，W ·齐默尔曼1959，郑万钧1978等），对现存的各类裸子植物有以下分歧意见：
+            ①将银杏置于苏铁纲中与苏铁并列，或置于松杉纲中与松杉并列，或银杏、苏铁、松杉均并列为纲。这是以银杏营养体的结构和生殖器官的发育作比较研究，所强调的性状不同而得出的不同结论。
+            ②将红豆杉科置于松杉纲中或单独成纲，与苏铁、银杏、松杉和盖子植物并列。这是对红豆杉科具有单一的顶生胚珠作不同解释而得出的两种绝然不同的意见。
+            ③松杉纲（目）所含各科是否根据雌球花形成球果与否而归为两个亚纲（或亚目）。
+           </p>
+        </div>
+        <div class="content">
+            <h1>主要价值</h1>
+           <p>裸子植物除少数类群（如买麻藤属及松科的一些属）外，均具有双黄酮类化合物，常见的有穗花杉双黄酮、西阿多黄素、银杏黄素、枯黄素、榧黄素等。黄酮类化合物则普遍存在，常见的有槲皮素、山奈酚和杨梅树皮素等。生物碱仅在三尖杉科、麻黄科和买麻藤科中存在，可供药用。苏铁科、红豆杉科和罗汉松科的部分属种可供观赏，其他种类多为高大乔木，其树干通直，出材率高，材质较优良，供建筑、家具及工业用材，占世界木材供应量的50%以上；部分树种可割制松香和提取松节油；少数树种的种子可食；部分树种为速生造林树种或园林绿化树种；生于江河上游的为水源林；生于高山陡坡的可防止雨水冲刷。 [2] 
+我国的裸子植物多为林业经营上的重要用材树种，也是纤维、树脂、单宁等原料树种，少数种类的枝叶、花粉、种子、根皮等可供药用。
+           </p>
+        </div>
+    </div>
+    <div class="container">   
+             <div class="card" >
+            <div class="picture">
+                <img src="裸子植物1.jpg">
+            </div>
+            <h2>水杉</h2>
+            <div class="information">
+                
+          <p>
+            水杉（学名：Metasequoia glyptostroboides Hu & W. C. Cheng）：裸子植物杉科。落叶乔木，小枝对生，下垂。叶线形，交互对生，假二列成羽状复叶状，长1-1.7厘米，下面两侧有4-8条气孔线。雌雄同株。球果下垂，近球形，微具4棱，长1.8-2.5厘米，有长柄；种鳞木质，盾形，每种鳞具5-9种子，种子扁平，周围具窄翅。
+     水杉属在中生代白垩纪和新生代约有6-7种，过去认为早已绝灭，1941年中国植物学者在湖北利川谋道镇，首次发现这一闻名中外古老珍稀孑遗树种。据近年调查，重庆万州、重庆石柱县、湖北利川和湖南龙山、桑植均发现300余年的巨树。
+     水杉适应性强，喜湿润生长快，北京以南各地均有栽培。材质轻软，可供建筑、板料、造纸等用；树姿优美，为庭园观赏树。喜气候温暖湿润，夏季凉爽，冬季有雪而不严寒，且产地年均温度在13℃，极端最低温-8℃，极端最高温24℃左右，无霜期230天；年降水量1500毫米，年均相对湿度82%。
+多生于山谷或山麓附近地势平缓、土层深厚、湿润或稍有积水的地方，耐寒性、耐水湿能力强，在轻盐碱地可以生长为喜光性树种，根系发达，生长的快慢常受土壤水分的支配，在长期积水排水不良的地方生长缓慢，树干基部通常膨大和有纵棱。 
+          </p>
+          </div>
+          </div>
+        <div class="card">
+        <div class="picture">
+            <img src="裸子植物2.jpg">
+        </div>
+        <h2>丽江云杉</h2>
+        <div class="information">
+            
+      <p>
+        丽江云杉（学名：Picea likiangensis (Franch.) Pritz.）是松科云杉属植物，乔木，高达50米，胸径达2.6米；树皮深灰色或暗褐灰色；冬芽圆锥形；卵状圆锥形、卵状球形或圆球形。小枝上面之叶近直上伸展或向前伸展，小枝下面及两侧之叶向两侧弯伸，叶棱状条形或扁四棱形。球果卵状矩圆形或圆柱形，成熟前种鳞红褐色或黑紫色，熟时褐色、淡红褐色、紫褐色或黑紫色；中部种鳞斜方状卵形或菱状卵形；种子灰褐色，近卵圆形，连同种翅长0.7-1.4厘米，种翅倒卵状椭圆形，淡褐色，有光泽，常具疏生的紫色小斑点。花期4-5月，球果9-10月成熟。
+
+分布于云南西北部、四川西南部。在海拔2500-3800米、气候温暖湿润、冬季积雪、酸性山地棕色森林土高山地带，组成单纯林或与其他针叶树组成混交林。
+
+木材坚韧，纹理致密，可供建筑、桥梁、舟车、器具、细木加工及木纤维工业原料等用材。材质优良，为分布区森林更新及荒山造林树种[1]。树叶可提取芳香油，树皮含单宁。
+    </p>
+      </div>
+    </div>
+        <div class="card">
+        <div class="picture">
+            <img src="裸子植物4.jpg">
+        </div>
+        <h2>铁树</h2>
+        <div class="information">
+            
+      <p>
+        铁树（拉丁学名：Cycas revoluta Thunb，别名：凤尾铁）[1]，苏铁科苏铁属裸子植物。它分布在亚洲东部及东南部、大洋洲及马达加斯加等热带、亚热带地区。
+其茎高0.5~8米，茎干圆柱状，茎部宿存于的叶基和叶痕，呈鳞片，叶从茎顶部长出，1回羽状复叶，厚革质而坚硬，小叶线形，叶背密生锈色绒毛，基部小叶成刺状，雌雄异株，6~8月开花，雄球花圆柱形，雌球花扁球形，种子12月成熟。它喜光，喜温暖，喜肥沃湿润和微酸性的土壤。
+常绿棕榈状木本植物，茎高0.5～8米，一般高2米。茎干圆柱状，不分枝。在生长点破坏后，能在伤口下萌发出丛生的枝芽，呈多头状。茎部宿存于的叶基和叶痕，呈鳞片状。叶从茎顶部长出，1回羽状复叶，长0.4～2.0米，厚革质而坚硬，羽片条形。小叶线形，初生时内卷，后向上斜展，微呈“V”字形，边缘向下反卷，先端锐尖，叶背密生锈色绒毛，基部小叶成刺状。雌雄异株，6～8月开花，雄球花圆柱形，小孢子叶木质，密被黄褐色绒毛，背面着生多数药囊；雌球花扁球形，大孢子叶宽卵形，上部羽状分裂，其下方两侧着生有2～4个裸露的直生胚珠。种子12月成熟，种子大，卵形而稍扁，熟时红褐色或橘红色。
+      </p>
+      </div>
+      </div>
+        <div class="card">
+        <div class="picture">
+            <img src="裸子植物6.jpg">
+        </div>
+        <h2>买麻藤</h2>
+        <div class="information">
+            
+      <p>
+        买麻藤（Gnetum montanum Markgr.），买麻藤科植物，大藤本，高达10米以上，小枝圆或扁圆，光滑，稀具细纵皱纹。。叶形大小多变，通常呈矩圆形，稀矩圆状披针形或椭圆形，革质或半革质，长10-25厘米，宽4-11厘米，先端具短钝尖头，基部圆或宽楔形，侧脉8-13对，叶柄长8-15毫米。
+雄球花序1-2回三出分枝，排列疏松，长2.5-6厘米，总梗长6-12毫米，雄球花穗圆柱形，长2-3厘米，径2.5-3毫米，具13-17轮环状总苞，每轮环状总苞内有雄花25-45，排成两行，雄花基部有密生短毛，假花被稍肥厚成盾形筒，顶端平，成不规则的多角形或扁圆形，花丝连合，约1/3自假花被顶端伸出，花药椭圆形，花穗上端具少数不育雌花排成一轮；雌球花序侧生老枝上，单生或数序丛生，总梗长2-3厘米，主轴细长，有3-4对分枝，雌球花穗长2-3厘米，径约4毫米，每轮环状总苞内有雌花5-8,胚珠椭圆状卵圆形，先端有短珠被管，管口深裂成条状裂片，基部有少量短毛；雌球花穗成熟时长约10厘米。
+种子矩圆状卵圆形或矩圆形，长1.5-2厘米，径1-1.2厘米，熟时黄褐色或红褐色，光滑，有时被亮银色鳞斑，种子柄长2-5毫米。花期6-7月，种子8-9月成熟。
+      </p>
+      </div>
+      </div>
+        <div class="card">
+        <div class="picture">
+            <img src="裸子植物5.jpg">
+        </div>
+        <h2>银杏</h2>
+        <div class="information">
+            
+      <p>
+        银杏（学名：Ginkgo biloba L.）是银杏科、银杏属植物。乔木，高达40米，胸径可达4米；幼树树皮浅纵裂，大树之皮呈灰褐色，深纵裂，粗糙；幼年及壮年树冠圆锥形，老则广卵形。叶扇形，有长柄，淡绿色，无毛，有多数叉状并列细脉，顶端宽5-8厘米，在短枝上常具波状缺刻，在长枝上常2裂，基部宽楔形。球花雌雄异株，单性，生于短枝顶端的鳞片状叶的腋内，呈簇生状；雄球花葇荑花序状，下垂。种子具长梗，下垂，常为椭圆形、长倒卵形、卵圆形或近圆球形状。
+
+银杏为中生代孑遗的稀有树种，系中国特产，仅浙江天目山有野生状态的树木，生于海拔500-1000米、酸性（pH值5-5.5）黄壤、排水良好地带的天然林中，常与柳杉、榧树、蓝果树等针阔叶树种混生，生长旺盛。朝鲜、日本及欧美各国庭园均有栽培。银杏为速生珍贵的用材树种，边材淡黄色，心材淡黄褐色，结构细，质轻软，富弹性，易加工，有光泽，比重0.45-0.48，不易开裂，不反挠，为优良木材。种子供食用（多食易中毒）及药用。叶可作药用和制杀虫剂，亦可作肥料。种子的肉质外种皮含白果酸、白果醇及白果酚，有毒。树皮含单宁。银杏树形优美，春夏季叶色嫩绿，秋季成黄色，颇为美观，可作庭园树及行道树。
+      </p>
+      </div>
+      </div> 
+        <div class="card">
+        <div class="picture">
+            <img src="裸子植物7.jpg">
+        </div>
+        <h2>金钱松</h2>
+        <div class="information">
+            
+      <p>
+        金钱松（学名：Pseudolarix amabilis (Nelson) Rehd.）为松科金钱松属下的一个种。别称金松（杭州），水树（浙江湖州）。叶片条形，扁平柔软，在长枝上成螺旋状散生，在短枝上15～30枚簇生，向四周辐射平展，秋后变金黄色，圆如铜钱，因此而得名。
+金钱松为著名的古老残遗植物，最早的化石发现于西伯利亚东部与西部的晚白垩世地层中，古新世至上新世在斯匹次卑尔根群岛、欧洲、亚洲中部、美国西部、中国东北部及日本亦有发现。由于气候的变迁，尤其是更新世的大冰期的来临，使各地的金钱松灭绝。只在中国长江中下游少数地区幸存下来。因分布零星，个体稀少，结实有明显的间歇性，而亟待保护。
+木材纹理通直，硬度适中，材质稍粗，性较脆。可作建筑、板材、家具、器具及木纤维工业原料等用；树皮可提栲胶，入药（俗称土槿皮）有助于治顽癣和食积等症；根皮亦可药用，也可作造纸胶料；种子可榨油。
+      </p>
+      </div>
+      </div>
+    </div>
+    </div>
+        </div>
+        <button type="button" class="block" onclick="myFunction()">返回首页</button>
+    <script>
+         function myFunction() {
+  location.replace("index.html")
+}
+    </script>
+    </body>
+</html>

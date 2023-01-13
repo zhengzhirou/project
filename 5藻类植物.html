@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>藻类植物</title>
+   
+    <style>
+    *{
+            margin: 0;
+            padding: 0;
+            }
+    #max{
+        background-image: url(页面图片4.jpg);
+        background-size:100%;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .grasses{
+        height: 6.25rem;
+        display: flex;
+        position: fixed;
+        left: 3.125rem;
+        bottom: 1.875rem;
+    }
+    .grass{
+        width: 0.625rem;
+        height: 6.25rem;
+        border-radius: 0.625rem;
+        background: linear-gradient(rgb(167, 208, 226),rgb(118, 163, 180),rgb(54, 77, 92));
+        margin-right: 0.3125rem;
+        list-style: none;
+    }
+    .grass:nth-child(1){
+        animation: grass1 4s 0s infinite;
+    }
+    .grass:nth-child(2){
+        animation: grass2 4s 0s infinite;
+    }
+    .grass:nth-child(3){
+        animation: grass3 4s 0s infinite;
+    }
+    .grass:nth-child(4){
+        animation: grass4 4s 0s infinite;
+    }
+    .grass:nth-child(5){
+        animation: grass5 4s 0s infinite;
+    }
+    @keyframes grass1{
+        0%,50%{
+            height: 2.5rem;
+            transform: translateY(-40px);
+        }
+        70%,100%{
+            height: 0%;
+            transform: translateY(0px);
+        }
+    }
+    @keyframes grass2{
+        0%,50%{
+            height: 3.75rem;
+            transform: translateY(-60px);
+        }
+        70%,100%{
+            height: 0%;
+            transform: translateY(0px);
+        }
+    }
+    @keyframes grass3{
+        0%,50%{
+            height: 5rem;
+            transform: translateY(-80px);
+        }
+        70%,100%{
+            height: 0%;
+            transform: translateY(0px);
+        }
+    }
+    @keyframes grass4{
+        0%,50%{
+            height: 3.75rem;
+            transform: translateY(-60px);
+        }
+        70%,100%{
+            height: 0%;
+            transform: translateY(0px);
+        }
+    }
+    @keyframes grass5{
+        0%,50%{
+            height: 2.5rem;
+            transform: translateY(-40px);
+        }
+        70%,100%{
+            height: 0%;
+            transform: translateY(0px);
+        }
+    } 
+    .grasses1{
+        height: 6.25rem;
+        display: flex;
+        position: fixed;
+        right: 3.125rem;
+        bottom: 1.875rem;
+    }
+    .grassa{
+        width: 0.625rem;
+        height: 6.25rem;
+        border-radius: 0.625rem;
+        background:linear-gradient(rgb(167, 208, 226),rgb(118, 163, 180),rgb(54, 77, 92));
+        margin-right:0.3125rem;
+        list-style: none;
+    }
+    .grassa:nth-child(1){
+        animation: grass1 4s 0s infinite;
+    }
+    .grassa:nth-child(2){
+        animation: grass2 4s 0s infinite;
+    }
+    .grassa:nth-child(3){
+        animation: grass3 4s 0s infinite;
+    }
+    .grassa:nth-child(4){
+        animation: grass4 4s 0s infinite;
+    }
+    .grassa:nth-child(5){
+        animation: grass5 4s 0s infinite;
+    }
+    @keyframes grassa1{
+        0%,50%{
+            height: 2.5rem;
+            transform: translateY(-40px);
+        }
+        70%,100%{
+            height: 0%;
+            transform: translateY(0px);
+        }
+    }
+    @keyframes grassa2{
+        0%,50%{
+            height: 3.75rem;
+            transform: translateY(-60px);
+        }
+        70%,100%{
+            height: 0%;
+            transform: translateY(0px);
+        }
+    }
+    @keyframes grassa3{
+        0%,50%{
+            height: 5rem;
+            transform: translateY(-80px);
+        }
+        70%,100%{
+            height: 0%;
+            transform: translateY(0px);
+        }
+    }
+    @keyframes grassa4{
+        0%,50%{
+            height: 3.75rem;
+            transform: translateY(-60px);
+        }
+        70%,100%{
+            height: 0%;
+            transform: translateY(0px);
+        }
+    }
+    @keyframes grassa5{
+        0%,50%{
+            height: 2.5rem;
+            transform: translateY(-40px);
+        }
+        70%,100%{
+            height: 0%;
+            transform: translateY(0px);
+        }
+    }   
+    #header{
+        display: block;
+        text-align: center;
+        font-size: 1.875rem;
+        margin-left: 10%;
+        margin-right: 10%;
+        color: rgb(13, 13, 13);
+    }
+    #header img{
+        box-shadow: black 0.3125rem 0.3125rem 0.3125rem ;
+    }
+    .row{
+        display: flex;
+        height: 100%;
+        margin-left: 10%;
+        margin-right: 10%;
+        
+    }
+   .container{
+    
+      flex-basis: -50%;
+    }
+    .container .card{
+        margin-top: 10%;
+        position: relative;
+        width:26.875rem;
+        height: 14.375rem;
+        background:rgb(113, 167, 176);
+        margin: 2rem 0.312rem;
+        padding: 3.125rem 1rem;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 0.3125rem 1.25rem black;
+        transition: .2s ease-in-out;
+        border-radius: 1.25rem;
+    }
+    .container .card:hover{
+        height: 31.25rem;
+    }
+    .container .card .picture{
+        position: relative;
+        width: 24.375rem;
+        height: 15.625rem;
+        top: -3.75rem;
+        left: 1.25rem;
+        z-index: 1;
+        box-shadow: 0 0.3125rem 0.625rem black;
+        border-radius: 1.25rem;
+    }
+    .container .card .picture img{
+        max-width: 100%;
+        border-radius: 0.25rem;
+        width: 24.375rem;
+        height: 15.625rem;
+    }
+    .container .card .information{
+        position: relative;
+        margin-top: -8.75rem;
+        padding: 0.625rem 1rem;
+        text-align: center;
+        color:rgb(8, 8, 8);
+        display: none;
+        opacity: 0;
+        transition: .3s ease-in-out;
+        font-style: italic;
+        background-color:rgb(113, 167, 176);
+    }
+    .container .card:hover .information{
+        display: block;
+        opacity: 1;
+        margin-top: -2.5rem;
+        transition-delay: .4s;
+    }
+    .container .content{
+        color: black;
+        text-indent: 3.125rem;
+        font-size: 1.25rem;
+        word-spacing: 0.3125rem;
+        font-weight: bolder;
+        text-shadow: rgb(254, 253, 253) 1px 0 0,rgb(252, 251, 251) 0 1px 0,rgb(254, 254, 254) -1px 0 0,rgb(253, 253, 253) 0 -1px 0;
+    }
+    .container .content .h1{
+        font-size: 1.875rem;
+    }
+    .card h2{
+        position: relative;
+       top: -2.5rem;
+       left: 11rem;
+       width: 5rem;
+    } 
+    @media(max-width:1600px){
+      #max{
+            background-image: none;
+            background-color: rgb(174, 212, 243);
+        }
+    }
+    @media(max-width:900px){
+        html{
+            font-size: 11px;
+        }
+      #max{
+            background-image: none;
+            background-color: rgb(174, 212, 243);
+        }
+        .row{
+            display: block;
+        }
+    }
+    .block {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: #4c95af;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+.block:hover {
+  background-color: #ddd;
+  color: black;
+}
+    </style>
+    </head>
+    <body>
+        <div id="max">
+     <ul class="grasses">
+        <li class="grass"></li>
+        <li class="grass"></li>
+        <li class="grass"></li>
+        <li class="grass"></li>
+        <li class="grass"></li>
+     </ul>
+     <ul class="grasses1">
+        <li class="grassa"></li>
+        <li class="grassa"></li>
+        <li class="grassa"></li>
+        <li class="grassa"></li>
+        <li class="grassa"></li>
+     </ul>
+    <div id="header">
+        <img src="藻类植物7.jpg" width="100%" height="400px" >
+     <h1 >藻类植物</h1>
+    </div>
+    <div class="row">
+    <div class="container">
+        <div class="content">
+        <h1>简介</h1>
+           <p>
+            藻类是一类比较原始、古老的低等生物。藻类的构造简单，没有根、茎、叶的分化，多为单细胞、群体或多细胞的叶状体。如小球藻是单细胞，团藻属于群体，海带呈叶状体。藻类含叶绿素等光合色素，能进行光合作用，属自养型生物。 [1] 
+            从历史的角度来说，中国历史中第一次出现“藻”的记录，是在成书于春秋战国时期的诗歌总集《诗经》中。《诗经·国风·采苹》记载：“于以采藻？于彼行潦”；《诗经·鲁颂·泮水》记载：“薄采其藻”等。这说明当时人们已经对“藻”有了认识，并主动采集。 [2] 
+            藻类植物约有3万种，主要分布于淡水或海水中，分为淡水藻类和海洋藻类两种，包括蓝藻门Cyanophyta、裸藻门Euglenophyta、甲藻门Pyrrophyta、金藻门Chrysophyta、黄藻门Xanthophyta、硅藻门Bacillariophyta、绿藻门Chlorophyta、红藻门Rhodophyta、褐藻门phaeophyta。体型多样，有单细胞、群体（由许多单细胞聚集而成，细胞没有紧密的生理联系）、多细胞的丝状体及叶状体；高等种类已有简单的组织分化。藻体大小差别很大，小的只有几微米，必须在显微镜下才能看到；较大的肉眼可见，最大体长达100米以上。某些种类过度繁殖会引起赤潮（海洋）、水华（淡水）等现象。  
+        </p>
+        </div>
+        <div class="content">
+         <h1>生长繁殖</h1>
+         <p>
+            藻类植物的生殖有营养体生殖、无性生殖和有性生殖。营养体生殖方法很多，有特殊的营养枝，如黑顶藻的繁殖枝，掉地后则独立生长为新的个体；有依靠假根的繁殖方式，如海扇藻；也有依靠盘状幼体以度夏或度冬。无性生殖主要依靠游孢子,这些一般具有1～4根鞭毛，叶绿体和眼点，没有细胞壁，有自由游动的能力；缺少鞭毛因而没有游动能力的孢子也不少，如蓝藻门的内孢子，红藻门的四分孢子，绿藻门的厚壁孢子等。有性生殖依靠配子，可以是同配或异配。同配由形状大小一样的配子相互接近，融合形成厚壁的合子，而异配则由大小不同，甚至形状不一样的配子融合形成合子。卵配是一种异配，其雌性细胞较大，一般不能游动，而其雄性细胞较小，有两根鞭毛，能自由游动。红藻的卵配尤其特殊，卵囊称果胞，为一瓶状构造，卵在瓶底，瓶颈即受精丝，而精子在精子囊内，不能游动，随水漂流，遇于受精丝则粘着上，精子破囊而出，顺着受精丝进入果胞与卵子结合成为合子，后者立即发育成为一个双倍体的果孢子体，寄生在雌性个体上。果孢子体成熟产生果孢子，发育则成为独立的孢子体。蓝藻无有性生殖现象  
+        </p>
+        </div>
+        <div class="content">
+            <h1>形态特征</h1>
+           <p> 
+            <h2>形态</h2>
+藻类植物体大小悬殊，最小的直径只有1～2微米，肉眼见不到，而最大的长达60多米；形态相差很大，有单细胞、群体和多细胞。群体各体由许多单细胞个体群集而成。多细胞个体有丝状体、囊状体和皮壳状体等，也有类似根、茎、叶的外形，但不具备高等植物那样的内部构造和功能。 生殖器官多数由单细胞构成。合子不在母体内发育成胚。主要生活在水里，也有的生活在潮湿的岩石、树干、土壤表面或内部。能在地震、火山爆发、洪水泛滥后形成的新基质上存活，是新生活区的先锋植物之一。
+<h2>色素和光合作用</h2>
+藻类植物细胞含有各式各样的色素，而不同的色素组成标志着进化的不同方向，是分门的主要依据。 但所有的藻类都含有叶绿素a和光合作用系统Ⅱ并能利用水作为氢的供体，在光合作用中释放出氧气。现大气中的游离氧气主要是光合作用的产物，其中大半是藻类所产生。藻类的色素主要有4类：叶绿素、藻胆蛋白、胡萝卜素和叶黄素，其中除叶绿素a以外，β-胡萝卜素也普遍存在于各种藻类，只是在隐藻门数量较少而已。此外，红藻门、和隐藻门还含有藻胆蛋白；隐藻门、甲藻门、黄藻门、金藻门、硅藻门和褐藻门含有叶绿素c；原绿藻门、屁藻门、绿藻门和轮藻门含有叶绿素b，在红藻门有的种类则含有叶绿素d。少数藻类在演化过程中营腐生或寄生生活，逐渐失掉叶绿素，成为没有色素的藻类。
+           </p>
+        </div>
+        <div class="content">
+            <h1>分类</h1>  
+           <p><h2> 原核藻类</h2>
+            细胞为原核细胞，主要是蓝藻门Cyanophyta，有时被提升为一界，即蓝藻界（蓝菌界）Cyanobacteria kingdom。单细胞个体或群体，或为细胞成串排列组成藻丝（细胞列）的丝状体，不分枝、假分枝或真分枝。具核质，无核膜；色质区主要由类囊体及其有关结构，藻胆体和糖原颗粒等所组成，具叶绿素a、藻胆素、胡萝卜素、类胡萝卜素等光合色素，但无叶绿体膜，不形成叶绿体；具细胞壁。
+            <h2>真核藻类</h2>
+            真核藻类为一群没有根、茎、叶分化，能进行光合作用的低等自养真核植物，大约出现于15亿～14亿年前。形态包括单细胞、各式群体、丝状体、叶状体、管状体等。大小从几微米到几米（海带），甚至百米（巨藻） 结构简单，无明显组织分化。少数种类有表皮层、皮层和髓的分化，如海带。植物体通常称为原植体。大多数具细胞壁，仅隐藻、裸藻、多数金藻无；细胞核均具真核，有核膜、核仁，出现染色体；细胞器有质体、线粒体、内质网、高尔基体、液泡等；光合器（载色体）包括杯、盘、带、星、块、网状等多种形态，绿藻和轮藻形成简单的基粒，其余藻类不形成基粒。光合色素包括4种叶绿素类（叶绿素a、b、c、d）、类胡萝卜素类（5种胡萝卜素和多种叶黄素）、藻胆素类（红藻、隐藻和甲藻中含藻胆素）；叶绿体为含叶绿素a、b，呈绿色的光合器；色素体为含叶绿素c或d，呈褐、黄褐或紫红色的光合器。繁殖包括营养繁殖（细胞分裂、藻体断离、繁殖小枝）、无性生殖（产生无性孢子，即游动孢子、不动孢子等）和有性生殖（同配生殖、异配生殖、卵式生殖）；合子或受精卵脱离母体，产生新藻体；合子或受精卵不发育成胚。绝大多数真核藻类生于淡水、海水、咸淡水等各种水体中，也有生于潮湿的土表、岩面、树皮、墙壁等处，有的种类生于高山积雪上，也有的与真菌等生物共生。生活型包括浮游、附着、固着、底栖等。
+        </p>
+        </div>
+        <div class="content">
+            <h1>主要价值</h1>
+           <p>
+            藻类在经济上的重要性主要表现在：
+            ①藻类通过光合作用固定无机碳，使之转化为碳水化合物，从而为水域生产力提供基础。
+            ②在池塘鱼类养殖中一般根据水色判断水质，而水色是由藻类的优势种及其繁殖程度决定的。
+            ③固氮蓝藻是地球上提供化合氮的重要生物，也是可利用的重要生物氮肥资源。现已知固氮蓝藻有120多种，在每公顷水稻田中固氮量达16～89千克。
+            ④褐藻门的海带、裙带菜，红藻门的紫菜，蓝藻门的发菜，绿藻门的石莼和浒苔等都是重要的食用藻类。
+            ⑤藻类在工业上的用途主要是提供各种藻胶。
+            在食用价值方面，记载表明，中国先民不断发现并挖掘了藻类植物的食用价值，首先发现这类植物食用价值的时间，是在汉代。明代李时珍在《本草纲目》中记载：“海藻近海诸地采取，亦作海菜，乃立名目，货之四方云。”可见，到明代时，藻类植物已经作为一种常见蔬菜，在不同地域间流通。 [2] 
+            在药用价值方面，记录说明，中国先民在很早的时候就已经开始注意到藻类植物的药用功能，并不断深入挖掘整理。现代的研究也证实马尾藻科的植物具有药用价值。
+           </p>
+        </div>
+    </div>
+    <div class="container">   
+             <div class="card" >
+            <div class="picture">
+                <img src="藻类植物1.jpg">
+            </div>
+            <h2>石花菜</h2>
+            <div class="information">
+               
+          <p>
+            石花菜（学名：Gelidium amansii Lamouroux）是石花菜科、石花菜科属藻类。石花菜颜色有紫红、深红或绛紫色，在受光多的海区生长的往往呈淡黄色。新鲜的石花菜藻体为直立丛生，羽状分枝互生或对生，枝呈扁平或亚圆柱形。藻体分枝很多，主枝生侧枝，侧枝上生小枝，各种分枝的末端尖，枝宽0.5-2毫米。整个藻体上部分枝较密。藻体的大小因种类和生活环境不同差别很大，小的只有1-1.5厘米或2-4厘米，一般为10-20厘米，大的可达30-40厘米。
+            石花菜的分布很广，属于世界性的红藻。从总的分布来看，以太平洋沿岸及其附近诸岛的分布量要大一些。中国沿海石花菜资源也很丰富，北起辽东半岛南至台湾沿岸都有分布。石花菜生长于海里的珊瑚礁上，它喜欢生长在水质清净、潮流通畅、盐度较高的海域，多为紫红色或深红色。
+            石花菜可以入药，也可以食用。 
+        </p>
+          </div>
+          </div>
+        <div class="card">
+        <div class="picture">
+            <img src="藻类植物2.jpg">
+        </div>
+        <h2>鹿角菜</h2>
+        <div class="information">
+            
+      <p>
+        鹿角菜(PelvetiasiliquosaTsengetC.F.Chang)隶属褐藻门（Phaeophyta）、圆子纲（Cyclosporeae）、鹿角菜目（Fucales）、鹿角菜科（Fucaceae）、鹿角菜属（Pelvetia）。[3]鹿角菜通常呈黄色，藻类的身体是线形的，带有圆锥形的固着器，多数茎扁平且圆形，茎上有重复的叉状分枝，分枝生有繁殖能力的小枝。[2]
+
+        生长于中潮带岩石上，在中国分布于北部沿海，可供食用。[2]
+        
+        鹿角菜含有丰富的蛋白质和胶质，并含有多种糖类、矿物质及维生素。鹿角菜是一种天然生长的海藻，是一种绿色食品，很早以前就为我国沿海群众采集食用。    
+    </p>
+      </div>
+    </div>
+        <div class="card">
+        <div class="picture">
+            <img src="藻类植物3.jpg">
+        </div>
+        <h2>扁藻</h2>
+        <div class="information">
+            
+      <p>
+        扁藻学名扁藻(Platymonas)，属于绿藻门、绿藻纲、团藻目、衣藻科、扁藻属。繁殖方式为无性生殖，细胞纵分裂形成2个，少数情况下为4个子细胞，环境不良时形成休眠孢子。单细胞体。细胞长约10μm余，藻体一般扁压，有背弯腹平的特点，具有四条等长鞭毛。伸缩泡2个或不明显。色素体呈四个分叶。淀粉核1个，眼点1个。无性生殖，细胞纵分裂形成2个，少数情况下为4个子孢子，环境不良时形成休眠孢子。生长于海水和淡水中。在温暖而有机质含量较多的水中能大量繁殖。富含养分，可人工培养。含有丰富的蛋白质，是海洋中小型动物的优质天然饵料[1]。  
+    </p>
+      </div>
+      </div>
+        <div class="card">
+        <div class="picture">
+            <img src="藻类植物4.jpg">
+        </div>
+        <h2>紫菜</h2>
+        <div class="information">
+           
+      <p>
+        紫菜（Pyropia/Porphyra spp. ）在系统分类学上隶属于红藻门（Rhodophyta），原红藻纲（Protoflorideae），红毛菜目（Bangiales），红毛菜科（Bangiaceae），是一类生长在潮间带的海藻，其分布范围涵盖了寒带、温带、亚热带和热带海域。紫菜是世界上产值最高的栽培海藻，在中国、日本和韩国被大规模栽培。
+
+        紫菜是我国海洋农业和出口创汇的主导品种之一。2016年我国紫菜产量约13.53万吨，产值超过100亿元。干紫菜中粗蛋白含量达30%~50%，富含膳食纤维、多种维生素及钙、钾、镁等微量元素，还含藻类特有的藻胆蛋白，具有很高的营养价值，是一种不可多得的海洋食材，也是我国东南沿海农村经济的支柱产品。   
+    </p>
+      </div>
+      </div>
+        <div class="card">
+        <div class="picture">
+            <img src="藻类植物5.jpg">
+        </div>
+        <h2>小球藻</h2>
+        <div class="information">
+            
+      <p>
+        小球藻（Chlorella）为绿藻门小球藻属普生性单细胞绿藻，是一种球形单细胞淡水藻类，直径3～8微米，是地球上最早的生命之一，出现在20多亿年前，是一种高效的光合植物，以光合自养生长繁殖，分布极广。
+        单细胞藻，常单生，也有多细胞聚集。细胞球形、椭圆形，内有一个周生、杯状或片状的色素体。无性繁殖，每个细胞可以产生2、4、8或16个似亲孢子，成熟时母细胞破裂，孢子逸出，长大后即为新个体。细胞内的蛋白质、脂肪和碳水化合物含量都很高，又有多种维生素，可食用和作为饵料。
+        小球藻广泛分布于自然界，以淡水水域种类最多；易于培养，不仅能利用光能自养，还能在异养条件下利用有机碳源进行生长、繁殖；并且生长繁殖速度快，是地球上动植物中唯一能在 20h 增长 4 倍的生物。我国常见的种类有蛋白核小球藻、椭圆小球藻、普通小球藻等。   
+    </p>
+      </div>
+      </div> 
+        <div class="card">
+        <div class="picture">
+            <img src="藻类植物6.jpg">
+        </div>
+        <h2>海萝</h2>
+        <div class="information">
+            
+      <p>
+        海萝，中药名。为海萝科(内枝藻科)植物海萝 Gloiopeltisfurcata (Post.et Rupr.) J. Ag. 及鹿角海萝 Gloiopeltis tenax (Turn.) J. Ag. 的藻体。海萝分布于辽宁、河北、山东、江苏、浙江、福建、广东、台湾等沿海；鹿角海萝分布于浙江、福建、广东等沿海。具有清热，消食，祛风除湿，软坚化痰之功效。常用于劳热，骨蒸，泄泻，痢疾，风湿痹痛，咳嗽，瘿瘤，痔疾。海萝：藻体紫红色，黄褐色至褐色，软革质，干后韧，高4-10cm，可达15cm，丛生，主枝短，圆柱形或亚圆柱形，宽约4mm，不规则二叉分枝，于分枝处常缢缩。内部组织疏松或中空，故藻体有时扁塌，细胞壁外层为海萝胶，内层为纤维素。四分孢子囊散在皮层中，十字形分裂，成熟的囊果圆球形或半球形，很小，突生体表，密布于藻体上。固着器盘状。   
+    </p>
+      </div>
+      </div>
+    </div>
+    </div>
+        </div>
+        <button type="button" class="block" onclick="myFunction()">返回首页</button>
+        <script>
+            function myFunction() {
+ location.replace("index.html")
+}
+       </script>
+    </body>
+</html>
