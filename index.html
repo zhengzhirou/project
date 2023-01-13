@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <style>
+        * {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #4c90af;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: rgb(197, 227, 235);
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+.header {
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+.fakeimg {
+  background-color: rgb(197, 227, 235);
+  width: 100%;
+  padding: 20px;
+}
+
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.topnav {
+  background-color: rgb(150, 192, 203);
+  overflow: hidden;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.active {
+  background-color: #4c90af;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px #4c90af;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: #4c90af;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #4c90af;
+  color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: #4c90af;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: rgb(150, 192, 203);
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+.tab {
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: 30%;
+  height: 300px;
+}
+
+.tab button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 70%;
+  border-left: none;
+  height: 300px;
+  overflow: scroll;
+}
+
+      </style>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+    <body>
+
+    
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+      <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">主页</a>
+        <a href="danger.html">濒危动物</a>
+        <div class="dropdown">
+          <button class="dropbtn">植物 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="1裸子植物.html">裸子植物</a>
+            <a href="2被子植物.html">被子植物</a>
+            <a href="3苔藓植物.html">苔藓植物</a>
+            <a href="4.蕨类植物.html">蕨类植物</a>
+            <a href="5藻类植物.html">藻类植物</a>
+          </div>
+        </div> 
+        <div class="dropdown">
+          <button class="dropbtn">动物 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="waterdongwu.html">水生动物</a>
+            <a href="di.html">陆地动物</a>
+            <a href="too.html">两栖爬行动物</a>
+          </div>
+        </div> 
+        <div class="dropdown">
+          <button class="dropbtn">保护 
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="dongwu.html">动物保护</a>
+            <a href="environment.html">生态保护</a>
+            <a href="biology.html">其他</a>
+          </div>
+        </div> 
+        <a href="report.html">报告</a>
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+      </div>
+
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="img1.jpg" style="width:100%">
+          <div class="text">swan</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="img2.jpg" style="width:100%">
+          <div class="text">elephant</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="img3.jpg" style="width:100%">
+          <div class="text">leopard</div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+      
+      <div class="tab">
+        <button class="tablinks" onclick="openCity(event, '天鹅')" id="defaultOpen">天鹅</button>
+        <button class="tablinks" onclick="openCity(event, '大象')">大象</button>
+        <button class="tablinks" onclick="openCity(event, '猎豹')">猎豹</button>
+      </div>
+
+      
+      
+      <div id="天鹅" class="tabcontent">
+        <h3>天鹅</h3>
+        <p>天鹅指雁族（学名：Cygnus）的鸟类，属游禽，国家二级保护动物。除非洲、南极洲之外的各大陆均有分布。为鸭科中个体最大的类群。颈修长，超过体长或与身躯等长；嘴基部高而前端缓平，眼腺裸露；尾短而圆，尾羽20-24枚；蹼强大，但后趾不具瓣蹼。喜欢群栖在湖泊和沼泽地带，主要以水生植物为食，也吃螺类和软体动物。多数是一夫一妻制，相伴终生。求偶的行为丰富，雌雄会趋于一致的做出相同的动作，还会体贴地互相梳理羽毛。一年繁殖一次，卵的体积较大，如大天鹅的卵有400多克重。幼鸟为早成雏。迁徙时会多群集结，但仍是小群行动。</p>
+      </div>
+      
+      <div id="大象" class="tabcontent">
+        <h3>大象</h3>
+        <p>大象属于长鼻目，只有一科两属三种，即象科（学名：Elephantidae），非洲象属和象属，非洲象有两种：普通非洲象（也叫热带草原象或灌木象）和非洲森林象，象属只有亚洲象一种（也叫印度象）。据史料记载，大象很早就成了人类的朋友，并能为人类提供帮助。大象非常聪明，能开辟场地，还能把死去的同伴安埋在落叶枯枝之中。大象寿命很长，一般能活到70岁左右，它在10岁到15岁性成熟，怀孕期长达22个月。大象分布极广，大约在四千万年以前，除了大洋洲和南极洲以外，各洲都有它的足迹，然而现在主要有亚洲象和非洲象两大类。  
+          2020年5月至6月，博茨瓦纳奥卡万戈三角洲，数百头大象因不明原因死亡。国家公园救援联合创始人马克·希利称这次大象死亡事件为“本世纪影响大象的最大灾难之一”。</p> 
+      </div>
+      
+      <div id="猎豹" class="tabcontent">
+        <h3>猎豹</h3>
+        <p>猎豹（学名：Acinonyx jubatus）：是食肉目的猫科动物，也是猎豹属下仅有的物种。分为5个亚种和一个变异种。体型最大的是北非亚种，成年雄性体重29-71千克，均重45千克，成年雌性21-63千克，均重38千克；其他4个亚种的成年体重一般在35千克以下。因外貌与花豹相似，奔跑速度特别快，故称猎豹。猎豹有独特的身体结构：灵活的脊椎、半伸缩的爪子，头小而圆，吻较短，体型纤细，腿长。后颈部的毛比较长，好像很短的鬃毛一样。眼部有白斑，内眼角沿鼻吻部两侧各有一道明显的黑纹。被毛呈黄褐色或淡黄色，吻部、颔部、胸腹部和四肢内侧为白色；体表遍布黑色斑点，与豹相比其斑点较小且均为实心。尾巴末端的三分之一部位有黑色的环纹。
+          栖息在温带和热带草原，包括半沙漠和有稀疏树木的大草原及裸岩地区。专门的肌肉可以让四肢有更大的摆动，从而增加加速度。是世界上跑得最快的陆生动物，能够在短短三秒内达到每小时110公里以上的速度。以最高速度，它们的步幅长达七米。是食肉动物，主要食物为各种羚羊。野生种群现分布于非洲和伊朗。</p>
+      </div>
+
+
+      <div class="row">
+        <div class="leftcolumn">
+          <div class="card">
+            <h2>植物</h2>
+            <h5>生命形态之一</h5>
+            <div class="fakeimg" >
+              <img src="蕨类.jpeg" width="100%" height="100%"></div>
+            <p>植物(Plants)是生命的主要形态之一，包含了如树木、灌木、藤类、青草、蕨类，及绿藻、地衣等熟悉的生物。</p>
+            <p>植物可以分为种子植物、苔藓植物、蕨类植物等，据估计现存大约有450 000个物种。绿色植物大部分的能源是经由光合作用从太阳光中得到的，温度、湿度、光线、淡水是植物生存的基本需求。被子植物共有六大器官：根、茎、叶、花、果实、种子。绿色植物具有光合作用的能力——借助光能及叶绿素，在酶的催化作用下，利用水、无机盐和二氧化碳进行光合作用，释放氧气，产生葡萄糖等有机物，供植物体利用。</p>
+          </div>
+          <div class="card">
+            <h2>动物</h2>
+            <h5>生物学名词</h5>
+            <div class="fakeimg" >
+              <img src="img1.jpg" width="100%" height="100%"></div>
+            <p>动物（Animal）是生物的一个种类。它们一般以有机物为食，是能够自主运动或能够活动的有感觉的生物。人类也是动物之一。</p>
+            <p>根据化石研究，地球上最早出现的动物源于海洋。早期的海洋动物经过漫长的地质时期，逐渐演化出各种分支，丰富了早期的地球生命形态。在人类出现以前，史前动物便已出现，并在各自的活动期得到繁荣发展。后来，它们在不断变换的生存环境下相继灭绝。但是，地球上的动物仍以从低等到高等、从简单到复杂的趋势不断进化并繁衍，并有了如今的多样性。
+              科学家们把现存的人类已知的动物根据体内有无脊柱分为无脊椎动物和脊椎动物两大种类。科学家已经鉴别出46900多种脊椎动物。包括鲨鱼、鳐鱼等软骨鱼类动物，鲤鱼、黄鱼、草鱼等硬骨鱼类动物，青蛙、娃娃鱼等两栖类动物，蛇、蜥蜴等爬行类动物，鸡、鸽子、麻雀等鸟类动物以及猴子、红熊猫等哺乳类动物。科学家们还发现了130多万种无脊椎动物。这些动物中多数是昆虫，昆虫中多数是甲虫。海绵、蚯蚓、乌贼、牡蛎、红海星、水母、蜘蛛、珊瑚虫、放射虫、蛔虫、猪肉绦虫、沙蚕、蜗牛、蛞蝓等都属于无脊椎动物。
+              动物界所有成员的身体都是由细胞组成的异养有机体。</p>
+          </div>
+        </div>
+        
+        <div class="rightcolumn">
+          <div class="card">
+            <h2>海豹</h2>
+            <div class="fakeimg" ><img src="海豹.jpg" width="100%"></div>
+            <p>海豹是对鳍足亚目种海豹科动物的统称。海豹体粗圆呈纺锤形。全身披短毛，背部蓝灰色，腹部乳黄色，带有蓝黑色斑点。头近圆形，眼大而圆，无外耳廓，吻短而宽，上唇触须长而粗硬，呈念珠状。四肢均具5趾，趾间有蹼，形成鳍状肢，具锋利爪。后鳍肢大，向后延伸，尾短小而扁平。毛色随年龄变化：幼兽色深，成兽色浅。
+              共11种海豹。
+              </p>
+          </div>
+          <div class="card">
+            <h2>小浣熊</h2>
+            <div class="fakeimg" ><img src="浣熊.jpg" width="100%"></div>
+            <p>浣熊属哺乳纲食肉目浣熊科的一种动物。源自北美洲，因其食前要将食物在水中洗濯，故名浣熊（注：“浣”字普通话拼音为huàn。另外，小浣熊和小熊猫不属于同种动物，两者有很大差别。）
+              浣熊属包括7种动物，模式种浣熊产在北美和中美，食蟹浣熊产在哥斯达黎加至南美洲北部地区，其余5种产在各个岛屿上。
+              浣熊体长在42-60厘米之间，它们的脚觉发达，经常用前爪捕食和吃食，使用前爪几乎同猴子一样灵活。浣熊常常把捕到的食物放在水中洗去泥沙，因而得名“浣熊”。
+              浣熊是杂食性动物，吃鱼、蛙和小型陆生动物，也吃野果、坚果、种子、橡树籽等。
+              </p>
+          </div>
+          <div class="card">
+            <h3>图片</h3>
+            <div class="fakeimg">
+              <img src="瓢虫.jpg" width="100%">
+            </div><br>
+            <div class="fakeimg">
+              <img src="鸟.png" width="100%">
+            </div><br>
+            <div class="fakeimg"><img src="草.jpg" width="100%"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+
+      </div>
+      <script>
+        var slideIndex = 1;
+          showSlides(slideIndex);
+
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+         }
+
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+
+         function showSlides(n) {
+           var i;
+           var slides = document.getElementsByClassName("mySlides");
+           var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+             slides[i].style.display = "none";  
+           }
+          for (i = 0; i < dots.length; i++) {
+             dots[i].className = dots[i].className.replace(" active", "");
+           }
+             slides[slideIndex-1].style.display = "block";  
+             dots[slideIndex-1].className += " active";
+            }
+        var mybutton = document.getElementById("myBtn");
+          window.onscroll = function() {scrollFunction()};
+          function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+              mybutton.style.display = "block";
+            } else {
+              mybutton.style.display = "none";
+            }
+          }
+          function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+          }
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        function openCity(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+           tabcontent[i].style.display = "none";
+        }
+          tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+           tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+        document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+     }
+      document.getElementById("defaultOpen").click();
+
+        </script>
+      
+    </body>
+  </html>
+
