@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+        * {
+     box-sizing: border-box;
+
+ }
+
+ body {
+     margin: 0;
+     padding: 10px;
+     background-color: rgb(117, 176, 216);
+
+ }
+
+ .header {
+     padding: 30px;
+     text-align: center;
+     position: relative;
+ }
+ .leftcolumn {
+    float: left;
+    width: 75%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: #ffffff;
+    padding-left: 20px;
+}
+
+.fakeimg {
+    background-color: rgb(193, 200, 202);
+    width: 100%;
+    padding: 20px;
+}
+
+.card2 {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+ .centered {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+ }
+
+ .container {
+     max-width: 1000px;
+     margin: 5px auto;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-around;
+ }
+
+
+ .card {
+     position: relative;
+     margin: 20px 0;
+     width: 300px;
+     height: 400px;
+     background: #fff;
+     transform-style: preserve-3d;
+     transform: perspective(2000px);
+     box-shadow: inset 300px 0 50px rgba(0, 0, 0, .5), 0 20px 20px rgba(0, 0, 0, .5);
+     transition: 1s;
+ }
+
+ .card:hover {
+     z-index: 10000;
+     transform: perspective(2000px) rotate(-10deg);
+     box-shadow: inset 20px 0 50px rgba(0, 0, 0, .5), 0 10px 100px rgba(0, 0, 0, .5);
+ }
+
+ .card .imgBox {
+     position: relative;
+     width: 100%;
+     height: 100%;
+     border: 1px solid #000;
+     box-sizing: border-box;
+     position: relative;
+     transform-origin: left;
+     z-index: 1;
+     transition: 1s cubic-bezier(.15, 1.7, .84, .58);
+     background: #111;
+ }
+
+ .card .imgBox img {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+ }
+
+ .card:hover .imgBox {
+     transform: rotateY(-135deg);
+ }
+
+ .card .details {
+     position: absolute;
+     top: 0;
+     left: 0;
+     box-sizing: border-box;
+     padding: 20px;
+     z-index: -1;
+ }
+ .card3{
+    text-align: center;
+ }
+ .footer .card2{
+    text-align: center;
+    padding: 30px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(94, 186, 233);
+ }
+ .block {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: #4c95af;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+.block:hover {
+  background-color: #ddd;
+  color: black;
+}
+    </style>
+    <title>水生动物</title>
+</head>
+
+<body>
+    <div class="header">
+        <img src="images\header1.webp" alt="海洋" style="width:100% ;height:400px;">
+        <div class="centered">
+            <h1 style="color:white;font-size: 100px;">水生动物</h1>
+        </div>
+    </div>
+    <div class="card2">
+        <h3>鲸鱼：</h3>
+        <p>鲸的拉丁学名是由希腊语中的“海怪”一词衍生的，由此可见古人对这类栖息在海洋中的庞然大物所具有的敬畏之情。<br>其实，鲸的体形差异很大，小型的体长有1.8米左右，最大的则可达30米以上，最重的重量可达170吨以上，最轻的也有2000公斤，分为须鲸和齿鲸。
+        </p>
+    </div>
+    <div class="row">
+        <div class="rightcolumn">
+            <div class="card2">
+                <h2>鲸鱼种类</h2>
+                <div class="fakeimg" style="height:100px;">鲸鱼主要分为须鲸和齿鲸两类，总共有接近100种。<br> 在我国，比较常见的鲸鱼有30多种</div>
+            </div>
+            <div class="card2">
+                <h3>鲸鱼搁浅事迹</h3>
+                <div class="fakeimg">
+                    <p>2005年3月10日<br>广东吴川长8米重约4吨大鲸鱼搁浅死亡</p>
+                </div>
+                <div class="fakeimg">
+                    <p>2008年3月11日<br>一头2吨多重鲸鱼在海南搁浅死亡<br>2008年9月1日<br>三千斤重鲸鱼搁浅金沙滩。</p>
+                </div>
+                <div class="fakeimg">
+                    <p>2012年3月16日<br>4头抹香鲸搁浅在江苏省盐城市新滩盐场附近滩涂，体型最大的身长约20米、体重约30吨。这是中国海域第二次大规模鲸鱼搁浅群死。</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="leftcolumn">
+            <div class="container">
+                <div class="card">
+                    <div class="imgBox">
+                        <img src="images\座头鲸.jpg">
+                    </div>
+                    <div class="details">
+                        <h2>座头鲸</h2>
+                        <p>座头鲸<br>(学名：Megaptera novaeangliae,又名humpback
+                            whale)<br>其“座头”之名源于日文“座头”，意为“琵琶”，指鲸背部的形状。为热带暖海性鲸类。身体较短而宽，一般长达13~15米。座头鲸以其跃出水面姿势、超长的前翅与复杂的叫声而闻名。活动时多一双一对活动，性情温顺，有洄游习性，惟游泳速度较慢。主食为小甲壳类和群游性小型鱼类。
+                            座头鲸栖息于世界各大洋，中国分布于黄海、东海、南海，黄海北部较少，台湾南部海区较多。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgBox">
+                        <img src=" images\抹香鲸.jpg">
+                    </div>
+                    <div class="details">
+                        <h2>抹香鲸</h2>
+                        <p>抹香鲸<br>（学名：Physeter
+                            macrocephalus）<br>头部巨大，下颌较小，仅下颌有牙齿。主要食乌贼。体长可达18米，体重超过50吨，是体型最大的齿鲸，头部可占身体的1/3，无背鳍；潜水能力极强，是潜水最深，潜水时间最长的哺乳动物。体型似鱼，用肺呼吸。颈短，头似与躯干相联；颈椎愈合；鼻孔为喷孔，位于吻端，前肢成鳍，前臂退化，掌部变长，趾数增加，但从外部看不出趾和爪；后肢退化；尾似鱼，有水平尾鳍，游泳靠尾挥动。
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgBox">
+                        <img src="images\蓝鲸.webp ">
+                    </div>
+                    <div class="details">
+                        <h2>蓝鲸</h2>
+                        <p>蓝鲸<br>（学名：Balaenoptera
+                            musculus）<br>是须鲸科、须鲸属的一种海洋哺乳动物。共有4个亚种。蓝鲸被认为是已知的地球上生存过的体积最大的动物，长可达33米，重达181吨。蓝鲸的身躯瘦长，背部是青灰色的，不过在水中看起来有时颜色会比较淡。蓝鲸的鳍肢长3-4米。上方为灰色，窄边白色。下方全白。头部和尾鳍一般为灰色。但是背部，有时还有鳍肢通常是杂色的。
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgBox">
+                        <img src="images\灰鲸.jpg ">
+                    </div>
+                    <div class="details">
+                        <h2>灰鲸</h2>
+                        <p>灰鲸<br>（学名：Eschrichtius
+                            robustus）<br>隶属于鲸偶蹄目须鲸亚目灰鲸科，体围比须鲸科的种类大，但比露脊鲸小；它的成体长10至15米（雌鲸略大于雄鲸），最大体重超过35吨。体形呈纺锤状，躯干粗胖，在鳍肢附近最粗，向尾部逐渐变细,无背鳍。灰鲸幼鲸为黑灰色，但成年后则呈褐灰色至浅灰色。它的全身密布浅色斑，以及由鲸虱和藤壶类构成的白色至橙黄色的斑块。这些体外寄生物的斑块成为了该种的特征之一。
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgBox">
+                        <img src="images\虎鲸.jpg ">
+                    </div>
+                    <div class="details">
+                        <h2>虎鲸</h2>
+                        <p>虎鲸<br>（学名：Orcinus
+                            orca）<br>是哺乳纲、海豚科中体型最大的物种。头部呈圆锥状，没有突出的嘴喙。身体大小、鳍肢大小和背鳍高度有明显的性二型。大而高耸的背鳍位于背部中央，雄性成体的背鳍直立，高可达1.0-1.8米，雌性的背鳍明显地镰刀形，高低于1米。胸鳍大而宽阔，大致呈圆形。上、下颚各有10-14对大而尖锐的牙齿。虎鲸的体色图样主要由黑与白这两种对比分明的色彩组成，位于身体腹面的白色区域自下颚往后延伸至尾部处。
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgBox">
+                        <img src="images\瓜头鲸.jpg ">
+                    </div>
+                    <div class="details">
+                        <h2>瓜头鲸</h2>
+                        <p>瓜头鲸<br>（学名：Peponocephala
+                            electra）<br>是海豚科、瓜头鲸属动物。它们的个头很小，体型健壮，头部呈三角形，吻突极短。成体身长2-2.75米，体重70-225千克。体色灰黑色，背鳍高耸，鳍肢较长、末端尖锐，尾鳍有力。瓜头鲸是一种群居性极强的鲸类，它们经常以数百甚至超过1000只的族群量出现，以远洋的鱼类、乌贼，偶尔以甲壳类动物为食。主要分布在全球北纬40度到南纬35度之间的热带和亚热带海域。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card2">
+        <h3>海豚:</h3>
+        <p>海豚科大约从1000万年前的中新世分化而来，现存17属，近40种，是鲸类中最大的一科，领航鲸、虎鲸等黑鲸类亦属此科，本质上是大型海豚。<br>海豚科的现代近亲为鼠海豚科（Phocoenidae）与独角鲸科（Monodontidae），三科共同构成海豚总科（Delphinoidea）。
+        </p>
+    </div>
+    <div class="row">
+        <div class="rightcolumn">
+            <div class="card2">
+                <h2>海豚种类</h2>
+                <div class="fakeimg" style="height:100px;">海豚科有17属、种类37种（矮海豚属，真海豚属，侏虎鲸属，领航鲸属，灰海豚属，坛喙海豚属等等）</div>
+            </div>
+            <div class="card2">
+                <h3>轶闻趣事</h3>
+                <div class="fakeimg">
+                    <p>屡救人的海豚：<br>美国佛罗里达一位律师夫人被海水淹得昏迷过去，正当生死攸关之际，附近的一头海豚将她推上了沙滩。</p>
+                </div>
+                <div class="fakeimg">
+                    <p>天才的表演家:<br>钻铁环、玩篮球、与人“握手”和“唱歌”等等。</p>
+                </div>
+                <div class="fakeimg">
+                    <p>联络信号精准:<br>海豚都有自己的“信号”口叫声，这“信号”能让同伴知道它是谁和它所在的位置，便于彼此相互联络。</p>
+                </div>
+            </div>
+            <div class="card2">
+                <h3>栖息环境:</h3>
+                <p>主要栖息于热带的温暖海域，但也有一些种类比如露脊海豚更喜欢寒冷水域。</p>
+            </div>
+        </div>
+        <div class="leftcolumn">
+            <div class="container">
+                <div class="card">
+                    <div class="imgBox">
+                        <img src="images\白边海豚.webp">
+                    </div>
+                    <div class="details">
+                        <h2>白边海豚</h2>
+                        <p>白边海豚<br>成体体长可达2.7m，重约215kg。吻短，但与额部界限清楚。额部隆起不显著。背黑、腹白、界线清楚。鳍肢黑色，位于白色区内。背鳍后下方的腰部，有和体轴略平行的白斑，后方有一土黄色或灰色线与白斑相交。体色的个体变异很大。背鳍颇高，后缘凹入呈镰状，位于体中间略前。鳍肢三角形，基底宽，末端尖，位置较靠前。尾鳍中大，宽为体长的1/6～1/5。上下颌都是每侧有齿30～34枚，齿小而尖，直径约5mm。
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgBox">
+                        <img src="images\港口海豚.webp">
+                    </div>
+                    <div class="details">
+                        <h2>港口海豚</h2>
+                        <p>港口海豚<br>这个品种是海豚中最小的，它体型矮胖，只有约五呎长。背部为深棕色或灰色，底为白色，侧边是灰棕色。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgBox">
+                        <img src="images\中华白海豚.jpg ">
+                    </div>
+                    <div class="details">
+                        <h2>中华白海豚 </h2>
+                        <p> 中华白海豚<br>（学名：Sousa
+                            chinensis）<br>属于鲸类的海豚科，是宽吻海豚及虎鲸的近亲。和人类一样恒温，用肺部呼吸、怀胎产子及用乳汁哺育.虽然名为“白海豚”，然而刚出生的中华白海豚体呈深灰色，年轻的会呈灰色，至于成年的则呈粉红色。
+                            主要分布于西太平洋、东印度洋，广布于中国东南部沿海，属于国家一级保护动物，素有“水上大熊猫”之称。</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgBox">
+                        <img src=" images\花斑喙头海豚.jpg">
+                    </div>
+                    <div class="details">
+                        <h2>花斑喙头海豚</h2>
+                        <p>花斑喙头海豚是康氏矮海豚的俗称<br>（学名：Cephalorhynchus commersonii）花斑喙头海豚是康氏矮海豚的俗称（学名：Cephalorhynchus
+                            commersonii）。
+                            属于个体较小的海豚，体长通常在1.2~1.8米间。喙颇尖，与额部界限不清。身体的花纹极似熊猫。头部黑色，背鳍至尾鳍间有黑色相连，此二黑色区外为白色。背鳍基底上，上端带圆形，整个背鳍向后呈伏卧状，位于体中略后。鳍肢近长圆形，肛门和生殖裂周围黑色，其余白色，鳍肢后缘之前呈黑色。
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgBox">
+                        <img src="images\智利矮海豚.jpg  ">
+                    </div>
+                    <div class="details">
+                        <h2> 智利矮海豚</h2>
+                        <p> 智利矮海豚<br>（学名：Cephalorhynchus
+                            eutropia）<br>体型小而短胖，外形呈鱼雷状。体围可达体长的2/3。头似圆锥形，喙及额隆不明显。嘴裂长。脸侧具凹槽。眼睛正对嘴末端。背鳍低矮呈三角形，背鳍前缘细长形成近S形。胸鳍浑圆，但某些个体的胸鳍边缘有锯齿状突起。除了喉咙、胸鳍后侧、腹部以及臀部周围呈现白色，它们身体的其余部分为混杂的暗色调。深灰色区域覆盖胸鳍、尾鳍、背鳍和背部；浅灰色覆及头和两侧；喷水孔可能呈浅灰色。
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgBox">
+                        <img src="images\真海豚.jpg ">
+                    </div>
+                    <div class="details">
+                        <h2>真海豚</h2>
+                        <p>真海豚<br>（学名：Delphinus）<br>身体细而流线型。体色十分复杂而独特，通常十字交叉型，黄褐色在前灰色在后，背面黑色向下延伸，在背鳍下面形成V形区域。具白色胸斑。头前额喙平缓向倾斜，喙细长，相对较短。黑唇末端白色。背鳍大，位于体中央，形状从三角形至镰刀形。鳍肢中等大小，末端尖。尾鳍中等大小，后缘具明显的中央缺刻。真海豚属国家二级保护野生动物，在中国常见于渤海和黄海的各渔场，东海的舟山等渔场，南海的北部湾、北海、海南岛海域，以及台湾海域等。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card2">
+        <h3>水母：</h3>
+        <p>水母是一种非常漂亮的水生动物。<br>它的身体外形就像一把透明伞，伞状体的直径有大有小，大水母的伞状体直径可达2米。伞状体边缘长有一些须状的触手，有的触手可长达20-30米。</p>
+    </div>
+    <div class="row">
+        <div class="rightcolumn">
+            <div class="card2">
+                <h2>水母种类</h2>
+                <div class="fakeimg" style="height:100px;">
+                    水母是一种低等的无脊椎浮游动物，肉食动物，在分类学上包括刺丝胞动物钵水母纲、十字水母纲、立方水母纲动物，已知道的约有250余种。</div>
+            </div>
+            <div class="card2">
+                <h3>生活方式</h3>
+                <div class="fakeimg">
+                    <p>捕食:<br>水母都是肉食性的，以浮游生物，小的甲壳类、多毛类甚至小的鱼类为食。</p>
+                </div>
+                <div class="fakeimg">
+                    <p>共生:<br>水母虽然长相美丽温顺，其实十分凶猛。因为水母没有呼吸器官与循环系统，只有原始的消化器官，所以捕获的食物立即在腔肠内消化吸收。</p>
+                </div>
+                <div class="fakeimg">
+                    <p>运动，毒性：<br>水母通过收缩外壳挤压内腔的方式，改变内腔体积，喷出腔内的水，通过喷水推进的方式进行移动。触手的上面布满了刺细胞，像毒丝一样，能够射出毒液，猎物被刺螫以后，会迅速麻痹而死。
+                    </p>
+                </div>
+            </div>
+            <div class="card2">
+                <h3>发光原理</h3>
+                <p>每只水母大约含有50微克的发光蛋白质，这说明水母就是靠它发光的。</p>
+            </div>
+        </div>
+        <div class="leftcolumn">
+            <div class="container">
+                <div class="card">
+                    <div class="imgBox">
+                        <img src="images\雪花水母.webp">
+                    </div>
+                    <div class="details">
+                        <h2>雪花水母</h2>
+                        <p>雪花水母<br>朝天水母Cassiopea
+                            frondosa<br>盔瓣水母科仙女水母属的一种水母。俗称朝天水母、车轮水母，有毒性，水母翼为圆盘状，边缘缺乏触手，水母翼上有车轮状的图案，口脕上有8只触手，呈花边形状，体内有单细胞虫黄藻共生，常是触手向上。
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgBox">
+                        <img src="images\倒立水母.webp">
+                    </div>
+                    <div class="details">
+                        <h2>倒立水母</h2>
+                        <p>倒立水母<br>圆盘在下，触须朝上的一种水母。缓缓地摆动著圆盘「倒立」在浅水域中，特殊的倒立游泳行为，有别于一般水母。主要栖息于潮间带至水深10米左右之砂质环境，除了会利用光合作用的能量之外，它们与其他水母一样会用触手上的刺丝胞捕食浮游生物，因为触手上的刺丝胞具有微弱毒性，最好尽量不要接近碰触它们。
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgBox">
+                        <img src=" images\灯塔水母.webp ">
+                    </div>
+                    <div class="details">
+                        <h2> 灯塔水母</h2>
+                        <p>灯塔水母<br>（学名：Turritopsis
+                            nutricula）<br>是一种小型水母。身体呈钟型，直径约4-5毫米，身体透明，能够看见红色的消化系统，状如灯塔，因而得名。灯塔水母胃巨大且呈现出鲜艳的红色，横断面为十字型。
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgBox">
+                        <img src="images\海月水母.webp">
+                    </div>
+                    <div class="details">
+                        <h2>海月水母</h2>
+                        <p>海月水母<br>Aurelia aurita (Linnaeus,
+                            1758)<br>是羊须水母科海月水母属下的一种水母。海月水母属物种的水母体单从外观根本不能分辨，必须要以基因来作出分析。海月水母的水母体是透明的，一般阔25－49厘米，有4条明显的马蹄状生殖腺。它们会用触手来捕捉猎物，如水母体、浮游生物及软体动物。但触手的活动有限，它们也只是会随波逐流。生活在大西洋、太平洋、印度洋。
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgBox">
+                        <img src="images\炮弹水母.webp ">
+                    </div>
+                    <div class="details">
+                        <h2> 炮弹水母</h2>
+                        <p>炮弹水母<br>是一种有趣的水母，分布于墨西哥，炮弹水母又叫球水母。炮弹水母的栖息地从美国的东海岸一直延续到巴西海岸，明显以其外形而命名。一个有趣的小插曲就是它如何进行繁殖。它能够进行无性繁殖但是当它不进行无性繁殖的时候，它会把精子从嘴中喷射到受体水母的嘴中。
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgBox">
+                        <img src="images\桃花水母.webp">
+                    </div>
+                    <div class="details">
+                        <h2>桃花水母</h2>
+                        <p>桃花水母<br>（学名：Craspedacusta）<br>是水螅纲、淡水水母目、笠水母科的一属淡水生活的小型水母，已记录11种。水母体直径1.5-2厘米，具有很多触手，缘膜很厚，其水螅型阶段仅有数毫米大小。钟形身体的边缘有数百根短触手。有世代交替。螅形体高约2公釐，无触手，借出芽方式产生水母体。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card2">
+        <h3>鲨鱼：</h3>
+        <p>鲨鱼属于脊椎动物门软骨纲(Chondrichthyes)板鳃亚纲，海生，少数种类进入淡水，为一群游速快的中大型海洋鱼类。</p>
+    </div>
+    <div class="row">
+        <div class="rightcolumn">
+            <div class="card2">
+                <h2>鲨鱼种类</h2>
+                <div class="fakeimg" style="height:100px;">
+                    鲨鱼是侧孔总目(鲨总目)下属软骨鱼的统称，别称鲛、沙鱼、鲛鲨等，全世界共有8目25科约250～300种鲨鱼，我国约有130种。</div>
+
+            </div>
+            <div class="card2">
+                <h3>生殖方式</h3>
+                <div class="fakeimg">
+                    <p>卵生型：<br>卵壳奇特，大小和形状随种类不同而有差异，最大者长30cm、宽14cm、高9cm，为现生鱼类最大的卵，最小的卵长63mm、宽37mm。</p>
+                </div>
+                <div class="fakeimg">
+                    <p>卵胎生:<br>多数鲨鱼受精卵在母体子宫内发育成胎儿，最后生出仔鱼。产出的胎儿数目多少不一，多者几十个，少者2-3个。</p>
+                </div>
+                <div class="fakeimg">
+                    <p>胎生型:<br>胎儿与母体有密切联系，母体子宫壁与胎儿卵黄囊联成卵黄囊胎盘，母体的营养物质和氧通过卵黄囊胎盘进入胎儿体内。</p>
+                </div>
+            </div>
+        </div>
+        <div class="leftcolumn">
+            <div class="container">
+                <div class="card">
+                    <div class="imgBox">
+                        <img src=" images\锤头双髻鲨.webp">
+                    </div>
+                    <div class="details">
+                        <h2>锤头双髻鲨</h2>
+                        <p>锤头双髻鲨<br>（学名：Sphyrna
+                            zygaena）<br>是双髻鲨科、双髻鲨属的一种鲨鱼。体延长，侧扁而粗壮。头前部平扁，两侧特别扩展，形成很宽的锤状突出，状似广阔之丫髻状。吻部短而宽，前缘呈波浪状，中央区不凹入，两侧则明显凹入。眼小，圆形，瞬膜发达。前鼻沟发育完全，位于鼻孔前方内侧。口裂大，弧形；上下颌齿同型，侧扁三角形，齿头倾斜，边缘平滑或具细弱锯齿，不具小齿尖。喷水孔缺如。
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgBox">
+                        <img src="images\护士鲨.jpg ">
+                    </div>
+                    <div class="details">
+                        <h2>护士鲨 </h2>
+                        <p>护士鲨<br>又名铰口鲨（学名：Ginglymostoma
+                            cirratum）<br>是铰口鲨科、铰口鲨属鲨鱼。成年最大体长为为308厘米。有两个无刺的圆形背鳍，第一个大于第二个，还有一个肛门鳍。第一背鳍的起点超过骨盆鳍的起点。尾鳍超过身体总长度的1/4。末端的嘴位于眼睛前面，尖嘴很小，适度长的触须到达嘴。有鼻口沟，但没有会阴沟。成年铰口鲨的颜色一般从浅褐色到深棕色不等。55厘米以下的幼鲨有小的黑色斑点，每个斑点周围都有较浅的色素沉着区域。
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgBox">
+                        <img src="images\鼬鲨.jpg ">
+                    </div>
+                    <div class="details">
+                        <h2>鼬鲨</h2>
+                        <p>鼬鲨<br>（学名：Galeocerdo
+                            cuvier）<br>是真鲨科、鼬鲨属的一种鲨鱼。体呈纺锤型，躯干相当粗壮。头宽扁。尾基上下方各具一凹洼。吻短而宽圆。眼近圆形，瞬膜发达。前鼻瓣短而呈三角形；唇沟很长，上唇沟几达下唇沟之两倍长而接近眼之前角。口裂宽，深弧形，口闭时上下颌紧合，不露齿；上下颌齿同型，宽扁斜三角形，边缘具明显锯齿，齿尖明显外斜，外缘有一凹刻，凹刻下方具3-6小齿尖，小齿尖之外缘亦具明显锯齿。喷水孔裂缝状，中小型。背鳍2个，背鳍间存在明显的隆脊。
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgBox">
+                        <img src="images\柠檬鲨.jpg ">
+                    </div>
+                    <div class="details">
+                        <h2>柠檬鲨</h2>
+                        <p>柠檬鲨<br>又名尖鳍柠檬鲨(学名：Negaprion
+                            acutidens）<br>是真鲨科、柠檬鲨属的一种鲨鱼。体呈纺锤型，躯干较粗大。头甚平扁。尾基上下方各具一凹洼。吻短而钝圆。眼略小，略呈椭圆形，瞬膜发达。前鼻瓣短呈三角形；无口鼻沟或触须。口裂宽，深弧形，口闭时上下颌紧合，不露齿；上颌齿呈窄三角形，前侧齿略外斜，往后则渐直立，边缘光滑，无明显的小齿尖；下颌齿更窄而尖直，边缘光滑。喷水孔缺如。背鳍2个，背鳍间无隆脊，第一背鳍中大，
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgBox">
+                        <img src="images\噬人鲨.jpg">
+                    </div>
+                    <div class="details">
+                        <h2>噬人鲨</h2>
+                        <p>噬人鲨<br>（学名：Carcharodon
+                            carcharias）<br>是鼠鲨科、噬人鲨属的大型凶猛鲨鱼。俗称大白鲨、食人鲨等，是灰鲭鲨的狐朋狗友，而其凶暴则有过之无不及。体大者可长达5.4米，尾鳍宽大，游泳迅速、敏捷。吻部尖如圆锥，嘴里长着又尖又大而扁的牙齿。
+                            噬人鲨活动在海水表层下至大陆坡水深1280米处。活泼善泳，平均巡游速度每小时3.2千米。有袭击船只及攻击人类的纪录，为最凶残鲨类之一。广泛分布于世界各大洋沿岸海域。 [3-5]
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgBox">
+                        <img src=" images\长吻锯鲨.webp">
+                    </div>
+                    <div class="details">
+                        <h2>长吻锯鲨</h2>
+                        <p>长吻锯鲨<br>Pristiophorus cirratus (Latham,
+                            1794)<br>锯鲨科锯鲨属的一种鲨鱼。长吻锯鲨的吻突出成一长板，两侧有尖锐的齿，用以攻击猎物，类似锯，板中央有两条肉质触须，以探测猎物。一般生活在海底40米处，以底栖生物和鱼为食物，分布在从南非到日本的广大海域。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card2">
+        <h3>海龟：</h3>
+        <p>是海龟科和棱皮龟科海栖龟类的统称。为了适应水生生活，身体比较扁平，四肢都变成鳍状，长长的前肢像船桨一样，非常适宜在水里自由地邀游。它除了头、四肢和尾巴以外，全身覆盖着硬壳。</p>
+    </div>
+    <div class="row">
+        <div class="rightcolumn">
+            <div class="card2">
+                <h2>海龟种类</h2>
+                <div class="fakeimg" style="height:100px;">Image</div>
+                <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+            </div>
+            <div class="card2">
+                <h3>海龟简介</h3>
+                <div class="fakeimg">
+                    <p>栖息环境:<br>大多数海龟生活在比较浅的沿海水域、海湾、珊瑚和流入大海的河口等地方。在世界各地温暖舒适的海域大都可以发现海龟。</p>
+                </div>
+                <div class="fakeimg">
+                    <p>生活习性：<br>除了产卵和晒太阳外，海龟通常很少上岸。绝大多数的龟性情温和，遇到敌人时只会将头缩起，不去攻击敌人。</p>
+                </div>
+                <div class="fakeimg">
+                    <p>繁殖方式：<br>海龟一定要在陆地上产卵，每年夏季前后是海龟的繁殖期，雌海龟会在夜间选择坡度小、沙质松软的海滩登陆。</p>
+                </div>
+            </div>
+            <div class="card2">
+                <h3>主要价值</h3>
+                <p>海龟是恐龙时代遗留下来的“活化石”，具有很大的经济、科研、观赏、文化和生态价值。（海龟属于野生保护动物，禁止捕捞；突出其主要价值意义在于保护该物种。</p>
+            </div>
+        </div>
+        <div class="leftcolumn">
+            <div class="container">
+                <div class="card">
+                    <div class="imgBox">
+                        <img src="images\玳瑁.webp">
+                    </div>
+                    <div class="details">
+                        <h2>玳瑁</h2>
+                        <p>玳瑁<br>（学名：Eretmochelys
+                            imbricata）<br>属爬行纲，海龟科的海洋动物。背甲长62.5-114厘米，体重35-127千克。一般在海深18.3米以上的水域中活动，活动能力较强，游泳速度较快。主要的生活区是浅水礁湖和珊瑚礁区，食物包括海绵、水母、海葵、虾蟹和贝类以及鱼类和海藻。分布在广大的海域中，主要发现于大西洋和太平洋的热带地区。
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgBox">
+                        <img src=" images\肯式龟.jpg">
+                    </div>
+                    <div class="details">
+                        <h2>肯式龟</h2>
+                        <p>肯氏龟<br>又称大西洋丽龟，是丽龟属中现在依然存活着的两种海龟之一，另一种是榄蠵龟。是一种小型海龟，成年龟也只有60-90厘米。从大西洋到墨西哥湾都有分布，偏好温暖水域。食物包括一些软体动物、甲壳亚门动物、水母、藻类或者海胆。人为捕杀是肯氏龟数量迅速减少的最初原因，而今天其主要威胁则是栖息地丧失、海洋污染以及渔网。
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgBox">
+                        <img src=" images\棱皮龟.webp">
+                    </div>
+                    <div class="details">
+                        <h2>棱皮龟 </h2>
+                        <p> 棱皮龟<br>（学名：Dermochelys
+                            coriacea）<br>属棱皮龟科、棱皮龟属动物。棱皮龟体大，是龟鳖目中体型最大者，头大，颈、尾短，四肢桨状，无爪，前肢特别发达。棱皮龟属于变温的爬行动物，游泳迅速且能力极强，杂食性，每年5-6月之间产卵，一次产卵90-150枚，主要栖息于热带海域的中上层，分布于大西洋和太平洋海域。
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgBox">
+                        <img src="images\丽龟.webp ">
+                    </div>
+                    <div class="details">
+                        <h2>丽龟</h2>
+                        <p>丽龟<br>（学名：Lepidochelys
+                            olivacea）<br>是海龟科、丽龟属的海洋动物，也是最小的一种海龟。体长60-70厘米，体重约12千克，头背前额鳞2对。肋盾多，6-9对，第一对与颈盾相切。腹部有4对下缘盾，每枚盾片的后缘有一小孔。四肢扁平如桨。头、四肢及体背为暗橄榄绿色，腹甲淡橘黄色。
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgBox">
+                        <img src="images\绿海龟.webp ">
+                    </div>
+                    <div class="details">
+                        <h2>绿海龟 </h2>
+                        <p>绿海龟<br>（学名：Chelonia
+                            mydas）<br>海龟科海龟属的一种龟。亦称海龟，是各种海龟中体形较大的一种，其成龟背甲直线长度可达90到120厘米，体重可达100千克以上。因其体内脂富含主要食物，即海草之叶绿素而得名。然而，它的腹甲为白色或黄白色，背甲则从赤棕含有亮丽的大花斑到墨色不等。识别法为背甲中央为五盾，左右列各为四盾，眼睛上方具鳞片一对，绿海龟俗称黑龟或石龟，可能与耳身躯远望过去像个大黑圆石有关。
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="imgBox">
+                        <img src="images\蠵龟.webp  ">
+                    </div>
+                    <div class="details">
+                        <h2>蠵龟</h2>
+                        <p>蠵龟<br>红海龟（学名：Caretta
+                            caretta)<br>是海龟科、红海龟属的一种海洋动物。体长100-200厘米，体重约为100千克。头较大，宽约15厘米；上、下颌均具极强的钩状喙。头部背面具有对称的鳞片，成体背部无棱。背部表面覆以角棋逢对手或称角质盾片，呈平铺状排列，背甲呈心形，背甲后缘略呈锯齿状，腹甲较平坦，每侧甲桥处有下缘角板3块。腹角板、股角板、肛角板依次渐狭。四肢扁平呈鳍足状；前肢大，后肢较小，内侧各有2爪，比绿海龟多1个爪。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card3">
+    <div class="card2">
+        <h3>其他水生动物</h3>
+        <p>海星，海马，海狮，乌贼，章鱼，海豹等等</p>
+    </div>
+    </div>
+    <div class="container">
+        <div class="card">
+            <div class="imgBox">
+                <img src="images\海马.jpg ">
+            </div>
+            <div class="details">
+                <h2>海马</h2>
+                <p>海马<br>（拉丁学名：hippocampus）<br>是海龙目海龙科暖海生数种小型鱼类的统称，是一种小型海洋动物，身长5～30厘米。因头部弯曲与体近直角而得名，头呈马头状而与身体形成一个角，吻呈长管状，口小，背鳍一个，均为鳍条组成。眼可以各自独立活动。</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBox">
+                <img src="images\海星.jpg">
+            </div>
+            <div class="details">
+                <h2>海星 </h2>
+                <p> 海星（Asteroidea）<br>是棘皮动物中结构生理最有代表性的一类。体扁平，多为五辐射对称，体盘和腕分界不明显。生活时口面向下，反口面向上。腕腹侧具步带沟，沟内伸出管足。内骨骼的骨板以结缔组织相连，柔韧可曲。体表具棘和叉棘，为骨骼的突起。从骨板间突出的膜质泡状突起，外覆上皮，内衬体腔上皮，其内腔连于次生体腔，称为皮鳃，有呼吸和使代谢产物扩散到外界的作用。水管系发达。个体发育中经羽腕幼虫和短腕幼虫。</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBox">
+                <img src="images\海狮.jpg ">
+            </div>
+            <div class="details">
+                <h2>海狮</h2>
+                <p> 海狮<br>（学名：Otarriinae）<br>包括5属7种。分布北半球。体型较小，体长一般不超过2米。北海狮为海狮科最大的一种。雄性体长310-350厘米，体重1000千克以上。雄性成体颈部周围及肩部生有长而粗的鬃毛，体毛为黄褐色，背部毛色较浅，胸及腹部色深。雌性体色比雄兽淡，没有鬃毛。面部短宽，吻部钝，眼和外耳壳较小。前肢较后肢长且宽，前肢第一趾最长，爪退化。后肢的外侧趾较中间三趾长而宽，中间三趾具爪。</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBox">
+                <img src="images\章鱼.webp">
+            </div>
+            <div class="details">
+                <h2>章鱼</h2>
+                <p>章鱼（Octopus）<br>为章鱼科26属252种海洋软体动物的通称。为头足纲最大科，可分为深海多足蛸亚科（Bathypolypodinae）、爱尔斗蛸亚科（Eledoninae）、谷蛸亚科（Graneledoninae）和蛸亚科（Octopodinae）。体卵形或卵圆形，肌肉强健，外套腔开口窄，体表一般不具水孔。腕吸盘1列或2列。雄性左侧或右侧第3腕茎化，腕腹缘具精沟，末端具勺状舌叶；茎化腕不能自断,具1对退化针状内壳或无内壳,胃和盲肠位于消化腺后部。</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBox">
+                <img src=" images\乌贼.jpg">
+            </div>
+            <div class="details">
+                <h2>乌贼</h2>
+                <p> 乌贼<br>本名乌鲗，又称花枝、墨斗鱼或墨鱼。是软体动物门头足纲乌贼目的动物。乌贼遇到强敌时会以“喷墨”作为逃生的方法并伺机离开，因而有“乌贼”、“墨鱼”等名称。其皮肤中有色素小囊，会随“情绪”的变化而改变颜色和大小。乌贼会跃出海面，具有惊人的空中飞行能力。与鱿鱼和章鱼一样属海洋软体动物，三者均不属于鱼类。</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBox">
+                <img src="images\海豹.jpg ">
+            </div>
+            <div class="details">
+                <h2>海豹</h2>
+                <p>海豹<br>是对鳍足亚目种海豹科动物的统称。海豹体粗圆呈纺锤形。全身披短毛，背部蓝灰色，腹部乳黄色，带有蓝黑色斑点。头近圆形，眼大而圆，无外耳廓，吻短而宽，上唇触须长而粗硬，呈念珠状。四肢均具5趾，趾间有蹼，形成鳍状肢，具锋利爪。后鳍肢大，向后延伸，尾短小而扁平。毛色随年龄变化：幼兽色深，成兽色浅。</p>
+        </div>
+    </div>
+    </div>
+    <div class="footer">
+        <div class="card2">
+            <h1>Ending</h1>
+            <p style="text-align: center;">温馨提示：保护野生动物，杜绝野味，它们不属于餐桌。</p>
+        </div>
+    </div>
+    <button type="button" class="block" onclick="myFunction()">返回首页</button>
+    <script>
+        function myFunction() {
+location.replace("index.html")
+}
+   </script>
+</body>
+
+</html>

@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <title>两栖爬行动物</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+        * {
+    box-sizing: border-box;
+
+}
+
+ 
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color: rgba(103, 195, 103, 0.833);
+    
+}
+.header {
+    padding: 30px;
+    text-align: center;
+    position: relative;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.container {
+    margin: 20px auto;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card
+{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    padding: 100px;
+}
+.card .face
+{
+    position: absolute;
+    background-image: url(../imgs/01.jpg);
+    width: 310px;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 0;
+     
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card .face.face1
+{
+    top: 0;
+    left: 0;
+    transition-property: left, z-index, transform;
+    transition-delay: 0s, .5s, .5s;
+    transition-duration: .5s,0s,.5s;
+    z-index: 2;
+    transform: translate(-10px,-10px);
+}
+.card:hover .face.face1
+{
+    transition-property: transform, z-index, left;
+    transition-delay: 0s, .5s, .5s;
+    transition-duration: .5s,0s,.5s;
+    transform: translate(170px,-10px);
+    z-index: 1;
+    left: -160px;
+}
+.card .face.face2
+{
+    background: #111;
+    padding-left: 10px;
+    top: 0;
+    left: 0;
+    transition-property: left, z-index, transform;
+    transition-delay: 0s, .5s, .5s;
+    transition-duration: .5s,0s,.5s;
+    z-index: 1;
+}
+.card:hover .face.face2
+{
+    transition-property: transform, z-index, left;
+    transition-delay: 0s, .5s, .5s;
+    transition-duration: .5s,0s,.5s;
+    transform: translateX(-160px);
+    z-index: 2;
+    left: 160px;
+}
+.card .face.face1 img
+{
+    max-width: 100%;
+}
+.card .face.face2 .content
+{
+    padding: 20px;
+    box-sizing: border-box;
+}
+.card .face.face2 .content h2
+{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+.card .face.face2 .content 
+{
+    margin: 10px 0 0;
+    padding: 0;
+    color: #fff;
+}
+
+.card2{
+    text-align: center;
+    padding: 30px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(135, 236, 177, 0.764);
+    margin:40px;
+ }
+ .block {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: #ace469;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+.block:hover {
+  background-color: #ddd;
+  color: black;
+}
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <img src="images\header3.webp "  style="width:78% ;height:400px;">
+        <div class="centered">
+            <h1 style="color:white;font-size: 100px;">两栖爬行动物</h1>
+        </div>
+    </div>
+    <div class="card2">
+        <h1>爬行动物鳄鱼</h1>
+    </div>
+    <div class="container">
+        <div class="card">
+            <div class="face face1">
+                <img src="images\湾鳄.jpg " style="height: 400px;">
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <h2>湾鳄 </h2>
+                    <p>是鳄科、鳄属的一种鳄鱼。湾鳄为23种鳄鱼品种中最大型的，亦是世界上最大的爬行动物。雄性湾鳄成年后体长一般不会超过5米，个别可达7米。雌性最大体长2.5-3米。成年雄鳄体重可达600-1000千克。幼体呈淡褐色，身躯及尾部有黑色的斑点条纹。成体颜色较深，腹部淡黄色或白色，尾巴底部末端灰色。 </p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face face1">
+                <img src="images\扬子鳄.jpg  " style="height: 400px;">
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <h2>扬子鳄</h2>
+                    <p>古代被称作鼍（tuó），民间俗称“土龙”或“猪婆龙”，是中国特有的一种小型鳄类，被列为国家一级重点保护野外动物。历史上，扬子鳄曾广泛分布于中国东部的黄河、淮河、长江和钱塘江等流域。随着人类活动和气候变化逐渐收缩至长江下游流域。目前，扬子鳄的生存状况十分濒危，野外种群数量总数小于300只，其中成年个体不足100只。</p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face face1">
+                <img src="images\尼罗鳄.png" style="height: 400px;">
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <h2> 尼罗鳄</h2>
+                    <p> 是非洲最大的鳄鱼和最大的爬行动物，是所有鳄鱼种类中被人类研究最多的一种鳄鱼。它们主要分布于非洲尼罗河流域及东南部地区。另外，在马达加斯加岛也有分布。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card2">
+        <h1>爬行动物蛇</h1>
+    </div>
+    <div class="container">
+        <div class="card">
+            <div class="face face1">
+                <img src=" images\黄金蟒.jpg " style="height: 400px;">
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <h2>黄金蟒 </h2>
+                    <p>为脊索动物门，是缅甸蟒蛇的白化突变种，是一种十分稀少的变异品种。黄金蟒的成体可以长到约7米长。在野外的黄金蟒如果有机会与另一条黄金蟒交配，就会将它独特的基因遗传给下一代。但是这种几率十分小，因而黄金蟒十分难得。主要分布在印度、斯里兰卡、缅甸和泰国北部。 </p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face face1">
+                <img src=" images\银环蛇.jpg" style="height: 400px;">
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <h2>银环蛇 </h2>
+                    <p>是眼镜蛇科环蛇属的一种动物。俗称过基峡、白节黑、金钱白花蛇、银甲带、银包铁等。毒性极强，为陆地第四大毒蛇。</p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face face1">
+                <img src=" images\竹叶青.webp " style="height: 400px;">
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <h2>竹叶青 </h2>
+                    <p>是蝰科竹叶青蛇属的管牙类毒蛇。雄性最大全长77厘米，雌性98.1厘米。头较大、三角形，颈细，头颈区分明显。头顶具细鳞；左右鼻间鳞不相切，由细鳞分开；背鳞除最外一行外均起鳞。雄蛇体侧有一红白相间的纵线纹路，雌性体侧纵线纹路为白色或淡黄色。有2亚种。 </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="card">
+            <div class="face face1">
+                <img src="images\眼镜王蛇.jpg" style="height: 400px;">
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <h2>眼镜王蛇</h2>
+                    <p>又称山万蛇、过山风、大扁颈蛇、大眼镜蛇、大扁头风、扁颈蛇、大膨颈、吹风蛇、过山标等。虽称为“眼镜王蛇”，但此物种与真正的眼镜蛇不同，它并不是眼镜蛇属的一员，而是属于独立的眼镜王蛇属。</p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face face1">
+                <img src="images\白锦蛇.webp" style="height: 400px;">
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <h2>白蛇</h2>
+                    <p>白蛇，一般指患白化病的蛇，相对较为少见，例如蟒蛇的白化种黄金蟒。也有些是白色变异个体，比如白锦蛇。</p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face face1">
+                <img src="images\水蛇.webp" style="height: 400px;">
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <h2>水蛇</h2>
+                    <p>又叫红点锦蛇，俗称水长虫、白线蛇。是指游蛇科(Colubridae)游蛇属(Natrix)动物及类似的蛇类。全球共分布有65～80种。除南美洲外，见于各大洲。近来新大陆的种类被画成若干属，其中最大的属为Nerodia属。水蛇是一个种类繁多的“大家族”，主要包括中华水蛇、铅色水蛇二个主要品种；但人们习惯上也将有半水生习性的红点锦蛇、白条锦蛇、双斑锦蛇（旱水蛇），水赤链游蛇等也列入水蛇“家族”。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card2">
+        <h1>两栖动物蛙</h1>
+    </div>
+    <div class="container">
+        <div class="card">
+            <div class="face face1">
+                <img src="images\树蛙.jpg" style="height: 400px;">
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <h2>树蛙</h2>
+                    <p>无尾目树蛙科的1属，体多细长而扁，后肢长，吸盘大，指、趾间有发达的蹼，可以用其在空中滑翔，骨骼方面的主要特征与蛙科同。椎体参差型或前凹型；指、趾末端膨大成明显的吸盘，吸盘腹面边缘有边缘沟，吸盘的背面一般无横凹痕，腹面呈肉垫状。多树栖，外形和生活习性与雨蛙属颇近似，而亲缘关系甚远。树蛙科仅限于旧大陆，产于亚洲及非洲南半部热带和亚热带地区，从印度、斯里兰卡到日本、菲律宾和大巽他群岛；欧洲、美洲、大洋洲无分布。  </p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face face1">
+                <img src="images\雨蛙.webp" style="height: 400px;">
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <h2>雨蛙</h2>
+                    <p>脊椎动物亚门，两栖纲，无尾目，雨蛙科的1属，种类约250种。雨蛙肩带弧胸型，椎体为前凹型。适于树栖，指、趾末端多膨大成吸盘，末两骨节间有1间介软骨，是趋同演化的一个物种。雨蛙白天伏在树根附近的石缝或洞穴内，夜晚栖息在灌木上，以蚁类、金龟子等为食。</p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face face1">
+                <img src="images\蟾蜍.jpg" style="height: 400px;">
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <h2>蟾蜍</h2>
+                    <p>叫蛤蟆há ma（蟆单独读má）。两栖动物，体表有许多疙瘩，内有毒腺，俗称癞蛤蟆、癞猴子、癞刺、癞疙宝。在我国分为中华大蟾蜍和黑眶蟾蜍两种。从它们身上提取的蟾酥以及蟾衣则是我国紧缺的药材。蟾蜍水陆两栖，皮肤布满小孔具有渗透性，外加它们从出生就没有羊膜和壳等结构的保护，致使它们对环境的敏感性要高于其他类群，两栖动物被认为是检测环境变化的风向标。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="card">
+            <div class="face face1">
+                <img src="images\箭毒蛙.jpg " style="height: 400px;">
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <h2>箭毒蛙</h2>
+                    <p> 是世界上外表最美丽的青蛙，同时也是毒性最强的物种之一。它们的体型很小，最小的仅有1.5厘米，个别种类也可达到6厘米。 </p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face face1">
+                <img src="images\金钱蛙.jpg " style="height: 400px;">
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <h2>金钱蛙</h2>
+                    <p>富贵蛙又名金钱蛙、金蟾等,是爪蟾白化变色的一个品种。在分类上属于两栖纲,无尾目,负子蟾科,原产于南非。金钱蛙是一种生命力极强、用途很广、极易饲养的经济动物。</p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face face1">
+                <img src="images\红璞树蛙.jpg" style="height: 400px;">
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <h2>红璞树蛙</h2>
+                    <p>红蹼树蛙常栖息于海拔80-2100米的热带森林地区。白天多隐蔽于茂密的植物丛下；夜间常活动在草丛、灌木和阔叶树上。5-8月，雄蛙常发出“吱（zī）、吱、吱……”的鸣声，捕食蝶、蛾类幼虫以及脉翅目、鞘翅目等的较小昆虫。秋后多蛰伏于树洞或竹筒内越冬。分布于柬埔寨、中国、印度、老挝、缅甸、越南。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card2">
+        <h1>其他</h1>
+    </div>
+    <div class="container">
+        <div class="card">
+            <div class="face face1">
+                <img src=" images\河马.jpg " style="height: 400px;">
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <h2>河马</h2>
+                    <p>是河马科、河马属的杂食性淡水物种。体型巨大，体长2-5米，包括一条长约35厘米的尾巴；肩高1.5米；体重1,300-3200千克。躯体粗圆，四肢短，脚有4趾，头硕大，眼、耳较小，嘴特别大，尾较小，皮较厚，除吻部、尾、耳有稀疏的毛外，全身皮肤裸露，呈紫褐色。  </p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face face1">
+                <img src="images\蜥蜴.jpg  " style="height: 400px;">
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <h2> 蜥蜴</h2>
+                    <p> 称“四脚蛇”又称“蛇舅母”，在世界各地均有分布。属于冷血爬虫类，其种类繁多，在地球上分布大约有3000种左右，我国已知的有150余种，大多分布在热带和亚热带，其生活环境多样，主要是陆栖，也有树栖、半水栖和土中穴居。多数以昆虫为食，也有少数种类兼食植物。蜥蜴是卵生，少数卵胎生。蜥蜴与蛇有密切的亲缘关系，二者有许多相似的地方，周身覆盖以表皮衍生的角质鳞片，泄殖肛孔都是一横裂，雄性都有一对交接器，都是卵生（或有部分卵胎生种类）</p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face face1">
+                <img src=" images\大鲵.jpg " style="height: 400px;">
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <h2>大鲵 </h2>
+                    <p> 是隐腮鲵科、大鲵属有尾两栖动物。体大而扁平，一般全长582～834毫米，头体长310～585毫米，最大个体全长可达200厘米以上。头大扁平而宽阔，头长略大于头宽；雄鲵肛部隆起，椭圆形，肛孔较大，内壁有乳白色小颗粒；雌鲵肛部无隆起，泄殖肛孔较小，周围向内凹入，孔内壁平滑，无乳白色小颗粒。 </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="card">
+            <div class="face face1">
+                <img src=" images\吻蚓.jpg" style="height: 400px;">
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <h2>吻蚓 </h2>
+                    <p>分布于南美洲的北部地区，有2属9种。吻蚓科拥有最多的原始特征，如保留有尾部，口开在头的前方，头骨数量多，眼相对比较大，触突与眼相连，鳞很多和身上的环褶上又有很多小的褶子等。吻蚓科为卵生，幼体有小的外鳃，在水中生活，变态为成体后返回土壤中。 </p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face face1">
+                <img src="images\蚓螈.jpg " style="height: 400px;">
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <h2>蚓螈</h2>
+                    <p>裸蛇目(蚓螈目〔Gymnophiona〕，前作无足目〔Apoda〕)，约155种两生类的统称。穴居或于水中游泳，常隐伏，分布于西半球(从墨西哥至阿根廷北部)以及非洲、东南亚和塞舌尔(Seychelles)群岛，四肢及腰带已退化。特徵为体表有许多体环，体长10∼150厘米(约4∼60英寸)，直径最大为5厘米(2英寸)。颜色从黑到粉红再到棕色不等。眼小，隐于皮下乃至骨下。眼与鼻孔间有一化学感受触须。 </p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face face1">
+                <img src=" images\蝾螈.jpg " style="height: 400px;">
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <h2>蝾螈</h2>
+                    <p>隶属蝾螈亚目、蝾螈科、蝾螈属。蝾螈科在中国有6属23种，分别占世界该科20属77种的30.3%与29.9%。其分布范围北起秦岭以南，南达南海，西自横断山区的四川大凉山和云南腾冲及盈江一带，东至闽、浙沿海地区和台湾等岛屿，处于我国较湿润的亚热带。本科动物在中国境内均匀分布于东洋界，古北界则缺如，其中有18种是中国特有种，约占中国该科23种的78.3%，占世界全科77种的23.4%。蝾螈属分布于中国及日本 </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="card2">
+            <h1>Ending</h1>
+            <p style="text-align: center;">温馨提示：保护野生动物，杜绝野味，它们不属于餐桌。</p>
+        </div>
+    </div>
+    <button type="button" class="block" onclick="myFunction()">返回首页</button>
+    <script>
+        function myFunction() {
+location.replace("index.html")
+}
+   </script>
+</body>
+
+</html>
